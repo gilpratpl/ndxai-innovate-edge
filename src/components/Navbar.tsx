@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Moon, Sun, Globe } from 'lucide-react';
+import { Moon, Sun, Globe, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import { useLanguage } from '@/contexts/LanguageContext';
 import logo from '@/assets/logo.png';
 
@@ -23,8 +29,17 @@ const Navbar = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  const toggleLanguage = () => {
-    setLanguage(language === 'es' ? 'en' : 'es');
+  const handleLanguageChange = (lang: 'es' | 'en' | 'ca') => {
+    setLanguage(lang);
+  };
+
+  const getLanguageLabel = () => {
+    switch (language) {
+      case 'es': return 'ES';
+      case 'ca': return 'CA';
+      case 'en': return 'EN';
+      default: return 'ES';
+    }
   };
 
   const scrollToSection = (id: string) => {
@@ -70,18 +85,34 @@ const Navbar = () => {
             >
               {t('nav.contact')}
             </button>
+            <button
+              onClick={() => scrollToSection('blog')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              {t('nav.blog')}
+            </button>
           </div>
 
           <div className="flex items-center gap-2">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleLanguage}
-              className="rounded-full"
-            >
-              <Globe className="h-5 w-5" />
-              <span className="sr-only">Toggle language</span>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="rounded-full">
+                  <Globe className="h-5 w-5" />
+                  <span className="sr-only">Change language</span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => handleLanguageChange('es')}>
+                  Español {language === 'es' && '✓'}
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange('ca')}>
+                  Català {language === 'ca' && '✓'}
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange('en')}>
+                  English {language === 'en' && '✓'}
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Button
               variant="ghost"
               size="icon"

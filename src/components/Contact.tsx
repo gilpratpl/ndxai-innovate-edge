@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -144,6 +144,23 @@ const Contact = () => {
                   <p className="text-muted-foreground">Barcelona, España</p>
                 </div>
               </div>
+            </div>
+
+            <div className="p-6 rounded-lg bg-card border border-border hover:border-primary transition-all cursor-pointer">
+              <a 
+                href="https://www.linkedin.com/company/ndxai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-start gap-4"
+              >
+                <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
+                  <Linkedin className="h-5 w-5 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1">LinkedIn</h3>
+                  <p className="text-muted-foreground">Síguenos en LinkedIn</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>

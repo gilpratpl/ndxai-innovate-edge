@@ -63,6 +63,14 @@ const Footer = () => {
                   {t('nav.contact')}
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection('blog')}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {t('nav.blog')}
+                </button>
+              </li>
             </ul>
           </div>
 
