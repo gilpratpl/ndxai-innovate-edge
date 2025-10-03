@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Moon, Sun, Globe } from 'lucide-react';
+import { Moon, Sun, Globe, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -9,136 +9,108 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-// Logos
-import logo from '@/assets/logo_white.svg'; // for dark theme
-import logoDark from '@/assets/logo_blue.svg'; // for light theme
+import logo from '@/assets/logo_white.svg';
+import logoDark from '@/assets/logo_blue.svg';
 
 const Navbar = () => {
-  // Detect system preference at first load
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useState<'light' | 'dark'>(prefersDark ? 'dark' : 'light');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const { language, setLanguage, t } = useLanguage();
 
-  // Apply theme to <html>
   useEffect(() => {
     const root = window.document.documentElement;
     root.classList.remove('light', 'dark');
     root.classList.add(theme);
   }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+  const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
+  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
-  const handleLanguageChange = (lang: 'es' | 'en' | 'ca') => {
-    setLanguage(lang);
-  };
-
-  const getLanguageLabel = () => {
-    switch (language) {
-      case 'ca': return 'CA';
-      case 'es': return 'ES';
-      case 'en': return 'EN';
-      default: return 'CA';
-    }
-  };
+  const handleLanguageChange = (lang: 'es' | 'en' | 'ca') => setLanguage(lang);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false); // close mobile menu after click
     }
   };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
 
-          {/* Logo */}
-          <div className="flex items-center gap-2">
-            <img
-              src={theme === 'dark' ? logo : logoDark}
-              alt="NdxAI Logo"
-              className="h-20 w-30"
-            />
-          </div>
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <img src={theme === 'dark' ? logo : logoDark} alt="NdxAI Logo" className="h-12 w-30" />
+        </div>
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center gap-8">
+          {['home', 'services', 'about', 'contact', 'blog'].map((id) => (
             <button
-              onClick={() => scrollToSection('home')}
+              key={id}
+              onClick={() => scrollToSection(id)}
               className="text-foreground hover:text-primary transition-colors"
             >
-              {t('nav.home')}
+              {t(`nav.${id}`)}
             </button>
-            <button
-              onClick={() => scrollToSection('services')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              {t('nav.services')}
-            </button>
-            <button
-              onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              {t('nav.about')}
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              {t('nav.contact')}
-            </button>
-            <button
-              onClick={() => scrollToSection('blog')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              {t('nav.blog')}
-            </button>
-          </div>
+          ))}
+        </div>
 
-          {/* Actions: Language + Theme Toggle */}
-          <div className="flex items-center gap-2">
-            {/* Language Switcher */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="rounded-full">
-                  <Globe className="h-5 w-5" />
-                  <span className="sr-only">Change language</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => handleLanguageChange('es')}>
-                  Español {language === 'es' && '✓'}
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleLanguageChange('ca')}>
-                  Català {language === 'ca' && '✓'}
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => handleLanguageChange('en')}>
-                  English {language === 'en' && '✓'}
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+        {/* Actions */}
+        <div className="flex items-center gap-2">
+          {/* Language Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="icon" className="rounded-full">
+                <Globe className="h-5 w-5" />
+                <span className="sr-only">Change language</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem onClick={() => handleLanguageChange('es')}>
+                Español {language === 'es' && '✓'}
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => handleLanguageChange('ca')}>
+                Català {language === 'ca' && '✓'}
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => handleLanguageChange('en')}>
+                English {language === 'en' && '✓'}
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
 
-            {/* Theme Toggle */}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="rounded-full"
-            >
-              {theme === 'light' ? (
-                <Moon className="h-5 w-5" />
-              ) : (
-                <Sun className="h-5 w-5" />
-              )}
-              <span className="sr-only">Toggle theme</span>
-            </Button>
-          </div>
+          {/* Theme Toggle */}
+          <Button variant="ghost" size="icon" onClick={toggleTheme} className="rounded-full">
+            {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+            <span className="sr-only">Toggle theme</span>
+          </Button>
+
+          {/* Hamburger for mobile */}
+          <Button variant="ghost" size="icon" className="md:hidden rounded-full" onClick={toggleMobileMenu}>
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            <span className="sr-only">Menu</span>
+          </Button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-background border-t border-border flex flex-col items-center py-4 space-y-2">
+          {['home', 'services', 'about', 'contact', 'blog'].map((id) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              {t(`nav.${id}`)}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
