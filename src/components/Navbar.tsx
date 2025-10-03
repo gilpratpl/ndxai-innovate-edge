@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Moon, Sun, Globe, Menu, X } from 'lucide-react';
+import { Moon, Sun, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -8,17 +8,19 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { useLanguage } from '@/contexts/LanguageContext';
-import logo from '@/assets/logo.png';
+
+// Logos
+import logo from '@/assets/logo_white.svg'; // for dark theme
+import logoDark from '@/assets/logo_blue.svg'; // for light theme
 
 const Navbar = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('dark');
+  // Detect system preference at first load
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useState<'light' | 'dark'>(prefersDark ? 'dark' : 'light');
+
   const { language, setLanguage, t } = useLanguage();
 
-  useEffect(() => {
-    const root = window.document.documentElement;
-    root.classList.add('dark');
-  }, []);
-
+  // Apply theme to <html>
   useEffect(() => {
     const root = window.document.documentElement;
     root.classList.remove('light', 'dark');
@@ -35,10 +37,10 @@ const Navbar = () => {
 
   const getLanguageLabel = () => {
     switch (language) {
-      case 'es': return 'ES';
       case 'ca': return 'CA';
+      case 'es': return 'ES';
       case 'en': return 'EN';
-      default: return 'ES';
+      default: return 'CA';
     }
   };
 
@@ -53,13 +55,17 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
+
+          {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src={logo} alt="NdxAI Logo" className="h-10 w-10" />
-            <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              NdxAI
-            </span>
+            <img
+              src={theme === 'dark' ? logo : logoDark}
+              alt="NdxAI Logo"
+              className="h-20 w-30"
+            />
           </div>
 
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('home')}
@@ -93,7 +99,9 @@ const Navbar = () => {
             </button>
           </div>
 
+          {/* Actions: Language + Theme Toggle */}
           <div className="flex items-center gap-2">
+            {/* Language Switcher */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="rounded-full">
@@ -113,6 +121,8 @@ const Navbar = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+
+            {/* Theme Toggle */}
             <Button
               variant="ghost"
               size="icon"
