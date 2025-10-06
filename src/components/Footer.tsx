@@ -1,9 +1,34 @@
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/logo_white.svg';
+import logoDark from '@/assets/logo_blue.svg';
 
 const Footer = () => {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useState<'light' | 'dark'>(prefersDark ? 'dark' : 'light');
+
+  useEffect(() => {
+    // Listen to theme changes
+    const observer = new MutationObserver(() => {
+      const root = window.document.documentElement;
+      const isDark = root.classList.contains('dark');
+      setTheme(isDark ? 'dark' : 'light');
+    });
+
+    observer.observe(window.document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    // Set initial theme
+    const root = window.document.documentElement;
+    const isDark = root.classList.contains('dark');
+    setTheme(isDark ? 'dark' : 'light');
+
+    return () => observer.disconnect();
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -18,10 +43,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="NdxAI Logo" className="h-10 w-10" />
-              <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                NdxAI
-              </span>
+              <img src={theme === 'dark' ? logo : logoDark} alt="NdxAI Logo" className="h-12 w-30" />
             </div>
             <p className="text-muted-foreground mb-4">
               {t('footer.tagline')}
