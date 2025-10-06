@@ -1,39 +1,45 @@
-import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const { t } = useLanguage();
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: '',
-  });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: t('contact.success'),
-      description: t('contact.subtitle'),
-    });
-    setFormData({ name: '', email: '', company: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const contactMethods = [
+    {
+      icon: Mail,
+      title: 'Email',
+      value: 'contact@ndxai.com',
+      link: 'mailto:contact@ndxai.com',
+      description: t('contact.emailDesc'),
+    },
+    {
+      icon: Phone,
+      title: t('contact.phone'),
+      value: '+34 900 123 456',
+      link: 'tel:+34900123456',
+      description: t('contact.phoneDesc'),
+    },
+    {
+      icon: MapPin,
+      title: t('contact.location'),
+      value: 'Barcelona, Catalunya',
+      link: 'https://maps.google.com/?q=Barcelona',
+      description: t('contact.locationDesc'),
+    },
+    {
+      icon: Linkedin,
+      title: 'LinkedIn',
+      value: '@ndxai',
+      link: 'https://www.linkedin.com/company/ndxai',
+      description: t('contact.linkedinDesc'),
+    },
+  ];
 
   return (
-    <section id="contact" className="py-24 bg-muted/30">
+    <section id="contact" className="py-24 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
             {t('contact.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -41,128 +47,37 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-          <div className="lg:col-span-2">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    {t('contact.name')}
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder={t('contact.namePlaceholder')}
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    {t('contact.email')}
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder={t('contact.emailPlaceholder')}
-                    required
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="company" className="block text-sm font-medium mb-2">
-                  {t('contact.company')}
-                </label>
-                <Input
-                  id="company"
-                  name="company"
-                  value={formData.company}
-                  onChange={handleChange}
-                  placeholder={t('contact.companyPlaceholder')}
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  {t('contact.message')}
-                </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder={t('contact.messagePlaceholder')}
-                  rows={6}
-                  required
-                />
-              </div>
-
-              <Button type="submit" size="lg" variant="hero" className="w-full md:w-auto">
-                {t('contact.send')}
-              </Button>
-            </form>
-          </div>
-
-          <div className="space-y-6">
-            <div className="p-6 rounded-lg bg-card border border-border">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                  <Mail className="h-5 w-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-muted-foreground">contact@ndxai.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-6 rounded-lg bg-card border border-border">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                  <Phone className="h-5 w-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Teléfono</h3>
-                  <p className="text-muted-foreground">+34 900 123 456</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-6 rounded-lg bg-card border border-border">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                  <MapPin className="h-5 w-5 text-primary-foreground" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1">Ubicación</h3>
-                  <p className="text-muted-foreground">Barcelona, España</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-6 rounded-lg bg-card border border-border hover:border-primary transition-all cursor-pointer">
-              <a 
-                href="https://www.linkedin.com/company/ndxai" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-start gap-4"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {contactMethods.map((method, index) => {
+            const Icon = method.icon;
+            return (
+              <a
+                key={index}
+                href={method.link}
+                target={method.link.startsWith('http') ? '_blank' : undefined}
+                rel={method.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-elegant hover:-translate-y-1"
               >
-                <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                  <Linkedin className="h-5 w-5 text-primary-foreground" />
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-16 h-16 rounded-xl bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="h-8 w-8 text-primary-foreground" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                      {method.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {method.description}
+                    </p>
+                    <p className="font-medium text-foreground">
+                      {method.value}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold mb-1">LinkedIn</h3>
-                  <p className="text-muted-foreground">Síguenos en LinkedIn</p>
-                </div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
               </a>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>
