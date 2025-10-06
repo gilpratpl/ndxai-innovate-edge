@@ -39,12 +39,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-xl border-b border-border/50 shadow-sm">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src={theme === 'dark' ? logo : logoDark} alt="NdxAI Logo" className="h-12 w-30" />
+          <img src={theme === 'dark' ? logo : logoDark} alt="NdxAI Logo" className="h-12 w-30 transition-transform hover:scale-105 duration-300" />
         </div>
 
         {/* Desktop Menu */}
@@ -53,9 +53,10 @@ const Navbar = () => {
             <button
               key={id}
               onClick={() => scrollToSection(id)}
-              className="text-foreground hover:text-primary transition-colors"
+              className="relative text-foreground hover:text-primary transition-colors duration-300 group"
             >
-              {t(`nav.${id}`)}
+              <span>{t(`nav.${id}`)}</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
         </div>

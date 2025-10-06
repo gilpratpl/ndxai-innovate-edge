@@ -49,9 +49,13 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+    <section id="services" className="py-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+      {/* Decoraciones de fondo */}
+      <div className="absolute top-0 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             {t('services.title')}
           </h2>
@@ -66,20 +70,21 @@ const Services = () => {
             return (
               <Card
                 key={index}
-                className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
+                className="group border-border/50 hover:border-primary/50 transition-all duration-500 cursor-pointer backdrop-blur-sm bg-card/50 hover:bg-card hover:shadow-xl hover:-translate-y-2 animate-fade-in"
                 onClick={() => setSelectedService(index)}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-lg bg-gradient-primary flex items-center justify-center mb-4">
-                    <Icon className="h-7 w-7 text-primary-foreground" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/25">
+                    <Icon className="h-8 w-8 text-primary-foreground" />
                   </div>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base mb-4">
+                  <CardDescription className="text-base mb-4 leading-relaxed">
                     {service.description}
                   </CardDescription>
-                  <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80">
+                  <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80 group-hover:translate-x-1 transition-transform">
                     {t('services.learnMore')} →
                   </Button>
                 </CardContent>

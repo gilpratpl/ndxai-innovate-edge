@@ -36,10 +36,13 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-background to-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+    <section id="contact" className="py-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+      {/* Decoraciones */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             {t('contact.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -47,7 +50,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {contactMethods.map((method, index) => {
             const Icon = method.icon;
             return (
@@ -56,25 +59,17 @@ const Contact = () => {
                 href={method.link}
                 target={method.link.startsWith('http') ? '_blank' : undefined}
                 rel={method.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="group relative p-8 rounded-2xl bg-card border border-border hover:border-primary transition-all duration-300 hover:shadow-elegant hover:-translate-y-1"
+                className="group p-8 rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 text-center backdrop-blur-sm animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="w-16 h-16 rounded-xl bg-gradient-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="h-8 w-8 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-                      {method.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      {method.description}
-                    </p>
-                    <p className="font-medium text-foreground">
-                      {method.value}
-                    </p>
-                  </div>
+                <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/25">
+                  <Icon className="h-8 w-8 text-primary-foreground" />
                 </div>
-                <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{method.title}</h3>
+                <p className="text-muted-foreground text-sm mb-3 leading-relaxed">{method.description}</p>
+                <p className="text-foreground font-medium group-hover:text-primary transition-colors">
+                  {method.value}
+                </p>
               </a>
             );
           })}

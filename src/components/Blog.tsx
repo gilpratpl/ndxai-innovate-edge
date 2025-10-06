@@ -72,9 +72,12 @@ const Blog = () => {
   const currentNews = newsItems[language] || newsItems.es;
 
   return (
-    <section id="blog" className="py-24">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+    <section id="blog" className="py-24 bg-gradient-to-b from-background via-muted/10 to-background relative overflow-hidden">
+      {/* Decoraciones */}
+      <div className="absolute top-0 right-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             {t('blog.title')}
           </h2>
@@ -87,26 +90,29 @@ const Blog = () => {
           {currentNews.map((item, index) => (
             <Card
               key={index}
-              className="border-border hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/10"
+              className="group border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm bg-card/50 hover:bg-card animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                   <Calendar className="h-4 w-4" />
                   <span>{item.date}</span>
                   {item.trending && (
                     <>
-                      <TrendingUp className="h-4 w-4 ml-2 text-primary" />
-                      <span className="text-primary">Trending</span>
+                      <div className="ml-auto flex items-center gap-1 px-2 py-1 rounded-full bg-primary/10 text-primary">
+                        <TrendingUp className="h-3 w-3" />
+                        <span className="text-xs font-medium">Trending</span>
+                      </div>
                     </>
                   )}
                 </div>
-                <CardTitle className="text-xl">{item.title}</CardTitle>
+                <CardTitle className="text-xl leading-tight group-hover:text-primary transition-colors">{item.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base mb-4">
+                <CardDescription className="text-base mb-4 leading-relaxed">
                   {item.excerpt}
                 </CardDescription>
-                <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80">
+                <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80 group-hover:translate-x-1 transition-transform">
                   {t('blog.readMore')} →
                 </Button>
               </CardContent>
@@ -114,13 +120,14 @@ const Blog = () => {
           ))}
         </div>
 
-        <div className="text-center">
+        <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Button
             variant="hero"
             size="lg"
             onClick={() => window.open('https://www.linkedin.com/company/ndxai', '_blank')}
+            className="group"
           >
-            <Linkedin className="mr-2 h-5 w-5" />
+            <Linkedin className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
             {t('blog.linkedin')}
           </Button>
         </div>
