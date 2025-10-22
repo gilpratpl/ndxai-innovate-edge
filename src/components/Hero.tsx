@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold leading-snug">
             <span className="inline-block animate-fade-in">{t('hero.title')}</span>
-            <span className="block bg-gradient-primary bg-clip-text text-transparent animate-fade-in mt-2" style={{ animationDelay: '0.2s' }}>
+            <span className="bg-gradient-primary bg-clip-text text-transparent animate-fade-in mt-2" style={{ animationDelay: '0.2s' }}>
               {t('hero.titleHighlight')}
             </span>
           </h1>

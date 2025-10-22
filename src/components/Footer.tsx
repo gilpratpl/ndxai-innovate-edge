@@ -40,16 +40,16 @@ const Footer = () => {
   return (
     <footer className="relative bg-gradient-to-br from-card via-card to-muted/20 border-t border-border/50 backdrop-blur-sm">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-primary/10 pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 py-16 relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
           {/* Logo y tagline */}
-          <div className="col-span-1 md:col-span-5">
+          <div className="col-span-1 md:col-span-9">
             <div className="mb-6">
-              <img 
-                src={theme === 'dark' ? logo : logoDark} 
-                alt="NdxAI Logo" 
-                className="h-14 w-auto mb-4 transition-transform hover:scale-105 duration-300" 
+              <img
+                src={theme === 'dark' ? logo : logoDark}
+                alt="NdxAI Logo"
+                className="h-14 w-auto mb-4 transition-transform hover:scale-105 duration-300"
               />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Enlaces rápidos */}
-          <div className="col-span-1 md:col-span-3">
+          <div className="col-span-1 md:col-span-2">
             <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">
               {t('footer.quick')}
             </h3>
@@ -83,7 +83,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Enlaces legales */}
+          {/* Enlaces legales 
           <div className="col-span-1 md:col-span-4">
             <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">
               {t('footer.legal')}
@@ -109,6 +109,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          */}
         </div>
 
         {/* Copyright con gradiente */}
