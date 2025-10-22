@@ -64,7 +64,7 @@ const Navbar = () => {
         {/* Actions */}
         <div className="flex items-center gap-2">
           {/* Language Dropdown */}
-          <DropdownMenu>
+          <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon" className="rounded-full">
                 <Globe className="h-5 w-5" />
