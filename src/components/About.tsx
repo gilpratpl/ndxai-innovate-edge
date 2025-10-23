@@ -5,6 +5,7 @@ import member1 from '@/assets/team/member-1.jpg';
 import member2 from '@/assets/team/member-2.jpg';
 import member3 from '@/assets/team/member-3.jpg';
 import member4 from '@/assets/team/member-4.jpg';
+import member5 from '@/assets/team/member-5.jpg';
 
 const About = () => {
   const { t } = useLanguage();
@@ -41,6 +42,12 @@ const About = () => {
       role: t('about.member4.role'),
       desc: t('about.member4.desc')
     },
+    { 
+      image: member5, 
+      name: t('about.member5.name'),
+      role: t('about.member5.role'),
+      desc: t('about.member5.desc')
+    },
   ];
 
   return (
@@ -71,27 +78,54 @@ const About = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+          <div className="space-y-6">
+            {/* Primera fila con 3 miembros */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {teamMembers.slice(0, 3).map((member, index) => (
+                <div
+                  key={index}
+                  className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="aspect-square overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
+                    <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{member.desc}</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
-                  <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{member.desc}</p>
+              ))}
+            </div>
+            
+            {/* Segunda fila con 2 miembros centrados */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {teamMembers.slice(3, 5).map((member, index) => (
+                <div
+                  key={index + 3}
+                  className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden"
+                  style={{ animationDelay: `${(index + 3) * 0.1}s` }}
+                >
+                  <div className="aspect-square overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
+                    <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{member.desc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -88,6 +88,10 @@ const translations: Record<Language, Record<string, string>> = {
     'about.member4.name': 'David Torres',
     'about.member4.role': 'ML Engineer',
     'about.member4.desc': 'Expert en automatització intel·ligent i optimització de processos. Desenvolupa sistemes que redueixen costos operatius significativament.',
+    
+    'about.member5.name': 'Anna Rovira',
+    'about.member5.role': 'Business Intelligence Analyst',
+    'about.member5.desc': 'Especialista en analítica avançada i visualització de dades. Transforma dades complexes en insights accionables per a la presa de decisions.',
 
     // Contact
     'contact.title': 'Contacta amb Nosaltres',
@@ -189,6 +193,10 @@ const translations: Record<Language, Record<string, string>> = {
     'about.member4.name': 'David Torres',
     'about.member4.role': 'ML Engineer',
     'about.member4.desc': 'Experto en automatización inteligente y optimización de procesos. Desarrolla sistemas que reducen costos operativos significativamente.',
+    
+    'about.member5.name': 'Anna Rovira',
+    'about.member5.role': 'Business Intelligence Analyst',
+    'about.member5.desc': 'Especialista en analítica avanzada y visualización de datos. Transforma datos complejos en insights accionables para la toma de decisiones.',
 
     'contact.title': 'Contáctanos',
     'contact.subtitle': 'Estamos aquí para ayudarte a transformar tu empresa',
@@ -287,6 +295,10 @@ const translations: Record<Language, Record<string, string>> = {
     'about.member4.name': 'David Torres',
     'about.member4.role': 'ML Engineer',
     'about.member4.desc': 'Expert in intelligent automation and process optimization. Develops systems that significantly reduce operational costs.',
+    
+    'about.member5.name': 'Anna Rovira',
+    'about.member5.role': 'Business Intelligence Analyst',
+    'about.member5.desc': 'Specialist in advanced analytics and data visualization. Transforms complex data into actionable insights for decision-making.',
 
     'contact.title': 'Contact Us',
     'contact.subtitle': "We\'re here to help you transform your business",
