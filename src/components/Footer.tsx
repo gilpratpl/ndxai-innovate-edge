@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/50">
           <div className="text-center">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} <span className="font-semibold bg-gradient-primary bg-clip-text text-transparent">NdxAI</span>. {t('footer.rights')}.
+              © {currentYear} <span className="font-semibold bg-gradient-primary bg-clip-text text-transparent">NDXai</span>. {t('footer.rights')}.
             </p>
           </div>
         </div>
