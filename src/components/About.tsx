@@ -1,6 +1,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Target, Users, Lightbulb, Award, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import member1 from '@/assets/team/member-1.jpg';
+import member2 from '@/assets/team/member-2.jpg';
+import member3 from '@/assets/team/member-3.jpg';
+import member4 from '@/assets/team/member-4.jpg';
 
 const About = () => {
   const { t } = useLanguage();
@@ -12,11 +16,31 @@ const About = () => {
     }
   };
 
-  const values = [
-    { icon: Target, label: t('about.precision') },
-    { icon: Users, label: t('about.colaboration') },
-    { icon: Lightbulb, label: t('about.innovation') },
-    { icon: Award, label: t('about.excelence') },
+  const teamMembers = [
+    { 
+      image: member1, 
+      name: t('about.member1.name'),
+      role: t('about.member1.role'),
+      desc: t('about.member1.desc')
+    },
+    { 
+      image: member2, 
+      name: t('about.member2.name'),
+      role: t('about.member2.role'),
+      desc: t('about.member2.desc')
+    },
+    { 
+      image: member3, 
+      name: t('about.member3.name'),
+      role: t('about.member3.role'),
+      desc: t('about.member3.desc')
+    },
+    { 
+      image: member4, 
+      name: t('about.member4.name'),
+      role: t('about.member4.role'),
+      desc: t('about.member4.desc')
+    },
   ];
 
   return (
@@ -48,21 +72,26 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            {values.map((value, index) => {
-              const Icon = value.icon;
-              return (
-                <div
-                  key={index}
-                  className="group p-8 rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/25">
-                    <Icon className="h-7 w-7 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">{value.label}</h3>
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="aspect-square overflow-hidden">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
-              );
-            })}
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
+                  <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{member.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -72,10 +72,22 @@ const translations: Record<Language, Record<string, string>> = {
     'about.text':
       'Tot i ser una empresa de nova creació, els membres que composen el nostre equip tenen una llarga experiència treballant amb Intel·ligència Artificial, big data i altres tecnologies IT. Combinen coneixements tècnics i visió de negoci per oferir solucions innovadores, eficients i adaptades a les necessitats de cada empresa.',
     'about.cta': 'Conèixer més',
-    'about.precision': 'Precisió',
-    'about.colaboration': 'Col·laboració',
-    'about.innovation': 'Innovació',
-    'about.excelence': 'Excel·lència',
+    
+    'about.member1.name': 'Marc Sánchez',
+    'about.member1.role': 'Data Scientist',
+    'about.member1.desc': 'Expert en models predictius i anàlisi de dades. Més de 8 anys d\'experiència desenvolupant solucions d\'IA per a la indústria.',
+    
+    'about.member2.name': 'Laura Martínez',
+    'about.member2.role': 'AI Engineer',
+    'about.member2.desc': 'Especialista en visió per computador i deep learning. Lidera projectes de control de qualitat automàtic amb precisió superior al 99%.',
+    
+    'about.member3.name': 'Jordi Puig',
+    'about.member3.role': 'Director de Projectes',
+    'about.member3.desc': 'Combina experiència tècnica amb visió de negoci. Gestiona la implementació de solucions d\'IA adaptades a cada client.',
+    
+    'about.member4.name': 'David Torres',
+    'about.member4.role': 'ML Engineer',
+    'about.member4.desc': 'Expert en automatització intel·ligent i optimització de processos. Desenvolupa sistemes que redueixen costos operatius significativament.',
 
     // Contact
     'contact.title': 'Contacta amb Nosaltres',
@@ -161,10 +173,22 @@ const translations: Record<Language, Record<string, string>> = {
     'about.text':
       'Aunque somos una empresa de nueva creación, los miembros que componen nuestro equipo tienen una larga experiencia trabajando con Inteligencia Artificial, big data y otras tecnologías IT. Combinan conocimientos técnicos y visión de negocio para ofrecer soluciones innovadoras, eficientes y adaptadas a las necesidades de cada empresa.',
     'about.cta': 'Conocer más',
-    'about.precision': 'Precisión',
-    'about.colaboration': 'Colaboración',
-    'about.innovation': 'Innovación',
-    'about.excelence': 'Excelencia',
+    
+    'about.member1.name': 'Marc Sánchez',
+    'about.member1.role': 'Data Scientist',
+    'about.member1.desc': 'Experto en modelos predictivos y análisis de datos. Más de 8 años de experiencia desarrollando soluciones de IA para la industria.',
+    
+    'about.member2.name': 'Laura Martínez',
+    'about.member2.role': 'AI Engineer',
+    'about.member2.desc': 'Especialista en visión por computador y deep learning. Lidera proyectos de control de calidad automático con precisión superior al 99%.',
+    
+    'about.member3.name': 'Jordi Puig',
+    'about.member3.role': 'Director de Proyectos',
+    'about.member3.desc': 'Combina experiencia técnica con visión de negocio. Gestiona la implementación de soluciones de IA adaptadas a cada cliente.',
+    
+    'about.member4.name': 'David Torres',
+    'about.member4.role': 'ML Engineer',
+    'about.member4.desc': 'Experto en automatización inteligente y optimización de procesos. Desarrolla sistemas que reducen costos operativos significativamente.',
 
     'contact.title': 'Contáctanos',
     'contact.subtitle': 'Estamos aquí para ayudarte a transformar tu empresa',
@@ -247,10 +271,22 @@ const translations: Record<Language, Record<string, string>> = {
     'about.text':
       'Although a newly founded company, our team members have extensive experience working with Artificial Intelligence, big data, and other IT technologies. They combine technical knowledge and business vision to deliver innovative, efficient, and tailored solutions to each company\'s needs.',
     'about.cta': 'Learn More',
-    'about.precision': 'Precision',
-    'about.colaboration': 'Collaboration',
-    'about.innovation': 'Innovation',
-    'about.excelence': 'Excellence',
+    
+    'about.member1.name': 'Marc Sánchez',
+    'about.member1.role': 'Data Scientist',
+    'about.member1.desc': 'Expert in predictive models and data analysis. Over 8 years of experience developing AI solutions for industry.',
+    
+    'about.member2.name': 'Laura Martínez',
+    'about.member2.role': 'AI Engineer',
+    'about.member2.desc': 'Specialist in computer vision and deep learning. Leads automated quality control projects with over 99% precision.',
+    
+    'about.member3.name': 'Jordi Puig',
+    'about.member3.role': 'Project Director',
+    'about.member3.desc': 'Combines technical expertise with business vision. Manages implementation of AI solutions tailored to each client.',
+    
+    'about.member4.name': 'David Torres',
+    'about.member4.role': 'ML Engineer',
+    'about.member4.desc': 'Expert in intelligent automation and process optimization. Develops systems that significantly reduce operational costs.',
 
     'contact.title': 'Contact Us',
     'contact.subtitle': "We\'re here to help you transform your business",
