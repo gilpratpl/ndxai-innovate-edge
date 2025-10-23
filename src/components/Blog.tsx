@@ -75,7 +75,7 @@ const Blog = () => {
     <section id="blog" className="py-24 bg-gradient-to-b from-background via-muted/10 to-background relative overflow-hidden">
       {/* Decoraciones */}
       <div className="absolute top-0 right-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -124,7 +124,7 @@ const Blog = () => {
           <Button
             variant="hero"
             size="lg"
-            onClick={() => window.open('https://www.linkedin.com/company/ndxai', '_blank')}
+            onClick={() => window.open('https://www.linkedin.com/company/neural-dynamics-ai', '_blank')}
             className="group"
           >
             <Linkedin className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />

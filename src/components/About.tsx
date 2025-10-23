@@ -13,17 +13,17 @@ const About = () => {
   };
 
   const values = [
-    { icon: Target, label: 'Precisión' },
-    { icon: Users, label: 'Colaboración' },
-    { icon: Lightbulb, label: 'Innovación' },
-    { icon: Award, label: 'Excelencia' },
+    { icon: Target, label: t('about.precision') },
+    { icon: Users, label: t('about.colaboration') },
+    { icon: Lightbulb, label: t('about.innovation') },
+    { icon: Award, label: t('about.excelence') },
   ];
 
   return (
     <section id="about" className="py-24 relative overflow-hidden">
       {/* Decoración de fondo */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in">

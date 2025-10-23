@@ -8,29 +8,22 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'contact@ndxai.com',
-      link: 'mailto:contact@ndxai.com',
+      value: 'info@ndxai.eu',
+      link: 'mailto:info@ndxai.eu',
       description: t('contact.emailDesc'),
     },
     {
       icon: Phone,
       title: t('contact.phone'),
-      value: '+34 900 123 456',
-      link: 'tel:+34900123456',
+      value: '+34 696978421',
+      link: 'tel:+34696978421',
       description: t('contact.phoneDesc'),
-    },
-    {
-      icon: MapPin,
-      title: t('contact.location'),
-      value: 'Barcelona, Catalunya',
-      link: 'https://maps.google.com/?q=Barcelona',
-      description: t('contact.locationDesc'),
     },
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      value: '@ndxai',
-      link: 'https://www.linkedin.com/company/ndxai',
+      value: '@neural-dynamics-ai',
+      link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       description: t('contact.linkedinDesc'),
     },
   ];
@@ -39,7 +32,7 @@ const Contact = () => {
     <section id="contact" className="py-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
       {/* Decoraciones */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -50,7 +43,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {contactMethods.map((method, index) => {
             const Icon = method.icon;
             return (

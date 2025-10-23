@@ -3,7 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
-import { Cog, Zap, Eye, TrendingUp, BarChart, Box } from 'lucide-react';
+import { Cog, Bot, Eye, TrendingUp, BarChart, Box } from 'lucide-react';
 
 const Services = () => {
   const { t } = useLanguage();
@@ -17,22 +17,22 @@ const Services = () => {
       detail: t('services.predictive.detail'),
     },
     {
-      icon: Zap,
-      title: t('services.automation.title'),
-      description: t('services.automation.desc'),
-      detail: t('services.automation.detail'),
-    },
-    {
       icon: Eye,
-      title: t('services.quality.title'),
-      description: t('services.quality.desc'),
-      detail: t('services.quality.detail'),
+      title: t('services.vision.title'),
+      description: t('services.vision.desc'),
+      detail: t('services.vision.detail'),
     },
     {
-      icon: TrendingUp,
-      title: t('services.optimization.title'),
-      description: t('services.optimization.desc'),
-      detail: t('services.optimization.detail'),
+      icon: Box,
+      title: t('services.digital.title'),
+      description: t('services.digital.desc'),
+      detail: t('services.digital.detail'),
+    },
+    {
+      icon: Bot,
+      title: t('services.bots.title'),
+      description: t('services.bots.desc'),
+      detail: t('services.bots.detail'),
     },
     {
       icon: BarChart,
@@ -41,11 +41,12 @@ const Services = () => {
       detail: t('services.analytics.detail'),
     },
     {
-      icon: Box,
-      title: t('services.digital.title'),
-      description: t('services.digital.desc'),
-      detail: t('services.digital.detail'),
+      icon: TrendingUp,
+      title: t('services.optimization.title'),
+      description: t('services.optimization.desc'),
+      detail: t('services.optimization.detail'),
     },
+
   ];
 
   return (
@@ -53,7 +54,7 @@ const Services = () => {
       {/* Decoraciones de fondo */}
       <div className="absolute top-0 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -113,8 +114,8 @@ const Services = () => {
                 </DialogDescription>
               </DialogHeader>
               <div className="mt-6">
-                <Button 
-                  variant="hero" 
+                <Button
+                  variant="hero"
                   onClick={() => {
                     setSelectedService(null);
                     const element = document.getElementById('contact');
