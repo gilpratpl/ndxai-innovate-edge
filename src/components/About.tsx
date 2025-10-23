@@ -78,54 +78,27 @@ const About = () => {
             </Button>
           </div>
 
-          <div className="space-y-6">
-            {/* Primera fila con 3 miembros */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {teamMembers.slice(0, 3).map((member, index) => (
-                <div
-                  key={index}
-                  className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden flex flex-col"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="w-full h-48 overflow-hidden flex items-center justify-center bg-muted/30">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6 flex-1">
-                    <h3 className="text-xl font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{member.desc}</p>
-                  </div>
+          <div className="flex flex-wrap justify-center gap-6">
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden flex flex-col w-full sm:w-[calc(50%-12px)] lg:w-[230px]"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-full h-48 overflow-hidden flex items-center justify-center bg-muted/30">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
-              ))}
-            </div>
-            
-            {/* Segunda fila con 2 miembros centrados */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-              {teamMembers.slice(3, 5).map((member, index) => (
-                <div
-                  key={index + 3}
-                  className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden flex flex-col"
-                  style={{ animationDelay: `${(index + 3) * 0.1}s` }}
-                >
-                  <div className="w-full h-48 overflow-hidden flex items-center justify-center bg-muted/30">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-6 flex-1">
-                    <h3 className="text-xl font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{member.desc}</p>
-                  </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
+                  <p className="text-xs text-primary font-medium mb-3">{member.role}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed flex-1">{member.desc}</p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
