@@ -50,9 +50,9 @@ const translations: Record<Language, Record<string, string>> = {
 
     'services.optimization.title': 'Automatització Intel·ligent',
     'services.optimization.desc':
-      'Implementem sistemes d’IA que automatitzen tasques repetitives, reduint errors i alliberant temps valuós per al teu equip. Això permet centrar-se en activitats de més valor i augmentar l\'eficiència global dels processos empresarials.',
+      'Implementem sistemes d\'IA que automatitzen tasques repetitives, reduint errors i alliberant temps valuós per al teu equip. Això permet centrar-se en activitats de més valor i augmentar l\'eficiència global dels processos empresarials.',
     'services.optimization.detail':
-      'Implementem sistemes d’IA que automatitzen tasques repetitives, reduint errors i alliberant temps valuós per al teu equip. Això permet centrar-se en activitats de més valor i augmentar l\'eficiència global dels processos empresarials.',
+      'Implementem sistemes d\'IA que automatitzen tasques repetitives, reduint errors i alliberant temps valuós per al teu equip. Això permet centrar-se en activitats de més valor i augmentar l\'eficiència global dels processos empresarials.',
 
     'services.analytics.title': 'Analítica Avançada',
     'services.analytics.desc':
@@ -232,9 +232,9 @@ const translations: Record<Language, Record<string, string>> = {
 
     'services.analytics.title': 'Advanced Analytics',
     'services.analytics.desc':
-      'We turn your company’s data into a competitive advantage through Artificial Intelligence—creating models that predict sales and stock, segment customers, or define dynamic pricing, generating useful recommendations to improve decisions and efficiency.',
+      'We turn your company\'s data into a competitive advantage through Artificial Intelligence—creating models that predict sales and stock, segment customers, or define dynamic pricing, generating useful recommendations to improve decisions and efficiency.',
     'services.analytics.detail':
-      'We turn your company’s data into a competitive advantage through Artificial Intelligence—creating models that predict sales and stock, segment customers, or define dynamic pricing, generating useful recommendations to improve decisions and efficiency.',
+      'We turn your company\'s data into a competitive advantage through Artificial Intelligence—creating models that predict sales and stock, segment customers, or define dynamic pricing, generating useful recommendations to improve decisions and efficiency.',
 
     'services.digital.title': 'Digital Twin',
     'services.digital.desc':
@@ -245,7 +245,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.title': 'Our Team',
     'about.subtitle': 'Industrial AI Experts',
     'about.text':
-      'Although a newly founded company, our team members have extensive experience working with Artificial Intelligence, big data, and other IT technologies. They combine technical knowledge and business vision to deliver innovative, efficient, and tailored solutions to each company’s needs.',
+      'Although a newly founded company, our team members have extensive experience working with Artificial Intelligence, big data, and other IT technologies. They combine technical knowledge and business vision to deliver innovative, efficient, and tailored solutions to each company\'s needs.',
     'about.cta': 'Learn More',
     'about.precision': 'Precision',
     'about.colaboration': 'Collaboration',
@@ -253,7 +253,7 @@ const translations: Record<Language, Record<string, string>> = {
     'about.excelence': 'Excellence',
 
     'contact.title': 'Contact Us',
-    'contact.subtitle': "We’re here to help you transform your business",
+    'contact.subtitle': "We\'re here to help you transform your business",
     'contact.phone': 'Phone',
     'contact.location': 'Location',
     'contact.emailDesc': 'Send us an email',
