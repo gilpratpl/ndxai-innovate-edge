@@ -6,77 +6,78 @@ import { Linkedin, Calendar, TrendingUp } from 'lucide-react';
 const Blog = () => {
   const { t, language } = useLanguage();
 
-  const newsItems = {
-    es: [
-      {
-        title: 'La IA revoluciona el mantenimiento predictivo en la industria 4.0',
-        excerpt: 'Nuevos algoritmos de machine learning están transformando cómo las empresas industriales gestionan el mantenimiento de maquinaria, reduciendo costes hasta un 40%.',
-        date: '15 Mar 2025',
-        trending: true,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-      {
-        title: 'Automatización inteligente: El futuro de la manufactura',
-        excerpt: 'Descubre cómo los robots colaborativos equipados con IA están revolucionando las líneas de producción en Europa.',
-        date: '10 Mar 2025',
-        trending: false,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-      {
-        title: 'Visión artificial en control de calidad: Casos de éxito',
-        excerpt: 'Análisis de implementaciones exitosas de sistemas de visión artificial que han mejorado la calidad del producto en un 90%.',
-        date: '5 Mar 2025',
-        trending: true,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-    ],
-    ca: [
-      {
-        title: 'La IA revoluciona el manteniment predictiu en la indústria 4.0',
-        excerpt: 'Nous algoritmes de machine learning estan transformant com les empreses industrials gestionen el manteniment de maquinària, reduint costos fins a un 40%.',
-        date: '15 Mar 2025',
-        trending: true,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-      {
-        title: 'Automatització intel·ligent: El futur de la manufactura',
-        excerpt: 'Descobreix com els robots col·laboratius equipats amb IA estan revolucionant les línies de producció a Europa.',
-        date: '10 Mar 2025',
-        trending: false,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-      {
-        title: 'Visió artificial en control de qualitat: Casos d\'èxit',
-        excerpt: 'Anàlisi d\'implementacions reeixides de sistemes de visió artificial que han millorat la qualitat del producte en un 90%.',
-        date: '5 Mar 2025',
-        trending: true,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-    ],
-    en: [
-      {
-        title: 'AI revolutionizes predictive maintenance in Industry 4.0',
-        excerpt: 'New machine learning algorithms are transforming how industrial companies manage machinery maintenance, reducing costs by up to 40%.',
-        date: 'Mar 15, 2025',
-        trending: true,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-      {
-        title: 'Intelligent automation: The future of manufacturing',
-        excerpt: 'Discover how AI-equipped collaborative robots are revolutionizing production lines across Europe.',
-        date: 'Mar 10, 2025',
-        trending: false,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-      {
-        title: 'Computer vision in quality control: Success stories',
-        excerpt: 'Analysis of successful implementations of computer vision systems that have improved product quality by 90%.',
-        date: 'Mar 5, 2025',
-        trending: true,
-        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
-      },
-    ],
-  };
+const newsItems = {
+  es: [
+    {
+      title: 'La IA optimiza la predicción de la demanda en logística 4.0',
+      excerpt: 'La inteligencia artificial permite a las empresas anticipar la demanda en tiempo real, mejorando la eficiencia de la cadena de suministro y reduciendo costes operativos.',
+      date: '20 Oct 2025',
+      trending: true,
+      link: 'https://thelogisticsworld.com/tecnologia/logistica-4-0-como-la-ia-optimiza-la-prediccion-de-la-demanda-en-tiempo-real/',
+    },
+    {
+      title: 'La IA revoluciona el mantenimiento predictivo en la industria 4.0',
+      excerpt: 'La combinación de gemelos digitales, IoT y aprendizaje automático está mejorando la precisión y eficiencia del mantenimiento, reduciendo costes hasta un 30%.',
+      date: '2 Oct 2025',
+      trending: true,
+      link: 'https://www.computerweekly.com/es/noticias/366632086/El-mantenimiento-predictivo-basado-en-IA-gana-terreno',
+    },
+    {
+      title: 'Visión artificial transforma la industria de precisión',
+      excerpt: 'Sistemas de visión artificial están incrementando la calidad y eficiencia en procesos industriales, permitiendo un control más preciso y consistente.',
+      date: '18 Oct 2025',
+      trending: true,
+      link: 'https://www.automaticaeinstrumentacion.com/texto-diario/mostrar/4894678/vision-artificial-transforma-industria-precision-eficiencia-precedentes',
+    },
+  ],
+  ca: [
+    {
+      title: 'La IA optimitza la predicció de la demanda en logística 4.0',
+      excerpt: 'La intel·ligència artificial permet a les empreses anticipar la demanda en temps real, millorant l’eficiència de la cadena de subministrament i reduint costos operatius.',
+      date: '20 Oct 2025',
+      trending: true,
+      link: 'https://thelogisticsworld.com/tecnologia/logistica-4-0-como-la-ia-optimiza-la-prediccion-de-la-demanda-en-tiempo-real/',
+    },
+    {
+      title: 'La IA revoluciona el manteniment predictiu en la indústria 4.0',
+      excerpt: 'La combinació de bessons digitals, IoT i aprenentatge automàtic està millorant la precisió i eficiència del manteniment, reduint costos fins al 30%.',
+      date: '2 Oct 2025',
+      trending: true,
+      link: 'https://www.computerweekly.com/es/noticias/366632086/El-mantenimiento-predictivo-basado-en-IA-gana-terreno',
+    },
+    {
+      title: 'Visió artificial transforma la indústria de precisió',
+      excerpt: 'Els sistemes de visió artificial incrementen la qualitat i eficiència en processos industrials, permetent un control més precís i consistent.',
+      date: '18 Oct 2025',
+      trending: true,
+      link: 'https://www.automaticaeinstrumentacion.com/texto-diario/mostrar/4894678/vision-artificial-transforma-industria-precision-eficiencia-precedentes',
+    },
+  ],
+  en: [
+    {
+      title: 'AI optimizes demand forecasting in Logistics 4.0',
+      excerpt: 'Artificial intelligence enables companies to anticipate demand in real-time, enhancing supply chain efficiency and reducing operational costs.',
+      date: 'Oct 20, 2025',
+      trending: true,
+      link: 'https://thelogisticsworld.com/tecnologia/logistica-4-0-como-la-ia-optimiza-la-prediccion-de-la-demanda-en-tiempo-real/',
+    },
+    {
+      title: 'AI revolutionizes predictive maintenance in Industry 4.0',
+      excerpt: 'The combination of digital twins, IoT, and machine learning is improving maintenance accuracy and efficiency, reducing costs by up to 30%.',
+      date: 'Oct 2, 2025',
+      trending: true,
+      link: 'https://www.computerweekly.com/es/noticias/366632086/El-mantenimiento-predictivo-basado-en-IA-gana-terreno',
+    },
+    {
+      title: 'Computer vision transforms precision industry',
+      excerpt: 'Computer vision systems are increasing quality and efficiency in industrial processes, enabling more precise and consistent control.',
+      date: 'Oct 18, 2025',
+      trending: true,
+      link: 'https://www.automaticaeinstrumentacion.com/texto-diario/mostrar/4894678/vision-artificial-transforma-industria-precision-eficiencia-precedentes',
+    },
+  ],
+};
+
 
   const currentNews = newsItems[language] || newsItems.es;
 
