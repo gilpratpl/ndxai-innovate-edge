@@ -326,7 +326,15 @@ const translations: Record<Language, Record<string, string>> = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('ca');
+  const getBrowserLanguage = (): Language => {
+    const browserLang = navigator.language.split('-')[0].toLowerCase();
+    if (browserLang === 'ca' || browserLang === 'es' || browserLang === 'en') {
+      return browserLang as Language;
+    }
+    return 'en'; // Fallback a anglès si no és cap dels idiomes suportats
+  };
+
+  const [language, setLanguage] = useState<Language>(getBrowserLanguage());
   const t = (key: string): string => {
     return translations[language][key] || key;
   };
