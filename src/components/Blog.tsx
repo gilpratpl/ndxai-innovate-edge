@@ -13,18 +13,21 @@ const Blog = () => {
         excerpt: 'Nuevos algoritmos de machine learning están transformando cómo las empresas industriales gestionan el mantenimiento de maquinaria, reduciendo costes hasta un 40%.',
         date: '15 Mar 2025',
         trending: true,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
       {
         title: 'Automatización inteligente: El futuro de la manufactura',
         excerpt: 'Descubre cómo los robots colaborativos equipados con IA están revolucionando las líneas de producción en Europa.',
         date: '10 Mar 2025',
         trending: false,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
       {
         title: 'Visión artificial en control de calidad: Casos de éxito',
         excerpt: 'Análisis de implementaciones exitosas de sistemas de visión artificial que han mejorado la calidad del producto en un 90%.',
         date: '5 Mar 2025',
         trending: true,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
     ],
     ca: [
@@ -33,18 +36,21 @@ const Blog = () => {
         excerpt: 'Nous algoritmes de machine learning estan transformant com les empreses industrials gestionen el manteniment de maquinària, reduint costos fins a un 40%.',
         date: '15 Mar 2025',
         trending: true,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
       {
         title: 'Automatització intel·ligent: El futur de la manufactura',
         excerpt: 'Descobreix com els robots col·laboratius equipats amb IA estan revolucionant les línies de producció a Europa.',
         date: '10 Mar 2025',
         trending: false,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
       {
         title: 'Visió artificial en control de qualitat: Casos d\'èxit',
         excerpt: 'Anàlisi d\'implementacions reeixides de sistemes de visió artificial que han millorat la qualitat del producte en un 90%.',
         date: '5 Mar 2025',
         trending: true,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
     ],
     en: [
@@ -53,18 +59,21 @@ const Blog = () => {
         excerpt: 'New machine learning algorithms are transforming how industrial companies manage machinery maintenance, reducing costs by up to 40%.',
         date: 'Mar 15, 2025',
         trending: true,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
       {
         title: 'Intelligent automation: The future of manufacturing',
         excerpt: 'Discover how AI-equipped collaborative robots are revolutionizing production lines across Europe.',
         date: 'Mar 10, 2025',
         trending: false,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
       {
         title: 'Computer vision in quality control: Success stories',
         excerpt: 'Analysis of successful implementations of computer vision systems that have improved product quality by 90%.',
         date: 'Mar 5, 2025',
         trending: true,
+        link: 'https://www.linkedin.com/company/neural-dynamics-ai',
       },
     ],
   };
@@ -112,7 +121,11 @@ const Blog = () => {
                 <CardDescription className="text-base mb-4 leading-relaxed">
                   {item.excerpt}
                 </CardDescription>
-                <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80 group-hover:translate-x-1 transition-transform">
+                <Button 
+                  variant="ghost" 
+                  className="p-0 h-auto text-primary hover:text-primary/80 group-hover:translate-x-1 transition-transform"
+                  onClick={() => window.open(item.link, '_blank')}
+                >
                   {t('blog.readMore')} →
                 </Button>
               </CardContent>
