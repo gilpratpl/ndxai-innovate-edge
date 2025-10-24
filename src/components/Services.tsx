@@ -64,7 +64,50 @@ const Services = () => {
             {t('services.subtitle')}
           </p>
         </div>
+       
+<div
+  className="
+    flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4
+    md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:pb-0
+  "
+>
+  {services.map((service, index) => {
+    const Icon = service.icon;
+    return (
+      <Card
+        key={index}
+        className="
+          min-w-[80%] sm:min-w-[60%] md:min-w-0
+          snap-start flex-shrink-0
+          group border-border/50 hover:border-primary/50 transition-all duration-500 cursor-pointer
+          backdrop-blur-sm bg-card/50 hover:bg-card hover:shadow-xl hover:-translate-y-2
+          animate-fade-in
+        "
+        onClick={() => setSelectedService(index)}
+        style={{ animationDelay: `${index * 0.1}s` }}
+      >
+        <CardHeader>
+          <CardTitle className="text-2xl group-hover:text-primary transition-colors">
+            {service.title}
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="lg:w-24 lg:h-24 w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/25">
+            <Icon className="lg:h-12 lg:w-12 h-8 w-8 text-primary-foreground" />
+          </div>
+          <Button
+            variant="ghost"
+            className="p-0 h-auto text-primary hover:text-primary/80 group-hover:translate-x-1 transition-transform"
+          >
+            {t('services.learnMore')} →
+          </Button>
+        </CardContent>
+      </Card>
+    );
+  })}
+</div>
 
+ {/*
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -76,13 +119,12 @@ const Services = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
-                  <div className="lg:w-24 lg:h-24 w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/25">
-                    <Icon className="lg:h-12 lg:w-12 h-8 w-8 text-primary-foreground" />
-                  </div>
-                  <CardTitle className="text-2xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
+                      <CardTitle className="text-2xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-               
+                 <div className="lg:w-24 lg:h-24 w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-primary/25">
+                    <Icon className="lg:h-12 lg:w-12 h-8 w-8 text-primary-foreground" />
+                  </div>
                   <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80 group-hover:translate-x-1 transition-transform">
                     {t('services.learnMore')} →
                   </Button>
@@ -91,6 +133,8 @@ const Services = () => {
             );
           })}
         </div>
+
+        */}
       </div>
 
       <Dialog open={selectedService !== null} onOpenChange={() => setSelectedService(null)}>
