@@ -78,23 +78,23 @@ const About = () => {
             </Button>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-nowrap overflow-x-auto gap-4 pb-4 -mx-4 px-4 scrollbar-thin scrollbar-thumb-primary/20 scrollbar-track-transparent">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden flex flex-col w-full sm:w-[calc(50%-12px)] lg:w-[230px]"
+                className="group rounded-2xl bg-gradient-to-br from-card to-card/50 border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 backdrop-blur-sm animate-fade-in overflow-hidden flex flex-col min-w-[200px] w-[200px]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-full h-48 overflow-hidden flex items-center justify-center bg-muted/30">
+                <div className="w-full h-40 overflow-hidden flex items-center justify-center bg-muted/30">
                   <img 
                     src={member.image} 
                     alt={member.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
-                  <p className="text-xs text-primary font-medium mb-3">{member.role}</p>
+                <div className="p-4 flex-1 flex flex-col">
+                  <h3 className="text-base font-semibold mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
+                  <p className="text-xs text-primary font-medium mb-2">{member.role}</p>
                   <p className="text-xs text-muted-foreground leading-relaxed flex-1">{member.desc}</p>
                 </div>
               </div>
