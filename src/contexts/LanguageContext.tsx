@@ -73,9 +73,9 @@ const translations: Record<Language, Record<string, string>> = {
       'Tot i ser una empresa de nova creació, els membres que composen el nostre equip tenen una llarga experiència treballant amb Intel·ligència Artificial, big data i altres tecnologies IT. Combinen coneixements tècnics i visió de negoci per oferir solucions innovadores, eficients i adaptades a les necessitats de cada empresa.',
     'about.cta': 'Conèixer més',
     
-    'about.member1.name': 'Marc Sánchez',
-    'about.member1.role': 'Data Scientist',
-    'about.member1.desc': 'Expert en models predictius i anàlisi de dades. Més de 8 anys d\'experiència desenvolupant solucions d\'IA per a la indústria.',
+    'about.member1.name': 'Sergi Masó',
+    'about.member1.role': 'Data Analyst',
+    'about.member1.desc': 'Especialista en analitzar els reptes de les empreses i traduir-los en solucions pràctiques. Aplica la intel·ligència artificial per resoldre problemes reals, combinant visió transversal i coneixement tècnic per connectar tecnologia i negoci i generar valor tangible.',
     
     'about.member2.name': 'Laura Martínez',
     'about.member2.role': 'AI Engineer',
@@ -178,9 +178,10 @@ const translations: Record<Language, Record<string, string>> = {
       'Aunque somos una empresa de nueva creación, los miembros que componen nuestro equipo tienen una larga experiencia trabajando con Inteligencia Artificial, big data y otras tecnologías IT. Combinan conocimientos técnicos y visión de negocio para ofrecer soluciones innovadoras, eficientes y adaptadas a las necesidades de cada empresa.',
     'about.cta': 'Conocer más',
     
-    'about.member1.name': 'Marc Sánchez',
-    'about.member1.role': 'Data Scientist',
-    'about.member1.desc': 'Experto en modelos predictivos y análisis de datos. Más de 8 años de experiencia desarrollando soluciones de IA para la industria.',
+        'about.member1.name': 'Sergi Masó',
+    'about.member1.role': 'Data Analyst',
+    'about.member1.desc': 'Especialista en analitzar els reptes de les empreses i traduir-los en solucions pràctiques. Aplica la intel·ligència artificial per resoldre problemes reals, combinant visió transversal i coneixement tècnic per connectar tecnologia i negoci i generar valor tangible.',
+    
     
     'about.member2.name': 'Laura Martínez',
     'about.member2.role': 'AI Engineer',
@@ -280,9 +281,10 @@ const translations: Record<Language, Record<string, string>> = {
       'Although a newly founded company, our team members have extensive experience working with Artificial Intelligence, big data, and other IT technologies. They combine technical knowledge and business vision to deliver innovative, efficient, and tailored solutions to each company\'s needs.',
     'about.cta': 'Learn More',
     
-    'about.member1.name': 'Marc Sánchez',
-    'about.member1.role': 'Data Scientist',
-    'about.member1.desc': 'Expert in predictive models and data analysis. Over 8 years of experience developing AI solutions for industry.',
+    'about.member1.name': 'Sergi Masó',
+    'about.member1.role': 'Data Analyst',
+    'about.member1.desc': 'Especialista en analitzar els reptes de les empreses i traduir-los en solucions pràctiques. Aplica la intel·ligència artificial per resoldre problemes reals, combinant visió transversal i coneixement tècnic per connectar tecnologia i negoci i generar valor tangible.',
+    
     
     'about.member2.name': 'Laura Martínez',
     'about.member2.role': 'AI Engineer',

@@ -79,9 +79,8 @@ const Services = () => {
         className="
           min-w-[80%] sm:min-w-[60%] md:min-w-0
           snap-start flex-shrink-0
-          group border-border/50 hover:border-primary/50 transition-all duration-500 cursor-pointer
-          backdrop-blur-sm bg-card/50 hover:bg-card hover:shadow-xl hover:-translate-y-2
-          animate-fade-in
+          group border-border/100 hover:border-primary/50 transition-all duration-500 cursor-pointer
+          backdrop-blur-sm bg-card/50 hover:bg-card hover:shadow-xl
         "
         onClick={() => setSelectedService(index)}
         style={{ animationDelay: `${index * 0.1}s` }}
