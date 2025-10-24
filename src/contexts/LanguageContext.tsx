@@ -81,9 +81,9 @@ const translations: Record<Language, Record<string, string>> = {
     'about.member2.role': 'AI Engineer',
     'about.member2.desc': 'Especialista en visió per computador i deep learning. Lidera projectes de control de qualitat automàtic amb precisió superior al 99%.',
     
-    'about.member3.name': 'Jordi Puig',
-    'about.member3.role': 'Director de Projectes',
-    'about.member3.desc': 'Combina experiència tècnica amb visió de negoci. Gestiona la implementació de solucions d\'IA adaptades a cada client.',
+    'about.member3.name': 'Gil Prat',
+    'about.member3.role': 'Full Stack Engineer',
+    'about.member3.desc': 'Especialista en desenvolupar solucions completes, combinant back-end, front-end i bases de dades. Capacitat per integrar tecnologia IoT i xarxes, liderar equips tècnics i transformar requisits complexos en solucions funcionals i escalables.',
     
     'about.member4.name': 'David Torres',
     'about.member4.role': 'ML Engineer',
@@ -187,9 +187,9 @@ const translations: Record<Language, Record<string, string>> = {
     'about.member2.role': 'AI Engineer',
     'about.member2.desc': 'Especialista en visión por computador y deep learning. Lidera proyectos de control de calidad automático con precisión superior al 99%.',
     
-    'about.member3.name': 'Jordi Puig',
-    'about.member3.role': 'Director de Proyectos',
-    'about.member3.desc': 'Combina experiencia técnica con visión de negocio. Gestiona la implementación de soluciones de IA adaptadas a cada cliente.',
+    'about.member3.name': 'Gil Prat',
+    'about.member3.role': 'Full Stack Engineer',
+    'about.member3.desc': 'Especialista en desenvolupar solucions completes, combinant back-end, front-end i bases de dades. Capacitat per integrar tecnologia IoT i xarxes, liderar equips tècnics i transformar requisits complexos en solucions funcionals i escalables.',
     
     'about.member4.name': 'David Torres',
     'about.member4.role': 'ML Engineer',
@@ -290,9 +290,9 @@ const translations: Record<Language, Record<string, string>> = {
     'about.member2.role': 'AI Engineer',
     'about.member2.desc': 'Specialist in computer vision and deep learning. Leads automated quality control projects with over 99% precision.',
     
-    'about.member3.name': 'Jordi Puig',
-    'about.member3.role': 'Project Director',
-    'about.member3.desc': 'Combines technical expertise with business vision. Manages implementation of AI solutions tailored to each client.',
+    'about.member3.name': 'Gil Prat',
+    'about.member3.role': 'Full Stack Engineer',
+    'about.member3.desc': 'Especialista en desenvolupar solucions completes, combinant back-end, front-end i bases de dades. Capacitat per integrar tecnologia IoT i xarxes, liderar equips tècnics i transformar requisits complexos en solucions funcionals i escalables.',
     
     'about.member4.name': 'David Torres',
     'about.member4.role': 'ML Engineer',
