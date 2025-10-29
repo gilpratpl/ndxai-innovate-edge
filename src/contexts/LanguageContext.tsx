@@ -18,83 +18,88 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.blog': 'Blog',
 
     // Hero
-    'hero.title': 'Transformem la Indústria amb',
+    'hero.title': 'Transformem la indústria amb',
     'hero.titleHighlight': 'Intel·ligència Artificial',
     'hero.subtitle':
-      "Desenvolupem solucions d'IA personalitzades que optimitzen processos industrials, augmenten l'eficiència i redueixen costos operatius.",
-    'hero.cta': 'Sol·licitar Demo',
-    'hero.ctaSecondary': 'Veure Serveis',
+      "Desenvolupem solucions d'IA personalitzades que optimitzen processos industrials, augmenten l'eficiència i redueixen els costos operatius.",
+    'hero.cta': 'Sol·licita una demo',
+    'hero.ctaSecondary': 'Veure serveis',
 
     // Services
-    'services.title': 'Els Nostres Serveis',
+    'services.title': 'Els nostres serveis',
     'services.subtitle': "Solucions d'IA dissenyades per a la indústria moderna",
     'services.learnMore': 'Més informació',
 
-    'services.predictive.title': 'Manteniment Predictiu',
+    'services.predictive.title': 'Manteniment predictiu',
     'services.predictive.desc':
-      "Cada parada per avaria és una pèrdua irrecuperable de temps i recursos. Amb sistemes basats en dades històriques i models d\'IA, anticipem fallades abans que passin, permetent planificar les intervencions tècniques amb antelació. Això redueix costos de manteniment i evita interrupcions inesperades en la producció. Per exemple, en una planta industrial, el sistema pot detectar patrons anòmals en la vibració d\'un motor o en la temperatura d\'una bomba, avisant l\'equip tècnic abans que es produeixi una avaria greu.",
+      "Cada parada per avaria és una pèrdua irrecuperable de temps i recursos. \n Amb dades històriques i models d'IA, anticipem fallades abans que passin, reduint costos i augmentant la fiabilitat de les operacions.",
     'services.predictive.detail':
-      "Cada parada per avaria és una pèrdua irrecuperable de temps i recursos. Amb sistemes basats en dades històriques i models d\'IA, anticipem fallades abans que passin, permetent planificar les intervencions tècniques amb antelació. Això redueix costos de manteniment i evita interrupcions inesperades en la producció. Per exemple, en una planta industrial, el sistema pot detectar patrons anòmals en la vibració d\'un motor o en la temperatura d\'una bomba, avisant l\'equip tècnic abans que es produeixi una avaria greu.",
+      "Cada parada per avaria és una pèrdua irrecuperable de temps i recursos. \n Amb dades històriques i models d'IA, anticipem fallades abans que passin, reduint costos i augmentant la fiabilitat de les operacions.",
 
-    'services.vision.title': 'Visió Artificial',
+    'services.vision.title': 'Visió artificial',
     'services.vision.desc':
-      'Els models de visió per computador inspeccionen productes amb una precisió superior a la humana. Mitjançant xarxes neuronals profundes, detectem defectes microscòpics o irregularitats en línies de producció, assegurant estàndards de qualitat consistents i reduint el rebuig de productes. Això és especialment útil en sectors com el farmacèutic o l\'alimentari, on la detecció automàtica de defectes pot evitar lots defectuosos i millorar la traçabilitat dels productes.',
+      "Els models de visió per computador inspeccionen productes amb una precisió superior a la humana. Mitjançant xarxes neuronals profundes, detectem defectes microscòpics i assegurem uns estàndards de qualitat constants.",
     'services.vision.detail':
-      'Els models de visió per computador inspeccionen productes amb una precisió superior a la humana. Mitjançant xarxes neuronals profundes, detectem defectes microscòpics o irregularitats en línies de producció, assegurant estàndards de qualitat consistents i reduint el rebuig de productes. Això és especialment útil en sectors com el farmacèutic o l\'alimentari, on la detecció automàtica de defectes pot evitar lots defectuosos i millorar la traçabilitat dels productes.',
+      "Els models de visió per computador inspeccionen productes amb una precisió superior a la humana. Mitjançant xarxes neuronals profundes, detectem defectes microscòpics i assegurem uns estàndards de qualitat constants.",
 
-    'services.bots.title': 'Bots i Assistents IA',
+    'services.bots.title': 'Bots i assistents IA',
     'services.bots.desc':
-      "Desenvolupem assistents virtuals intel·ligents adaptats a diferents necessitats: integració en webs o apps, bots per consultar informació interna o per donar suport a clients. Aquests sistemes automatitzen tasques repetitives, ofereixen respostes immediates i milloren l\'experiència d\'usuari. Per exemple, un bot d\'atenció al client pot resoldre dubtes freqüents sobre comandes o facturació, mentre un assistent intern pot ajudar l\'equip a trobar documents o dades de forma instantània.",
+      "Desenvolupem assistents virtuals intel·ligents per a diferents necessitats: integració en webs o apps, bots per consultar informació interna o per donar suport a clients, automatitzant tasques repetitives i millorant l'experiència d'usuari.",
     'services.bots.detail':
-      "Desenvolupem assistents virtuals intel·ligents adaptats a diferents necessitats: integració en webs o apps, bots per consultar informació interna o per donar suport a clients. Aquests sistemes automatitzen tasques repetitives, ofereixen respostes immediates i milloren l\'experiència d\'usuari. Per exemple, un bot d\'atenció al client pot resoldre dubtes freqüents sobre comandes o facturació, mentre un assistent intern pot ajudar l\'equip a trobar documents o dades de forma instantània.",
+      "Desenvolupem assistents virtuals intel·ligents per a diferents necessitats: integració en webs o apps, bots per consultar informació interna o per donar suport a clients, automatitzant tasques repetitives i millorant l'experiència d'usuari.",
 
-    'services.optimization.title': 'Automatització Intel·ligent',
+    'services.optimization.title': 'Automatització intel·ligent',
     'services.optimization.desc':
-      'Implementem sistemes d\'IA que automatitzen processos repetitius i administratius, reduint errors i alliberant temps valuós per al teu equip. D\'aquesta manera, el personal pot centrar-se en tasques de més valor estratègic, com la innovació o la relació amb clients. Un exemple seria l\'automatització de la gestió de factures o del processament de comandes, que pot reduir dràsticament els temps de resposta i augmentar la productivitat.',
+      "Implementem sistemes d'IA que automatitzen processos repetitius i administratius, reduint errors i alliberant temps valuós perquè el teu equip es pugui centrar en tasques d'alt valor estratègic.",
     'services.optimization.detail':
-      'Implementem sistemes d\'IA que automatitzen processos repetitius i administratius, reduint errors i alliberant temps valuós per al teu equip. D\'aquesta manera, el personal pot centrar-se en tasques de més valor estratègic, com la innovació o la relació amb clients. Un exemple seria l\'automatització de la gestió de factures o del processament de comandes, que pot reduir dràsticament els temps de resposta i augmentar la productivitat.',
+      "Implementem sistemes d'IA que automatitzen processos repetitius i administratius, reduint errors i alliberant temps valuós perquè el teu equip es pugui centrar en tasques d'alt valor estratègic.",
 
-    'services.analytics.title': 'Analítica Avançada',
+    'services.analytics.title': 'Analítica avançada',
     'services.analytics.desc':
-      "Convertim les dades de la teva empresa en un avantatge competitiu mitjançant tècniques d\'Intel·ligència Artificial i Aprenentatge Automàtic. Creem models que permeten preveure vendes, optimitzar la gestió d\'estocs, segmentar clients o definir preus dinàmics. Això permet prendre decisions més informades i millorar l\'eficiència empresarial. Per exemple, un comerç pot ajustar les seves promocions segons la demanda prevista o una empresa logística pot optimitzar les rutes de repartiment.",
+      "Convertim les dades de la teva empresa en un avantatge competitiu mitjançant tècniques d'IA i aprenentatge automàtic. Creem models que permeten preveure vendes, optimitzar estocs i millorar la presa de decisions.",
     'services.analytics.detail':
-      "Convertim les dades de la teva empresa en un avantatge competitiu mitjançant tècniques d\'Intel·ligència Artificial i Aprenentatge Automàtic. Creem models que permeten preveure vendes, optimitzar la gestió d\'estocs, segmentar clients o definir preus dinàmics. Això permet prendre decisions més informades i millorar l\'eficiència empresarial. Per exemple, un comerç pot ajustar les seves promocions segons la demanda prevista o una empresa logística pot optimitzar les rutes de repartiment.",
+      "Convertim les dades de la teva empresa en un avantatge competitiu mitjançant tècniques d'IA i aprenentatge automàtic. Creem models que permeten preveure vendes, optimitzar estocs i millorar la presa de decisions.",
 
-    'services.digital.title': 'Bessó Digital',
+    'services.digital.title': 'Bessó digital',
     'services.digital.desc':
-      'Els bessons digitals són rèpliques virtuals exactes de les teves operacions físiques. Permeten simular canvis en processos, provar millores o predir resultats sense aturar la producció. Aquesta tecnologia ajuda a reduir riscos i accelera la innovació: per exemple, una fàbrica pot provar virtualment una nova configuració de màquines o un canvi en el flux de treball abans d\'implementar-lo realment, estalviant temps i costos.',
+      "Els bessons digitals són rèpliques virtuals exactes de les teves operacions físiques. Permeten simular canvis, provar millores i predir resultats sense aturar la producció, reduint riscos i accelerant la innovació.",
     'services.digital.detail':
-      'Els bessons digitals són rèpliques virtuals exactes de les teves operacions físiques. Permeten simular canvis en processos, provar millores o predir resultats sense aturar la producció. Aquesta tecnologia ajuda a reduir riscos i accelera la innovació: per exemple, una fàbrica pot provar virtualment una nova configuració de màquines o un canvi en el flux de treball abans d\'implementar-lo realment, estalviant temps i costos.',
+      "Els bessons digitals són rèpliques virtuals exactes de les teves operacions físiques. Permeten simular canvis, provar millores i predir resultats sense aturar la producció, reduint riscos i accelerant la innovació.",
 
     // About
     'about.title': 'El nostre equip',
-    'about.subtitle': 'Experts en IA Industrial',
+    'about.subtitle': 'Experts en IA industrial',
     'about.text':
-      'Tot i ser una empresa de nova creació, els membres que composen el nostre equip tenen una llarga experiència treballant amb Intel·ligència Artificial, big data i altres tecnologies IT. Combinen coneixements tècnics i visió de negoci per oferir solucions innovadores, eficients i adaptades a les necessitats de cada empresa.',
-    'about.cta': 'Conèixer més',
+      "El nostre equip compta amb una àmplia experiència en Intel·ligència Artificial, Big Data i tecnologies digitals. Combinen coneixements tècnics amb visió de negoci per identificar les millors oportunitats de millora i generar valor real a les empreses.",
+    'about.cta': 'Descobreix més',
 
     'about.member1.name': 'Sergi Masó',
     'about.member1.role': 'Data Analyst',
-    'about.member1.desc': 'Especialista en analitzar els reptes de les empreses i traduir-los en solucions pràctiques. Aplica la intel·ligència artificial per resoldre problemes reals, combinant visió transversal i coneixement tècnic per connectar tecnologia i negoci i generar valor tangible.',
+    'about.member1.desc':
+      "Especialista en analitzar reptes empresarials i traduir-los en solucions pràctiques. Aplica la IA per resoldre problemes reals, combinant coneixement tècnic i visió global per connectar tecnologia i negoci.",
 
     'about.member2.name': 'Iker Reina',
-    'about.member2.role': 'Cybersecurity and cloud infrastructure architect',
-    'about.member2.desc': 'Especialista en Seguretat Cloud i IA amb àmplia experiència internacional, liderant implementacions a escala empresarial a Europa, Amèrica i EUA. Expert en serveis d\'IA d\'AWS i solucions de seguretat, amb capacitat demostrada per liderar equips tècnics globals i transformar requisits complexos en solucions escalables alineades amb els objectius de negoci.',
+    'about.member2.role': 'Arquitecte de Ciberseguretat i Infraestructura Cloud',
+    'about.member2.desc':
+      "Especialista en seguretat Cloud i IA amb experiència internacional, liderant implementacions a gran escala a Europa i Amèrica. Expert en serveis d'IA d'AWS i solucions de seguretat.",
 
     'about.member3.name': 'Gil Prat',
-    'about.member3.role': 'Full Stack Engineer',
-    'about.member3.desc': 'Especialista en desenvolupar solucions completes, combinant back-end, front-end i bases de dades. Capacitat per integrar tecnologia IoT i xarxes, liderar equips tècnics i transformar requisits complexos en solucions funcionals i escalables.',
+    'about.member3.role': 'Enginyer Full Stack',
+    'about.member3.desc':
+      "Especialista en el desenvolupament de solucions completes, combinant back-end, front-end i bases de dades, amb experiència en integració de tecnologia IoT i lideratge tècnic.",
 
     'about.member4.name': 'David Torres',
-    'about.member4.role': 'ML Engineer',
-    'about.member4.desc': 'Expert en automatització intel·ligent i optimització de processos. Desenvolupa sistemes que redueixen costos operatius significativament.',
+    'about.member4.role': 'Enginyer de Machine Learning',
+    'about.member4.desc':
+      "Expert en automatització intel·ligent i optimització de processos industrials. Desenvolupa sistemes que redueixen costos i milloren l'eficiència operativa.",
 
     'about.member5.name': 'Anna Rovira',
-    'about.member5.role': 'Business Intelligence Analyst',
-    'about.member5.desc': 'Especialista en analítica avançada i visualització de dades. Transforma dades complexes en insights accionables per a la presa de decisions.',
+    'about.member5.role': 'Analista de Business Intelligence',
+    'about.member5.desc':
+      "Especialista en analítica avançada i visualització de dades. Transforma dades complexes en informació accionable per a la presa de decisions.",
 
     // Contact
-    'contact.title': 'Contacta amb Nosaltres',
+    'contact.title': 'Contacta amb nosaltres',
     'contact.subtitle': 'Som aquí per ajudar-te a transformar la teva empresa',
     'contact.phone': 'Telèfon',
     'contact.location': 'Ubicació',
@@ -104,9 +109,9 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.linkedinDesc': 'Connecta amb nosaltres',
 
     // Blog
-    'blog.title': 'Últimes Notícies',
+    'blog.title': 'Últimes notícies',
     'blog.subtitle': 'Mantén-te informat sobre les novetats en IA industrial',
-    'blog.readMore': 'Llegir més',
+    'blog.readMore': 'Llegeix més',
     'blog.linkedin': 'Segueix-nos a LinkedIn',
 
     // Footer
@@ -125,79 +130,83 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contacto',
     'nav.blog': 'Blog',
 
-    'hero.title': 'Transformamos la Industria con',
+    'hero.title': 'Transformamos la industria con',
     'hero.titleHighlight': 'Inteligencia Artificial',
     'hero.subtitle':
-      'Desarrollamos soluciones de IA personalizadas que optimizan procesos industriales, aumentan la eficiencia y reducen costes operativos.',
-    'hero.cta': 'Solicitar Demo',
-    'hero.ctaSecondary': 'Ver Servicios',
+      'Desarrollamos soluciones de IA personalizadas que optimizan procesos industriales, aumentan la eficiencia y reducen los costes operativos.',
+    'hero.cta': 'Solicita una demo',
+    'hero.ctaSecondary': 'Ver servicios',
 
-    'services.title': 'Nuestros Servicios',
+    'services.title': 'Nuestros servicios',
     'services.subtitle': 'Soluciones de IA diseñadas para la industria moderna',
     'services.learnMore': 'Más información',
 
-    'services.predictive.title': 'Mantenimiento Predictivo',
+    'services.predictive.title': 'Mantenimiento predictivo',
     'services.predictive.desc':
-      'Cada parada por avería es una pérdida irrecuperable de tiempo y recursos. Con sistemas basados en datos históricos y modelos de IA, anticipamos fallos antes de que ocurran, reduciendo costes y aumentando la fiabilidad de las operaciones.',
+      'Cada parada por avería supone una pérdida irrecuperable de tiempo y recursos. Con datos históricos y modelos de IA anticipamos fallos antes de que ocurran, reduciendo costes y aumentando la fiabilidad operativa.',
     'services.predictive.detail':
-      'Cada parada por avería es una pérdida irrecuperable de tiempo y recursos. Con sistemas basados en datos históricos y modelos de IA, anticipamos fallos antes de que ocurran, reduciendo costes y aumentando la fiabilidad de las operaciones.',
+      'Cada parada por avería supone una pérdida irrecuperable de tiempo y recursos. Con datos históricos y modelos de IA anticipamos fallos antes de que ocurran, reduciendo costes y aumentando la fiabilidad operativa.',
 
-    'services.vision.title': 'Visión Artificial',
+    'services.vision.title': 'Visión artificial',
     'services.vision.desc':
-      'Modelos basados en visión por computador inspeccionan productos con una precisión superior a la humana. Mediante redes neuronales profundas, detectamos defectos microscópicos, asegurando estándares de calidad consistentes y minimizando el rechazo de productos.',
+      'Los modelos de visión por computador inspeccionan productos con una precisión superior a la humana. Con redes neuronales profundas, detectamos defectos microscópicos y garantizamos estándares de calidad constantes.',
     'services.vision.detail':
-      'Modelos basados en visión por computador inspeccionan productos con una precisión superior a la humana. Mediante redes neuronales profundas, detectamos defectos microscópicos, asegurando estándares de calidad consistentes y minimizando el rechazo de productos.',
+      'Los modelos de visión por computador inspeccionan productos con una precisión superior a la humana. Con redes neuronales profundas, detectamos defectos microscópicos y garantizamos estándares de calidad constantes.',
 
-    'services.bots.title': 'Bots y Asistentes IA',
+    'services.bots.title': 'Bots y asistentes IA',
     'services.bots.desc':
-      'Desarrollamos asistentes virtuales inteligentes para diferentes necesidades, como integración en webs o apps, bots personalizados para consultar información interna o atención al cliente, agilizando tareas repetitivas, mejorando la eficiencia y ofreciendo respuestas rápidas y precisas.',
+      'Desarrollamos asistentes virtuales inteligentes para diversas necesidades: integración en webs o apps, bots para consultar información interna o atención al cliente, automatizando tareas repetitivas y mejorando la experiencia de usuario.',
     'services.bots.detail':
-      'Desarrollamos asistentes virtuales inteligentes para diferentes necesidades, como integración en webs o apps, bots personalizados para consultar información interna o atención al cliente, agilizando tareas repetitivas, mejorando la eficiencia y ofreciendo respuestas rápidas y precisas.',
+      'Desarrollamos asistentes virtuales inteligentes para diversas necesidades: integración en webs o apps, bots para consultar información interna o atención al cliente, automatizando tareas repetitivas y mejorando la experiencia de usuario.',
 
-    'services.optimization.title': 'Automatización Inteligente',
+    'services.optimization.title': 'Automatización inteligente',
     'services.optimization.desc':
-      'Implementamos sistemas de IA que automatizan tareas repetitivas, reduciendo errores y liberando tiempo valioso para tu equipo. Esto permite centrarse en actividades de mayor valor y aumentar la eficiencia global de los procesos empresariales.',
+      'Implementamos sistemas de IA que automatizan procesos repetitivos y administrativos, reduciendo errores y liberando tiempo valioso para que tu equipo se centre en tareas de mayor valor estratégico.',
     'services.optimization.detail':
-      'Implementamos sistemas de IA que automatizan tareas repetitivas, reduciendo errores y liberando tiempo valioso para tu equipo. Esto permite centrarse en actividades de mayor valor y aumentar la eficiencia global de los procesos empresariales.',
+      'Implementamos sistemas de IA que automatizan procesos repetitivos y administrativos, reduciendo errores y liberando tiempo valioso para que tu equipo se centre en tareas de mayor valor estratégico.',
 
-    'services.analytics.title': 'Analítica Avanzada',
+    'services.analytics.title': 'Analítica avanzada',
     'services.analytics.desc':
-      'Convertimos los datos de tu empresa en una ventaja competitiva mediante Inteligencia Artificial, creando modelos que permiten prever ventas y stocks, segmentar clientes o definir precios dinámicos, generando recomendaciones útiles para mejorar las decisiones y la eficiencia empresarial.',
+      'Convertimos los datos de tu empresa en una ventaja competitiva mediante IA y aprendizaje automático. Creamos modelos que predicen ventas, optimizan inventarios y mejoran la toma de decisiones.',
     'services.analytics.detail':
-      'Convertimos los datos de tu empresa en una ventaja competitiva mediante Inteligencia Artificial, creando modelos que permiten prever ventas y stocks, segmentar clientes o definir precios dinámicos, generando recomendaciones útiles para mejorar las decisiones y la eficiencia empresarial.',
+      'Convertimos los datos de tu empresa en una ventaja competitiva mediante IA y aprendizaje automático. Creamos modelos que predicen ventas, optimizan inventarios y mejoran la toma de decisiones.',
 
-    'services.digital.title': 'Gemelo Digital',
+    'services.digital.title': 'Gemelo digital',
     'services.digital.desc':
-      'Los gemelos digitales son réplicas virtuales exactas de tus operaciones físicas. Permiten simular cambios, probar mejoras y predecir resultados sin interrumpir la producción, reduciendo riesgos y acelerando la innovación en los procesos industriales.',
+      'Los gemelos digitales son réplicas virtuales exactas de tus operaciones físicas. Permiten simular cambios, probar mejoras y predecir resultados sin detener la producción, reduciendo riesgos y acelerando la innovación.',
     'services.digital.detail':
-      'Los gemelos digitales son réplicas virtuales exactas de tus operaciones físicas. Permiten simular cambios, probar mejoras y predecir resultados sin interrumpir la producción, reduciendo riesgos y acelerando la innovación en los procesos industriales.',
+      'Los gemelos digitales son réplicas virtuales exactas de tus operaciones físicas. Permiten simular cambios, probar mejoras y predecir resultados sin detener la producción, reduciendo riesgos y acelerando la innovación.',
 
-    'about.title': 'Nuestro Equipo',
-    'about.subtitle': 'Expertos en IA Industrial',
+    'about.title': 'Nuestro equipo',
+    'about.subtitle': 'Expertos en IA industrial',
     'about.text':
-      'Aunque somos una empresa de nueva creación, los miembros que componen nuestro equipo tienen una larga experiencia trabajando con Inteligencia Artificial, big data y otras tecnologías IT. Combinan conocimientos técnicos y visión de negocio para ofrecer soluciones innovadoras, eficientes y adaptadas a las necesidades de cada empresa.',
-    'about.cta': 'Conocer más',
+      'Nuestro equipo cuenta con una amplia experiencia en Inteligencia Artificial, Big Data y tecnologías digitales. Combinamos conocimientos técnicos con visión de negocio para identificar oportunidades y generar valor real en las empresas.',
+    'about.cta': 'Descubre más',
 
     'about.member1.name': 'Sergi Masó',
     'about.member1.role': 'Data Analyst',
-    'about.member1.desc': 'Especialista en analitzar els reptes de les empreses i traduir-los en solucions pràctiques. Aplica la intel·ligència artificial per resoldre problemes reals, combinant visió transversal i coneixement tècnic per connectar tecnologia i negoci i generar valor tangible.',
-
+    'about.member1.desc':
+      'Especialista en analizar los retos empresariales y traducirlos en soluciones prácticas. Aplica la IA para resolver problemas reales, combinando conocimiento técnico y visión global para conectar tecnología y negocio.',
 
     'about.member2.name': 'Iker Reina',
-    'about.member2.role': 'Cybersecurity and cloud infrastructure architect',
-    'about.member2.desc': 'Especialista en Seguridad Cloud e IA con amplia experiencia internacional, liderando implementaciones a escala empresarial en Europa, América y EE.UU. Experto en servicios de IA de AWS y soluciones de seguridad, con capacidad demostrada para liderar equipos técnicos globales y transformar requisitos complejos en soluciones escalables alineadas con los objetivos de negocio.',
+    'about.member2.role': 'Arquitecto de Ciberseguridad e Infraestructura Cloud',
+    'about.member2.desc':
+      'Especialista en seguridad Cloud e IA con experiencia internacional, liderando implementaciones a gran escala en Europa y América. Experto en servicios de IA de AWS y soluciones de seguridad.',
 
     'about.member3.name': 'Gil Prat',
-    'about.member3.role': 'Full Stack Engineer',
-    'about.member3.desc': 'Especialista en desenvolupar solucions completes, combinant back-end, front-end i bases de dades. Capacitat per integrar tecnologia IoT i xarxes, liderar equips tècnics i transformar requisits complexos en solucions funcionals i escalables.',
+    'about.member3.role': 'Ingeniero Full Stack',
+    'about.member3.desc':
+      'Especialista en el desarrollo de soluciones completas, combinando back-end, front-end y bases de datos, con experiencia en integración de tecnología IoT y liderazgo técnico.',
 
     'about.member4.name': 'David Torres',
-    'about.member4.role': 'ML Engineer',
-    'about.member4.desc': 'Experto en automatización inteligente y optimización de procesos. Desarrolla sistemas que reducen costos operativos significativamente.',
+    'about.member4.role': 'Ingeniero de Machine Learning',
+    'about.member4.desc':
+      'Experto en automatización inteligente y optimización de procesos industriales. Desarrolla sistemas que reducen costes y mejoran la eficiencia operativa.',
 
     'about.member5.name': 'Anna Rovira',
-    'about.member5.role': 'Business Intelligence Analyst',
-    'about.member5.desc': 'Especialista en analítica avanzada y visualización de datos. Transforma datos complejos en insights accionables para la toma de decisiones.',
+    'about.member5.role': 'Analista de Business Intelligence',
+    'about.member5.desc':
+      'Especialista en analítica avanzada y visualización de datos. Transforma datos complejos en información accionable para la toma de decisiones.',
 
     'contact.title': 'Contáctanos',
     'contact.subtitle': 'Estamos aquí para ayudarte a transformar tu empresa',
@@ -208,7 +217,7 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.locationDesc': 'Ven a visitarnos',
     'contact.linkedinDesc': 'Conecta con nosotros',
 
-    'blog.title': 'Últimas Noticias',
+    'blog.title': 'Últimas noticias',
     'blog.subtitle': 'Mantente informado sobre las novedades en IA industrial',
     'blog.readMore': 'Leer más',
     'blog.linkedin': 'Síguenos en LinkedIn',
@@ -228,82 +237,86 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.contact': 'Contact',
     'nav.blog': 'Blog',
 
-    'hero.title': 'Transforming Industry with',
+    'hero.title': 'Transforming industry with',
     'hero.titleHighlight': 'Artificial Intelligence',
     'hero.subtitle':
-      'We develop customized AI solutions that optimize industrial processes, increase efficiency, and reduce operational costs.',
-    'hero.cta': 'Request Demo',
-    'hero.ctaSecondary': 'View Services',
+      "We develop customized AI solutions that optimize industrial processes, increase efficiency, and reduce operational costs.",
+    'hero.cta': 'Request a demo',
+    'hero.ctaSecondary': 'View services',
 
-    'services.title': 'Our Services',
+    'services.title': 'Our services',
     'services.subtitle': 'AI solutions designed for modern industry',
     'services.learnMore': 'Learn more',
 
-    'services.predictive.title': 'Predictive Maintenance',
+    'services.predictive.title': 'Predictive maintenance',
     'services.predictive.desc':
-      'Every breakdown means lost time and resources. Using historical data and AI models, we predict failures before they occur, reducing costs and increasing operational reliability.',
+      'Every breakdown represents a loss of time and resources. Using historical data and AI models, we predict failures before they occur, reducing costs and increasing operational reliability.',
     'services.predictive.detail':
-      'Every breakdown means lost time and resources. Using historical data and AI models, we predict failures before they occur, reducing costs and increasing operational reliability.',
+      'Every breakdown represents a loss of time and resources. Using historical data and AI models, we predict failures before they occur, reducing costs and increasing operational reliability.',
 
-    'services.vision.title': 'Computer Vision',
+    'services.vision.title': 'Computer vision',
     'services.vision.desc':
-      'AI vision models inspect products with accuracy superior to humans. Through deep neural networks, we detect microscopic defects, ensuring consistent quality standards and minimizing product rejection.',
+      'AI vision models inspect products with accuracy superior to humans. Through deep neural networks, we detect microscopic defects and ensure consistent quality standards.',
     'services.vision.detail':
-      'AI vision models inspect products with accuracy superior to humans. Through deep neural networks, we detect microscopic defects, ensuring consistent quality standards and minimizing product rejection.',
+      'AI vision models inspect products with accuracy superior to humans. Through deep neural networks, we detect microscopic defects and ensure consistent quality standards.',
 
-    'services.bots.title': 'AI Bots and Assistants',
+    'services.bots.title': 'AI bots and assistants',
     'services.bots.desc':
-      'We develop intelligent virtual assistants for various needs, such as web or app integration, custom bots for internal data queries, or customer support—streamlining repetitive tasks, improving efficiency, and delivering fast and accurate responses.',
+      'We develop intelligent virtual assistants for multiple needs: website or app integration, internal data query bots, or customer support assistants that automate repetitive tasks and enhance user experience.',
     'services.bots.detail':
-      'We develop intelligent virtual assistants for various needs, such as web or app integration, custom bots for internal data queries, or customer support—streamlining repetitive tasks, improving efficiency, and delivering fast and accurate responses.',
+      'We develop intelligent virtual assistants for multiple needs: website or app integration, internal data query bots, or customer support assistants that automate repetitive tasks and enhance user experience.',
 
-    'services.optimization.title': 'Intelligent Automation',
+    'services.optimization.title': 'Intelligent automation',
     'services.optimization.desc':
-      'We implement AI systems that automate repetitive tasks, reducing errors and freeing valuable time for your team. This allows focus on high-value activities and increases overall business process efficiency.',
+      'We implement AI systems that automate repetitive and administrative tasks, reducing errors and freeing valuable time so your team can focus on high-value strategic work.',
     'services.optimization.detail':
-      'We implement AI systems that automate repetitive tasks, reducing errors and freeing valuable time for your team. This allows focus on high-value activities and increases overall business process efficiency.',
+      'We implement AI systems that automate repetitive and administrative tasks, reducing errors and freeing valuable time so your team can focus on high-value strategic work.',
 
-    'services.analytics.title': 'Advanced Analytics',
+    'services.analytics.title': 'Advanced analytics',
     'services.analytics.desc':
-      'We turn your company\'s data into a competitive advantage through Artificial Intelligence—creating models that predict sales and stock, segment customers, or define dynamic pricing, generating useful recommendations to improve decisions and efficiency.',
+      "We turn your company's data into a competitive advantage using AI and machine learning. We create models that predict sales, optimize inventory, and improve decision-making.",
     'services.analytics.detail':
-      'We turn your company\'s data into a competitive advantage through Artificial Intelligence—creating models that predict sales and stock, segment customers, or define dynamic pricing, generating useful recommendations to improve decisions and efficiency.',
+      "We turn your company's data into a competitive advantage using AI and machine learning. We create models that predict sales, optimize inventory, and improve decision-making.",
 
-    'services.digital.title': 'Digital Twin',
+    'services.digital.title': 'Digital twin',
     'services.digital.desc':
-      'Digital twins are exact virtual replicas of your physical operations. They allow you to simulate changes, test improvements, and predict results without disrupting production, reducing risks and accelerating innovation in industrial processes.',
+      'Digital twins are exact virtual replicas of your physical operations. They allow simulation of changes, testing improvements, and predicting outcomes without halting production—reducing risk and accelerating innovation.',
     'services.digital.detail':
-      'Digital twins are exact virtual replicas of your physical operations. They allow you to simulate changes, test improvements, and predict results without disrupting production, reducing risks and accelerating innovation in industrial processes.',
+      'Digital twins are exact virtual replicas of your physical operations. They allow simulation of changes, testing improvements, and predicting outcomes without halting production—reducing risk and accelerating innovation.',
 
-    'about.title': 'Our Team',
-    'about.subtitle': 'Industrial AI Experts',
+    'about.title': 'Our team',
+    'about.subtitle': 'Industrial AI experts',
     'about.text':
-      'Although a newly founded company, our team members have extensive experience working with Artificial Intelligence, big data, and other IT technologies. They combine technical knowledge and business vision to deliver innovative, efficient, and tailored solutions to each company\'s needs.',
-    'about.cta': 'Learn More',
+      'Our team brings extensive experience in Artificial Intelligence, Big Data, and digital technologies. We combine technical expertise with business vision to identify opportunities and deliver measurable value to companies.',
+    'about.cta': 'Learn more',
 
     'about.member1.name': 'Sergi Masó',
     'about.member1.role': 'Data Analyst',
-    'about.member1.desc': 'Especialista en analitzar els reptes de les empreses i traduir-los en solucions pràctiques. Aplica la intel·ligència artificial per resoldre problemes reals, combinant visió transversal i coneixement tècnic per connectar tecnologia i negoci i generar valor tangible.',
-
+    'about.member1.desc':
+      'Specialist in analyzing business challenges and translating them into practical solutions. Applies AI to solve real problems, combining technical expertise and global vision to connect technology and business.',
 
     'about.member2.name': 'Iker Reina',
-    'about.member2.role': 'Cybersecurity and cloud infrastructure architect',
-    'about.member2.desc': 'Cloud Security and AI specialist with extensive international experience, leading enterprise-scale implementations across Europe, Americas and USA. Expert in AWS AI services and security solutions, with proven ability to lead global technical teams and transform complex requirements into scalable solutions aligned with business objectives.',
+    'about.member2.role': 'Cybersecurity and Cloud Infrastructure Architect',
+    'about.member2.desc':
+      'Cloud Security and AI specialist with international experience, leading large-scale implementations across Europe and the Americas. Expert in AWS AI services and security solutions.',
 
     'about.member3.name': 'Gil Prat',
     'about.member3.role': 'Full Stack Engineer',
-    'about.member3.desc': 'Especialista en desenvolupar solucions completes, combinant back-end, front-end i bases de dades. Capacitat per integrar tecnologia IoT i xarxes, liderar equips tècnics i transformar requisits complexos en solucions funcionals i escalables.',
+    'about.member3.desc':
+      'Specialist in full-stack development combining back-end, front-end, and databases, with experience integrating IoT technology and leading technical teams.',
 
     'about.member4.name': 'David Torres',
-    'about.member4.role': 'ML Engineer',
-    'about.member4.desc': 'Expert in intelligent automation and process optimization. Develops systems that significantly reduce operational costs.',
+    'about.member4.role': 'Machine Learning Engineer',
+    'about.member4.desc':
+      'Expert in intelligent automation and process optimization. Develops systems that reduce operational costs and increase efficiency.',
 
     'about.member5.name': 'Anna Rovira',
     'about.member5.role': 'Business Intelligence Analyst',
-    'about.member5.desc': 'Specialist in advanced analytics and data visualization. Transforms complex data into actionable insights for decision-making.',
+    'about.member5.desc':
+      'Specialist in advanced analytics and data visualization. Transforms complex data into actionable insights for better decision-making.',
 
-    'contact.title': 'Contact Us',
-    'contact.subtitle': "We\'re here to help you transform your business",
+    'contact.title': 'Contact us',
+    'contact.subtitle': "We're here to help you transform your business",
     'contact.phone': 'Phone',
     'contact.location': 'Location',
     'contact.emailDesc': 'Send us an email',
@@ -311,14 +324,14 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.locationDesc': 'Visit us',
     'contact.linkedinDesc': 'Connect with us',
 
-    'blog.title': 'Latest News',
-    'blog.subtitle': 'Stay informed about industrial AI developments',
+    'blog.title': 'Latest news',
+    'blog.subtitle': 'Stay informed on industrial AI trends and innovations',
     'blog.readMore': 'Read more',
     'blog.linkedin': 'Follow us on LinkedIn',
 
     'footer.tagline': 'Transforming industry with AI',
     'footer.rights': 'All rights reserved',
-    'footer.quick': 'Quick Links',
+    'footer.quick': 'Quick links',
     'footer.legal': 'Legal',
     'footer.privacy': 'Privacy',
     'footer.terms': 'Terms',
@@ -328,15 +341,8 @@ const translations: Record<Language, Record<string, string>> = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const getBrowserLanguage = (): Language => {
-    const browserLang = navigator.language.split('-')[0].toLowerCase();
-    if (browserLang === 'ca' || browserLang === 'es' || browserLang === 'en') {
-      return browserLang as Language;
-    }
-    return 'en'; // Fallback a anglès si no és cap dels idiomes suportats
-  };
+  const [language, setLanguage] = useState<Language>('ca');
 
-  const [language, setLanguage] = useState<Language>(getBrowserLanguage());
   const t = (key: string): string => {
     return translations[language][key] || key;
   };
@@ -348,8 +354,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useLanguage = () => {
+export const useLanguage = (): LanguageContextType => {
   const context = useContext(LanguageContext);
-  if (!context) throw new Error('useLanguage must be used within LanguageProvider');
+  if (!context) throw new Error('useLanguage must be used within a LanguageProvider');
   return context;
 };

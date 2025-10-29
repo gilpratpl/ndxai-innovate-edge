@@ -19,6 +19,13 @@ const Contact = () => {
       link: 'tel:+34696978421',
       description: t('contact.phoneDesc'),
     },
+       {
+      icon: MapPin,
+      title: t('contact.location'),
+      value: 'Vic, Barcelona',
+      link: 'https://maps.google.com/?q=Vic',
+      description: t('contact.locationDesc'),
+    },
     {
       icon: Linkedin,
       title: 'LinkedIn',
@@ -43,7 +50,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {contactMethods.map((method, index) => {
             const Icon = method.icon;
             return (
