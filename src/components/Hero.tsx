@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui/button';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);

@@ -89,7 +89,19 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-sans;
   }
 
+  p {
+    @apply whitespace-pre-line;
+  }
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@layer base {
+  pre, code, kbd, samp {
+    @apply whitespace-pre;
+  }
+  textarea, input {
+    @apply whitespace-normal;
   }
 }

@@ -1,4 +1,4 @@
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import member1 from '@/assets/team/member-1.jpg';
@@ -8,7 +8,7 @@ import member4 from '@/assets/team/member-4.jpg';
 import member5 from '@/assets/team/member-5.jpg';
 
 const About = () => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);

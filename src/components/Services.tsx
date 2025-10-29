@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Cog, Bot, Eye, TrendingUp, BarChart, Box } from 'lucide-react';
 
 const Services = () => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
   const [selectedService, setSelectedService] = useState<number | null>(null);
 
   const services = [
@@ -165,7 +165,7 @@ const Services = () => {
                     }
                   }}
                 >
-                  Solicitar consulta
+                  {t('services.requestConsultation')}
                 </Button>
               </div>
             </>

@@ -7,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslation } from 'react-i18next';
 
 import logo from '@/assets/logo_white.svg';
 import logoDark from '@/assets/logo_blue.svg';
@@ -17,7 +17,7 @@ const Navbar = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>(prefersDark ? 'dark' : 'light');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const { language, setLanguage, t } = useLanguage();
+  const { i18n, t } = useTranslation();
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -28,7 +28,7 @@ const Navbar = () => {
   const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
-  const handleLanguageChange = (lang: 'es' | 'en' | 'ca') => setLanguage(lang);
+  const handleLanguageChange = (lang: 'es' | 'en' | 'ca') => i18n.changeLanguage(lang);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -73,13 +73,13 @@ const Navbar = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               <DropdownMenuItem onClick={() => handleLanguageChange('es')}>
-                Español {language === 'es' && '✓'}
+                Español {i18n.language?.startsWith('es') && '✓'}
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => handleLanguageChange('ca')}>
-                Català {language === 'ca' && '✓'}
+                Català {i18n.language?.startsWith('ca') && '✓'}
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => handleLanguageChange('en')}>
-                English {language === 'en' && '✓'}
+                English {i18n.language?.startsWith('en') && '✓'}
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

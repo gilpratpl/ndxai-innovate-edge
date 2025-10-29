@@ -1,10 +1,10 @@
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Linkedin, Calendar, TrendingUp } from 'lucide-react';
 
 const Blog = () => {
-  const { t, language } = useLanguage();
+  const { t, i18n } = useTranslation();
 
 const newsItems = {
   es: [
@@ -79,7 +79,8 @@ const newsItems = {
 };
 
 
-  const currentNews = newsItems[language] || newsItems.es;
+  const lang = (i18n.language || 'ca').split('-')[0] as 'ca' | 'es' | 'en';
+  const currentNews = newsItems[lang] || newsItems.ca;
 
   return (
     <section id="blog" className="py-24 bg-gradient-to-b from-background via-muted/10 to-background relative overflow-hidden">

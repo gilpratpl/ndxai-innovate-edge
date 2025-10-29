@@ -1,8 +1,8 @@
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslation } from 'react-i18next';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 
 const Contact = () => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
 
   const contactMethods = [
     {

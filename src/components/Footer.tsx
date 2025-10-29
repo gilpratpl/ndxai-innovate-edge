@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useTranslation } from 'react-i18next';
 import logo from '@/assets/logo_white.svg';
 import logoDark from '@/assets/logo_blue.svg';
 
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useState<'light' | 'dark'>(prefersDark ? 'dark' : 'light');
