@@ -2,35 +2,42 @@
 <html lang="en">
 
 <head>
-  <!-- Básico -->
+  <!-- ✅ Configuración básica -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NDXai - Neural Dynamics AI</title>
-    <!-- Descripción SEO -->
-  <meta name="description"
-    content="NDXai delivers cutting-edge AI solutions for industrial enterprises. Transform your operations with intelligent automation and data-driven insights." />
+
+  <!-- ✅ SEO -->
+  <meta name="description" content="NDXai delivers cutting-edge AI solutions for industrial enterprises. Transform your operations with intelligent automation and data-driven insights." />
   <meta name="author" content="Neural Dynamics AI S.L." />
-    <!-- Localización -->
+
+  <!-- ✅ Localización -->
   <meta name="geo.region" content="ES-CT">
   <meta name="geo.placename" content="Vic">
   <meta name="geo.position" content="41.9301;2.2549">
   <meta name="ICBM" content="41.9301, 2.2549">
   <meta name="city" content="Vic">
 
-    <!-- Open Graph (para redes sociales y vista previa en enlaces) -->
+  <!-- ✅ Open Graph (social media) -->
   <meta property="og:title" content="NDXai - Neural Dynamics AI" />
   <meta property="og:description" content="Transform your industrial operations with AI-powered solutions" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ndxai.eu" />
 
+  <!-- ✅ Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+  <!-- ✅ OPTIMIZACIÓN DE FUENTES (no bloqueante) -->
+  <!-- 1. Preconecta para reducir latencia -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <!-- 2. Preload para priorizar la descarga sin bloquear -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <!-- 3. Carga no bloqueante (solo aplica el estilo al terminar de cargar) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
 
-  <!-- Datos estructurados (SEO local) -->
+  <!-- ✅ Datos estructurados (SEO local) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,15 +64,19 @@
     ]
   }
   </script>
-  <!-- Google tag (gtag.js) -->
+
+  <!-- ✅ Google Analytics (async, no bloquea) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-15LJF6RVRK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-15LJF6RVRK');
   </script>
+
+  <link rel="preload" href="/assets/index--6MrJ7DM.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/index--6MrJ7DM.css"></noscript>
+  
 </head>
 
 <body>
