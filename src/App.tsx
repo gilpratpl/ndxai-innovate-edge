@@ -33,7 +33,7 @@ const SuspenseLoader = () => {
       width: '100vw',
       transition: 'background 0.2s',
     }}>
-      Cargando...
+     
     </div>
   );
 };
