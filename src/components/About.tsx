@@ -52,9 +52,9 @@ const About = () => {
 
   return (
     <section id="about" className="py-24 relative overflow-hidden">
-      {/* Decoración de fondo */}
+      {/* Decoración de fondo 
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
-
+*/}
       <div className="container mx-auto px-4 relative z-10">
         <div className="space-y-16">
           <div className="animate-fade-in text-center max-w-4xl mx-auto">

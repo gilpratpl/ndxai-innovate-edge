@@ -22,23 +22,21 @@ const Hero = () => {
           backgroundImage: `url(${heroImage})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/80 dark:from-background/98 dark:via-background/95 dark:to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-background/95 dark:from-background/80 dark:via-background/90 dark:to-background/90" />
       </div>
 
       {/* Efectos decorativos */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-
+     
       <div className="container relative z-10 mx-auto px-4 py-32 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold leading-snug">
+          <h1 className="text-3xl md:text-6xl font-bold leading-snug">
             <span className="inline-block animate-fade-in">{t('hero.title')}</span>
             <span className="bg-gradient-primary bg-clip-text text-transparent animate-fade-in mt-2" style={{ animationDelay: '0.2s' }}>
               {t('hero.titleHighlight')}
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <p className="text-l md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
             {t('hero.subtitle')}
           </p>
 

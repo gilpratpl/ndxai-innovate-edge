@@ -51,9 +51,10 @@ const Services = () => {
 
   return (
     <section id="services" className="py-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
-      {/* Decoraciones de fondo */}
+      {/* Decoraciones de fondo 
       <div className="absolute top-0 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-3xl" />
+      */}
 
       <div className="container mx-auto px-4 lg:px-24 relative z-10">
         <div className="text-center mb-16 animate-fade-in">

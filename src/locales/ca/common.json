@@ -7,7 +7,7 @@
 
   "hero.title": "Transformem la indústria amb",
   "hero.titleHighlight": "Intel·ligència Artificial",
-  "hero.subtitle": "Desenvolupem solucions d'IA personalitzades que optimitzen processos industrials, augmenten l'eficiència i redueixen els costos operatius.",
+  "hero.subtitle": "A Neural Dynamics AI desenvolupem solucions d'IA personalitzades que optimitzen processos industrials, augmenten l'eficiència i redueixen els costos operatius.",
   "hero.cta": "Sol·licita una demo",
   "hero.ctaSecondary": "Veure serveis",
 
@@ -39,7 +39,7 @@
   "about.text": "El nostre equip compta amb una àmplia experiència en Intel·ligència Artificial, Big Data i tecnologies digitals. Combinen coneixements tècnics amb visió de negoci per identificar les millors oportunitats de millora i generar valor real a les empreses.",
   "about.cta": "Descobreix més",
   "about.member1.name": "Sergi Masó",
-  "about.member1.role": "Data Analyst",
+  "about.member1.role": "Analista de dades",
   "about.member1.desc": "Especialista en analitzar reptes empresarials i traduir-los en solucions pràctiques. Aplica la IA per resoldre problemes reals, combinant coneixement tècnic i visió global per connectar tecnologia i negoci.",
   "about.member2.name": "Iker Reina",
   "about.member2.role": "Arquitecte de Ciberseguretat i Infraestructura Cloud",
@@ -47,10 +47,10 @@
   "about.member3.name": "Gil Prat",
   "about.member3.role": "Enginyer Full Stack",
   "about.member3.desc": "Especialista en el desenvolupament de solucions completes, combinant back-end, front-end i bases de dades, amb experiència en integració de tecnologia IoT i lideratge tècnic.",
-  "about.member4.name": "David Torres",
-  "about.member4.role": "Enginyer de Machine Learning",
-  "about.member4.desc": "Expert en automatització intel·ligent i optimització de processos industrials. Desenvolupa sistemes que redueixen costos i milloren l'eficiència operativa.",
-  "about.member5.name": "Anna Rovira",
+  "about.member4.name": "Mariona Forcada",
+  "about.member4.role": "Enginyera de dades",
+  "about.member4.desc": "Experta en gestió i arquitectura de dades, especialitzada en la construcció d'ETLs i optimització de bases de dades. Combina coneixements avançats en enginyeria de dades amb la implementació de projectes d'IA.",
+  "about.member5.name": "Carlo Manzo",
   "about.member5.role": "Analista de Business Intelligence",
   "about.member5.desc": "Especialista en analítica avançada i visualització de dades. Transforma dades complexes en informació accionable per a la presa de decisions.",
 

@@ -7,7 +7,7 @@
 
   "hero.title": "Transforming industry with",
   "hero.titleHighlight": "Artificial Intelligence",
-  "hero.subtitle": "We develop customized AI solutions that optimize industrial processes, increase efficiency, and reduce operational costs.",
+  "hero.subtitle": "At Neural Dynamics AI, we develop custom AI solutions that optimize industrial processes, increase efficiency, and reduce operational costs.",
   "hero.cta": "Request a demo",
   "hero.ctaSecondary": "View services",
 
@@ -47,10 +47,10 @@
   "about.member3.name": "Gil Prat",
   "about.member3.role": "Full Stack Engineer",
   "about.member3.desc": "Specialist in full-stack development combining back-end, front-end, and databases, with experience integrating IoT technology and leading technical teams.",
-  "about.member4.name": "David Torres",
-  "about.member4.role": "Machine Learning Engineer",
-  "about.member4.desc": "Expert in intelligent automation and process optimization. Develops systems that reduce operational costs and increase efficiency.",
-  "about.member5.name": "Anna Rovira",
+  "about.member4.name": "Mariona Forcada",
+  "about.member4.role": "Data Engineer",
+  "about.member4.desc": "Expert in data management and architecture, specialized in building ETLs and optimizing databases. Combines advanced knowledge in data engineering with the implementation of AI projects.",
+  "about.member5.name": "Carlo Manzo",
   "about.member5.role": "Business Intelligence Analyst",
   "about.member5.desc": "Specialist in advanced analytics and data visualization. Transforms complex data into actionable insights for better decision-making.",
 

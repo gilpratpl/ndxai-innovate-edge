@@ -84,9 +84,9 @@ const newsItems = {
 
   return (
     <section id="blog" className="py-24 bg-gradient-to-b from-background via-muted/10 to-background relative overflow-hidden">
-      {/* Decoraciones */}
+      {/* Decoraciones 
       <div className="absolute top-0 right-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-3xl" />
-
+*/}
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
