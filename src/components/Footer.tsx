@@ -37,20 +37,31 @@ const Footer = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="relative bg-gradient-to-br from-card via-card to-muted/20 border-t border-border/50 backdrop-blur-sm">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-primary/10 pointer-events-none" />
 
-      <div className="container mx-auto px-4 py-16 relative">
+      <div className="container mx-auto px-4 py-8 relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
           {/* Logo y tagline */}
           <div className="col-span-1 md:col-span-9">
             <div className="mb-6">
-              <img
-                src={theme === 'dark' ? logo : logoDark}
-                alt="NdxAI Logo"
-                className="h-14 w-auto mb-4 transition-transform hover:scale-105 duration-300"
-              />
+              <button
+                type="button"
+                onClick={scrollToTop}
+                aria-label="Scroll to top"
+                className="mb-4"
+              >
+                <img
+                  src={theme === 'dark' ? logo : logoDark}
+                  alt="NdxAI Logo"
+                  className="h-14 w-auto transition-transform hover:scale-105 duration-300 cursor-pointer"
+                />
+              </button>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
               {t('footer.tagline')}

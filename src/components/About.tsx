@@ -51,7 +51,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="pt-24 pb-12 relative overflow-hidden">
       {/* Decoración de fondo 
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2" />
 */}

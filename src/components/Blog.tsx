@@ -83,7 +83,7 @@ const newsItems = {
   const currentNews = newsItems[lang] || newsItems.ca;
 
   return (
-    <section id="blog" className="py-24 bg-gradient-to-b from-background via-muted/10 to-background relative overflow-hidden">
+    <section id="blog" className="pt-24 pb-12 bg-gradient-to-b from-background via-muted/10 to-background relative overflow-hidden">
       {/* Decoraciones 
       <div className="absolute top-0 right-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-3xl" />
 */}

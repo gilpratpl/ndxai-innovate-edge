@@ -10,11 +10,22 @@ void i18n
   .use(initReactI18next)
   .init({
     resources: { ca: { translation: ca }, es: { translation: es }, en: { translation: en } },
-    fallbackLng: 'ca',
+    fallbackLng: 'es',
     supportedLngs: ['ca', 'es', 'en'],
     interpolation: { escapeValue: false },
     detection: { order: ['localStorage', 'navigator'], caches: ['localStorage'] },
   });
+
+// Sync <html lang> with the active language
+if (typeof document !== 'undefined') {
+  document.documentElement.lang = i18n.language;
+}
+
+i18n.on('languageChanged', (lng) => {
+  if (typeof document !== 'undefined') {
+    document.documentElement.lang = lng;
+  }
+});
 
 export default i18n;
 

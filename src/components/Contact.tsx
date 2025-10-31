@@ -36,7 +36,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
+    <section id="contact" className="pt-24 pb-12 bg-gradient-to-b from-background via-muted/20 to-background relative overflow-hidden">
       {/* Decoraciones 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
 */}
