@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import member1 from '@/assets/team/member-1.jpg';
-import member2 from '@/assets/team/member-2.jpg';
-import member3 from '@/assets/team/member-3.jpg';
-import member4 from '@/assets/team/member-4.jpg';
-import member5 from '@/assets/team/member-5.jpg';
+import member1 from '@/assets/team/member-1.webp';
+import member2 from '@/assets/team/member-2.webp';
+import member3 from '@/assets/team/member-3.webp';
+import member4 from '@/assets/team/member-4.webp';
+import member5 from '@/assets/team/member-5.webp';
 
 const About = () => {
   const { t } = useTranslation();
