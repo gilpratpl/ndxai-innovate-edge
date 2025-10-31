@@ -34,8 +34,10 @@
   <!-- 2. Preload para priorizar la descarga sin bloquear -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
   <!-- 3. Carga no bloqueante (solo aplica el estilo al terminar de cargar) -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'"></noscript>
+  <noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript></noscript>
 
   <!-- ✅ Datos estructurados (SEO local) -->
   <script type="application/ld+json">
@@ -74,7 +76,8 @@
     gtag('config', 'G-15LJF6RVRK');
   </script>
   <script type="module" crossorigin src="/assets/index-WFTlevZz.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DgDJfK8O.css">
+  <link rel="preload" as="style" crossorigin href="/assets/index-DgDJfK8O.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" crossorigin href="/assets/index-DgDJfK8O.css"></noscript>
 </head>
 
 <body>
