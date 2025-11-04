@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Blog from '@/components/Blog';
 import Footer from '@/components/Footer';
+import ChatBot from '@/components/ChatBotWithBackend';
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Contact />
       <Blog />
       <Footer />
+      <ChatBot />
     </div>
   );
 };

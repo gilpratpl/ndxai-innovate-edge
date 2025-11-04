@@ -70,5 +70,10 @@
   "footer.terms": "Terms",
   "notFound.title": "404",
   "notFound.message": "Oops! Page not found",
-  "notFound.backHome": "Return to Home"
+  "notFound.backHome": "Return to Home",
+  "chatbot.title": "NdxAI AI Assistant",
+  "chatbot.subtitle": "Online",
+  "chatbot.welcome": "Hello! I'm the Neural Dynamics AI virtual assistant. How can I help you today? You can ask me about our industrial AI services or how we can help your business.",
+  "chatbot.placeholder": "Type your message...",
+  "chatbot.error": "Sorry, an error occurred. Please try again."
 }
