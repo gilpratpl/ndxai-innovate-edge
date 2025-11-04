@@ -50,7 +50,7 @@ const ChatBotWithBackend = () => {
     try {
       // URL del backend (configurada segons l'entorn)
       const BACKEND_URL = API_CONFIG.baseURL;
-      
+
       const response = await fetch(`${BACKEND_URL}/api/chat`, {
         method: 'POST',
         headers: {
@@ -104,7 +104,7 @@ const ChatBotWithBackend = () => {
       {!isOpen && (
         <Button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 h-16 w-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 z-50 bg-gradient-primary overflow-hidden"
+          className="fixed bottom-6 right-6 h-16 w-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 z-50 bg-gradient-primary overflow-hidden animate-blue-pulse-border"
           size="icon"
         >
           <img src={robotLogo} alt="NdxAI ChatBot" className="h-full w-full object-cover" />
@@ -143,11 +143,10 @@ const ChatBotWithBackend = () => {
                 className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[80%] p-3 rounded-2xl ${
-                    message.role === 'user'
-                      ? 'bg-gradient-primary text-primary-foreground'
-                      : 'bg-muted text-foreground'
-                  }`}
+                  className={`max-w-[80%] p-3 rounded-2xl ${message.role === 'user'
+                    ? 'bg-gradient-primary text-primary-foreground'
+                    : 'bg-muted text-foreground'
+                    }`}
                 >
                   <p className="text-sm whitespace-pre-wrap">{message.content}</p>
                 </div>
