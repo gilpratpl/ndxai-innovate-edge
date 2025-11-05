@@ -41,7 +41,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(189 94% 43%));
     --gradient-dark: linear-gradient(135deg, hsl(217 91% 35%), hsl(189 94% 28%));
     --gradient-subtle: linear-gradient(180deg, hsl(217 91% 60% / 0.1), hsl(189 94% 43% / 0.05));
-    
+
     --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.3);
     --shadow-soft: 0 10px 40px -10px hsl(222 47% 11% / 0.1);
   }
@@ -74,7 +74,7 @@ All colors MUST be HSL.
     --border: 217 33% 17%;
     --input: 217 33% 17%;
     --ring: 217 91% 60%;
-    
+
     --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.2);
     --shadow-soft: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
   }
@@ -92,16 +92,60 @@ All colors MUST be HSL.
   p {
     @apply whitespace-pre-line;
   }
+
   html {
     scroll-behavior: smooth;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+
+  @keyframes blue-pulse-border {
+
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7),
+        0 0 0 0 rgba(59, 130, 246, 0.4),
+        0 0 2px rgba(59, 130, 246, 0.3);
+    }
+
+    50% {
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.8),
+        0 0 0 2px rgba(59, 130, 246, 0.5),
+        0 0 5px rgba(59, 130, 246, 0.6);
+    }
+  }
+
+  .animate-blue-pulse-border {
+    animation: blue-pulse-border 3s ease-in-out infinite !important;
+    border: 2px solid rgba(59, 130, 246, 0.8);
   }
 }
 
 @layer base {
-  pre, code, kbd, samp {
+
+  pre,
+  code,
+  kbd,
+  samp {
     @apply whitespace-pre;
   }
-  textarea, input {
+
+  textarea,
+  input {
     @apply whitespace-normal;
   }
 }
