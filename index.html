@@ -25,23 +25,23 @@
   <meta property="og:url" content="https://www.ndxai.eu" />
   <meta name="apple-mobile-web-app-title" content="NDXai - Neural Dynamics AI">
 
-  <!-- ✅ Favicon -->
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/site.webmanifest">
+  <!-- ✅ Favicon (solo los críticos) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  
+  <!-- Favicons adicionales (diferidos) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- ✅ OPTIMIZACIÓN DE FUENTES (no bloqueante) -->
-  <!-- 1. Preconecta para reducir latencia -->
+  <!-- 1. DNS prefetch para reducir latencia -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <!-- 2. Preconecta para reducir latencia -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- 2. Preload para priorizar la descarga sin bloquear -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
-  <!-- 3. Carga no bloqueante (solo aplica el estilo al terminar de cargar) -->
+  <!-- 3. Carga diferida de fuentes (solo aplica el estilo al terminar de cargar) -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'"></noscript>
   <noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -75,17 +75,30 @@
   }
   </script>
 
-  <!-- ✅ Google Analytics (async, no bloquea) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-15LJF6RVRK"></script>
+  <!-- ✅ Google Analytics (diferido hasta después de la carga) -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-15LJF6RVRK');
+    // Cargar Google Analytics después de que la página esté lista
+    window.addEventListener('load', function() {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-15LJF6RVRK';
+      document.head.appendChild(script);
+      
+      script.onload = function() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-15LJF6RVRK');
+      };
+    });
   </script>
-  <script type="module" crossorigin src="/assets/index-CkqaLq3Q.js"></script>
-  <link rel="preload" as="style" crossorigin href="/assets/index-XjWD-9eM.css" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" crossorigin href="/assets/index-XjWD-9eM.css"></noscript>
+  <script type="module" crossorigin src="/assets/index-Cr8n_t79.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-BhqsE5nu.js">
+  <link rel="modulepreload" crossorigin href="/assets/radix-vendor-Dc_FVRD7.js">
+  <link rel="modulepreload" crossorigin href="/assets/react-vendor-CPRhm8Od.js">
+  <link rel="modulepreload" crossorigin href="/assets/i18n-vendor-WkszvIra.js">
+  <link rel="preload" as="style" crossorigin href="/assets/index-BA_IZDqc.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" crossorigin href="/assets/index-BA_IZDqc.css"></noscript>
 </head>
 
 <body>
