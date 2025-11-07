@@ -113,7 +113,7 @@ const ChatBotWithBackend = () => {
 
       {/* Ventana del chat */}
       {isOpen && (
-        <div className="fixed bottom-0 right-0 sm:bottom-9 sm:right-9 w-full sm:w-[380px] h-[100vh] sm:h-[600px] sm:max-h-[80vh] bg-card border-l sm:border border-border sm:rounded-2xl shadow-2xl flex flex-col z-50 animate-fade-in">
+        <div className="fixed inset-x-0 bottom-0 sm:bottom-9 sm:right-9 sm:inset-x-auto w-full sm:w-[380px] h-[85dvh] sm:h-[600px] sm:max-h-[80vh] bg-card border-t sm:border border-border rounded-t-2xl sm:rounded-2xl shadow-2xl flex flex-col z-50 animate-fade-in">
           {/* Header con el robot de NdxAI */}
           <div className="bg-gradient-primary text-primary-foreground p-4 sm:rounded-t-2xl flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -143,7 +143,7 @@ const ChatBotWithBackend = () => {
                 className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[80%] p-3 rounded-2xl ${message.role === 'user'
+                  className={`max-w-[90%] sm:max-w-[80%] p-3 rounded-2xl ${message.role === 'user'
                     ? 'bg-gradient-primary text-primary-foreground'
                     : 'bg-muted text-foreground'
                     }`}
@@ -163,7 +163,7 @@ const ChatBotWithBackend = () => {
           </div>
 
           {/* Input */}
-          <div className="p-4 border-t border-border">
+          <div className="p-4 pb-[max(env(safe-area-inset-bottom),1rem)] border-t border-border">
             <div className="flex gap-2">
               <input
                 type="text"

@@ -66,8 +66,11 @@ const Navbar = () => {
           {/* Language Dropdown */}
           <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="rounded-full">
+              <Button variant="ghost" className="rounded-full gap-2 px-3">
                 <Globe className="h-5 w-5" />
+                <span className="text-sm font-medium">
+                  {i18n.language?.startsWith('es') ? 'ES' : i18n.language?.startsWith('ca') ? 'CA' : 'EN'}
+                </span>
                 <span className="sr-only">Change language</span>
               </Button>
             </DropdownMenuTrigger>
