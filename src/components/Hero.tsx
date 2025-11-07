@@ -28,19 +28,19 @@ const Hero = () => {
       {/* Efectos decorativos */}
      
       <div className="container relative z-10 mx-auto px-4 py-32 text-center">
-        <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
+        <div className="max-w-4xl mx-auto space-y-8">
           <h1 className="text-3xl md:text-6xl font-bold leading-snug">
-            <span className="inline-block animate-fade-in">{t('hero.title')}</span>
-            <span className="bg-gradient-primary bg-clip-text text-transparent animate-fade-in mt-2" style={{ animationDelay: '0.2s' }}>
+            <span className="inline-block ">{t('hero.title')}</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent mt-2" style={{ animationDelay: '0.2s' }}>
               {t('hero.titleHighlight')}
             </span>
           </h1>
 
-          <p className="text-l md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <p className="text-l md:text-2xl text-muted-foreground max-w-2xl mx-auto" style={{ animationDelay: '0.4s' }}>
             {t('hero.subtitle')}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center" style={{ animationDelay: '0.6s' }}>
             <Button
               size="lg"
               variant="hero"
