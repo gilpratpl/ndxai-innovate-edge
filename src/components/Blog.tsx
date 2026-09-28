@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Linkedin, Calendar, TrendingUp } from 'lucide-react';
+import { ORG } from '@/lib/seo';
 
 const Blog = () => {
   const { t, i18n } = useTranslation();
@@ -123,12 +124,14 @@ const newsItems = {
                 <CardDescription className="text-base mb-4 leading-relaxed">
                   {item.excerpt}
                 </CardDescription>
-                <Button 
-                  variant="ghost" 
+                <Button
+                  asChild
+                  variant="ghost"
                   className="p-0 h-auto text-primary hover:text-primary/80 group-hover:translate-x-1 transition-transform"
-                  onClick={() => window.open(item.link, '_blank')}
                 >
-                  {t('blog.readMore')} →
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    {t('blog.readMore')}<span className="sr-only">: {item.title}</span> →
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -136,14 +139,11 @@ const newsItems = {
         </div>
 
         <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <Button
-            variant="hero"
-            size="lg"
-            onClick={() => window.open('https://www.linkedin.com/company/neural-dynamics-ai', '_blank')}
-            className="group"
-          >
-            <Linkedin className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
-            {t('blog.linkedin')}
+          <Button asChild variant="hero" size="lg" className="group">
+            <a href={ORG.linkedin} target="_blank" rel="noopener noreferrer">
+              <Linkedin className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
+              {t('blog.linkedin')}
+            </a>
           </Button>
         </div>
       </div>

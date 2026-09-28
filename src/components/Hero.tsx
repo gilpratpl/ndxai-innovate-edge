@@ -53,7 +53,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="heroOutline"
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection('about-what')}
               className="text-lg"
             >
               {t('hero.ctaSecondary')}

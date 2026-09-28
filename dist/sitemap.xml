@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.ndxai.eu/</loc>
-  <lastmod>2025-10-30T13:25:35+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.ndxai.eu/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ndxai.eu/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.ndxai.eu/ca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ndxai.eu/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ndxai.eu/" />
+  </url>
+  <url>
+    <loc>https://www.ndxai.eu/ca/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ndxai.eu/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.ndxai.eu/ca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ndxai.eu/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ndxai.eu/" />
+  </url>
+  <url>
+    <loc>https://www.ndxai.eu/en/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.ndxai.eu/" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.ndxai.eu/ca/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ndxai.eu/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ndxai.eu/" />
+  </url>
 </urlset>

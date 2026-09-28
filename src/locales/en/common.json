@@ -1,7 +1,17 @@
 {
+  "seo": {
+    "title": "NDXai | AI consultancy for manufacturing in Vic, Barcelona",
+    "description": "AI consultancy based in Vic (Barcelona). Predictive maintenance, computer vision, digital twins and custom automation for manufacturers and SMEs.",
+    "ogLocale": "en_GB",
+    "languageName": "English",
+    "switchLabel": "Language"
+  },
   "nav.home": "Home",
   "nav.services": "Services",
-  "nav.about": "About",
+  "nav.team": "Team",
+  "nav.faq": "FAQ",
+  "nav.label": "Main navigation",
+  "nav.about": "About us",
   "nav.contact": "Contact",
   "nav.blog": "Blog",
   "hero.title": "Transforming industry with",
@@ -9,47 +19,273 @@
   "hero.subtitle": "At Neural Dynamics AI, we develop custom AI solutions that optimize industrial processes, increase efficiency, and reduce operational costs.",
   "hero.cta": "Request a demo",
   "hero.ctaSecondary": "View services",
-  "services.title": "Our Services",
-  "services.subtitle": "AI solutions designed for the modern industry",
-  "services.learnMore": "Learn more",
-  "services.predictive.title": "Predictive Maintenance",
-  "services.predictive.desc": "Every breakdown stop is an irrecoverable loss of time and resources. Using systems based on historical data and AI models, we anticipate failures before they occur, allowing technical interventions to be planned in advance. This reduces maintenance costs and prevents unexpected production interruptions.\n For example, in an industrial plant, the system can detect abnormal patterns in a motor's vibration or a pump's temperature, alerting the technical team before a serious failure happens.",
-  "services.predictive.detail": "Every breakdown stop is an irrecoverable loss of time and resources. Using systems based on historical data and AI models, we anticipate failures before they occur, allowing technical interventions to be planned in advance. This reduces maintenance costs and prevents unexpected production interruptions.\n For example, in an industrial plant, the system can detect abnormal patterns in a motor's vibration or a pump's temperature, alerting the technical team before a serious failure happens.",
-  "services.vision.title": "Computer Vision",
-  "services.vision.desc": "Computer vision models inspect products with precision beyond human capability. Through deep neural networks, we detect microscopic defects or irregularities in production lines, ensuring consistent quality standards and reducing product rejection.\n This is especially useful in sectors such as pharmaceuticals or food processing, where automatic defect detection can prevent defective batches and improve product traceability.",
-  "services.vision.detail": "Computer vision models inspect products with precision beyond human capability. Through deep neural networks, we detect microscopic defects or irregularities in production lines, ensuring consistent quality standards and reducing product rejection.\n This is especially useful in sectors such as pharmaceuticals or food processing, where automatic defect detection can prevent defective batches and improve product traceability.",
-  "services.bots.title": "AI Bots and Assistants",
-  "services.bots.desc": "We develop intelligent virtual assistants tailored to different needs: website or app integration, bots for internal information queries, or customer support.\n These systems automate repetitive tasks, provide instant responses, and enhance user experience. For example, a customer service bot can resolve common inquiries about orders or billing, while an internal assistant can help teams find documents or data instantly.",
-  "services.bots.detail": "We develop intelligent virtual assistants tailored to different needs: website or app integration, bots for internal information queries, or customer support.\n These systems automate repetitive tasks, provide instant responses, and enhance user experience. For example, a customer service bot can resolve common inquiries about orders or billing, while an internal assistant can help teams find documents or data instantly.",
-  "services.optimization.title": "Intelligent Automation",
-  "services.optimization.desc": "We implement AI systems that automate repetitive and administrative processes, reducing errors and freeing up valuable time for your team.\n This allows staff to focus on higher-value strategic tasks such as innovation or customer relations. For instance, automating invoice management or order processing can drastically reduce response times and increase productivity.",
-  "services.optimization.detail": "We implement AI systems that automate repetitive and administrative processes, reducing errors and freeing up valuable time for your team.\n This allows staff to focus on higher-value strategic tasks such as innovation or customer relations. For instance, automating invoice management or order processing can drastically reduce response times and increase productivity.",
-  "services.analytics.title": "Advanced Analytics",
-  "services.analytics.desc": "We turn your company's data into a competitive advantage through Artificial Intelligence and Machine Learning techniques. We create models that forecast sales, optimize inventory management, segment customers, or define dynamic pricing.\n This enables better-informed decision-making and improves business efficiency. For example, a retailer can adjust promotions based on predicted demand, or a logistics company can optimize delivery routes.",
-  "services.analytics.detail": "We turn your company's data into a competitive advantage through Artificial Intelligence and Machine Learning techniques. We create models that forecast sales, optimize inventory management, segment customers, or define dynamic pricing.\n This enables better-informed decision-making and improves business efficiency. For example, a retailer can adjust promotions based on predicted demand, or a logistics company can optimize delivery routes.",
-  "services.digital.title": "Digital Twin",
-  "services.digital.desc": "Digital twins are exact virtual replicas of your physical operations. They allow you to simulate process changes, test improvements, or predict outcomes without halting production.\n This technology helps reduce risks and accelerates innovation: for example, a factory can virtually test a new machine configuration or workflow change before implementing it in real life, saving time and costs.",
-  "services.digital.detail": "Digital twins are exact virtual replicas of your physical operations. They allow you to simulate process changes, test improvements, or predict outcomes without halting production.\n This technology helps reduce risks and accelerates innovation: for example, a factory can virtually test a new machine configuration or workflow change before implementing it in real life, saving time and costs.",
-  "services.requestConsultation": "Request a consultation",
-  "about.title": "Our team",
-  "about.subtitle": "Industrial AI experts and co-founders",
-  "about.text": "Our team brings extensive experience in Artificial Intelligence, Big Data, and digital technologies. We combine technical expertise with business vision to identify opportunities and deliver measurable value to companies.",
-  "about.cta": "Learn more",
-  "about.member1.name": "Sergi Masó",
-  "about.member1.role": "Data Analyst",
-  "about.member1.desc": "Specialist in analyzing business challenges and translating them into practical solutions. Applies AI to solve real problems, combining technical expertise and global vision to connect technology and business.",
-  "about.member2.name": "Iker Reina",
-  "about.member2.role": "Cybersecurity and Cloud Infrastructure Architect",
-  "about.member2.desc": "Cloud Security and AI specialist with international experience, leading large-scale implementations across Europe and the Americas. Expert in AWS AI services and security solutions.",
-  "about.member3.name": "Gil Prat",
-  "about.member3.role": "Full Stack Engineer",
-  "about.member3.desc": "Specialist in full-stack development combining back-end, front-end, and databases, with experience integrating IoT technology and leading technical teams.",
-  "about.member4.name": "Mariona Forcada",
-  "about.member4.role": "Data Engineer",
-  "about.member4.desc": "Expert in data management and architecture, specialized in building ETLs and optimizing databases. Combines advanced knowledge in data engineering with the implementation of AI projects.",
-  "about.member5.name": "Carlo Manzo",
-  "about.member5.role": "Data Scientist",
-  "about.member5.desc": "Specialist in applying artificial intelligence to extract meaningful insights from complex data. Passionate about leveraging AI to accelerate discovery, deliver scalable technological solutions, and bridging scientific research and real-world applications.",
+  "aboutPage": {
+    "eyebrow": "About NDXai",
+    "title": "What is NDXai?",
+    "valueProp": "NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vic (Barcelona, Spain) that designs, builds and deploys custom AI solutions (predictive maintenance, computer vision, digital twins, AI assistants, advanced analytics and automation) for industrial companies and SMEs that want to cut costs and work more efficiently.",
+    "ctaPrimary": "Talk to the team",
+    "ctaSecondary": "See key facts",
+    "highlights": [
+      {
+        "value": "5",
+        "label": "specialists in AI, data and cloud"
+      },
+      {
+        "value": "6",
+        "label": "AI service lines"
+      },
+      {
+        "value": "3",
+        "label": "languages: Catalan, Spanish and English"
+      }
+    ],
+    "what": {
+      "title": "What NDXai does",
+      "items": [
+        {
+          "id": "predictive",
+          "title": "Predictive maintenance",
+          "text": "We analyse historical and sensor data (vibration, temperature, power draw) with AI models to anticipate breakdowns before they happen. The result is planned interventions, fewer unplanned stoppages and lower maintenance costs."
+        },
+        {
+          "id": "vision",
+          "title": "Computer vision",
+          "text": "We train neural networks that inspect products on the line and detect defects or irregularities the human eye misses. Quality stays consistent, rejects go down and traceability improves, especially in the food and pharmaceutical sectors."
+        },
+        {
+          "id": "digital",
+          "title": "Digital twin",
+          "text": "We build virtual replicas of processes and plants to simulate changes before applying them. You can test a new machine layout or workflow without stopping production and with less risk."
+        },
+        {
+          "id": "bots",
+          "title": "AI bots and assistants",
+          "text": "We develop assistants for websites, apps or internal use that serve customers or help your team find documents and data. They automate repetitive questions and give instant answers at any time of day."
+        },
+        {
+          "id": "analytics",
+          "title": "Advanced analytics",
+          "text": "We build machine learning models to forecast sales, optimise inventory, segment customers or set dynamic prices. They turn company data into better-informed decisions."
+        },
+        {
+          "id": "optimization",
+          "title": "Intelligent automation",
+          "text": "We automate repetitive and administrative processes such as invoice handling or order processing. Errors and response times go down, and your team gains time for higher-value work."
+        }
+      ]
+    },
+    "different": {
+      "title": "What makes NDXai different",
+      "items": [
+        {
+          "title": "A local team in Vic that works on site",
+          "text": "We are based in Vic (Osona) and can visit the plant, talk to operators and see the process in person. Clients deal directly with the people who build the solution, with no sales layer in between."
+        },
+        {
+          "title": "Five complementary profiles in one team",
+          "text": "We combine business analysis, data science, data engineering, full-stack development with IoT, and cloud architecture and cybersecurity. One team covers the whole project, from the data to production."
+        },
+        {
+          "title": "Custom AI, not off-the-shelf products",
+          "text": "Every model is trained on each client's own data and process, instead of forcing the problem to fit a generic tool. The solution adapts to the plant, not the other way round."
+        },
+        {
+          "title": "Focused on industry",
+          "text": "We work on shop-floor problems: breakdowns, quality, processes and production data. We speak the language of maintenance, quality and operations, not just technology."
+        },
+        {
+          "title": "Security and cloud by design",
+          "text": "The team has experience with AWS AI services and cloud security in large-scale deployments across Europe and the Americas. Industrial data is handled with cybersecurity in mind from day one."
+        }
+      ]
+    },
+    "who": {
+      "title": "Who works with NDXai",
+      "items": [
+        "Industrial companies and production plants in Osona and Catalonia with critical machinery or automated lines.",
+        "Food and pharmaceutical manufacturers that need quality control and traceability.",
+        "Maintenance, quality and operations managers who want fewer stoppages and rejects.",
+        "Logistics and distribution companies that want to forecast demand and optimise routes and inventory.",
+        "SMEs that want to automate admin tasks or serve their customers with AI assistants."
+      ]
+    },
+    "team": {
+      "title": "The team behind NDXai",
+      "story": "",
+      "composition": "NDXai is run by five co-founders with complementary backgrounds in business analysis, data science and engineering, software development and cloud infrastructure.",
+      "linkedinLabel": "LinkedIn profile of",
+      "members": [
+        {
+          "name": "Sergi Masó",
+          "role": "Data Analyst",
+          "bio": "Specialises in analysing business challenges and turning them into practical solutions. He applies AI to real problems, bridging technology and business.",
+          "linkedin": ""
+        },
+        {
+          "name": "Iker Reina",
+          "role": "Cybersecurity & Cloud Infrastructure Architect",
+          "bio": "Cloud security and AI specialist with international experience who has led large-scale deployments in Europe and the Americas. Expert in AWS AI services and security solutions.",
+          "linkedin": ""
+        },
+        {
+          "name": "Gil Prat",
+          "role": "Full Stack Engineer",
+          "bio": "Builds end-to-end solutions spanning back end, front end and databases. He has experience integrating IoT technology and leading technical teams.",
+          "linkedin": ""
+        },
+        {
+          "name": "Mariona Forcada",
+          "role": "Data Engineer",
+          "bio": "Expert in data management and architecture, specialising in building ETL pipelines and optimising databases. She combines advanced data engineering with delivering AI projects.",
+          "linkedin": ""
+        },
+        {
+          "name": "Carlo Manzo",
+          "role": "Data Scientist",
+          "bio": "Applies artificial intelligence to extract insight from complex data. He is passionate about bridging scientific research and real-world, scalable applications.",
+          "linkedin": ""
+        }
+      ]
+    },
+    "how": {
+      "title": "How NDXai works",
+      "steps": [
+        {
+          "title": "First conversation",
+          "text": "Tell us about your challenge by email, phone or in person in Vic. We get to know the process, the goal and the data available."
+        },
+        {
+          "title": "Assessment and proposal",
+          "text": "We assess feasibility and expected impact, then propose scope, timeline and budget."
+        },
+        {
+          "title": "Build and test",
+          "text": "We build the solution with your data and validate it with your team before deploying it."
+        },
+        {
+          "title": "Go-live and support",
+          "text": "We integrate the solution into your systems, train your team and keep improving it over time."
+        }
+      ],
+      "channels": "You work directly with the technical team building your project, in Catalan, Spanish or English."
+    },
+    "facts": {
+      "title": "NDXai key facts",
+      "rows": [
+        {
+          "key": "name",
+          "label": "Company name",
+          "value": "NDXai (Neural Dynamics AI S.L.)"
+        },
+        {
+          "key": "type",
+          "label": "Type",
+          "value": "Artificial intelligence consultancy for industry"
+        },
+        {
+          "key": "founded",
+          "label": "Founded",
+          "value": "2025"
+        },
+        {
+          "key": "founders",
+          "label": "Founders",
+          "value": "Sergi Masó, Iker Reina, Gil Prat, Mariona Forcada and Carlo Manzo"
+        },
+        {
+          "key": "hq",
+          "label": "Headquarters",
+          "value": "Carrer Assemblea de Catalunya 9, 08500 Vic (Barcelona), Spain"
+        },
+        {
+          "key": "website",
+          "label": "Website",
+          "value": "www.ndxai.eu",
+          "href": "https://www.ndxai.eu"
+        },
+        {
+          "key": "offering",
+          "label": "Core offering",
+          "value": "Custom AI solutions for industrial companies and SMEs"
+        },
+        {
+          "key": "pricing",
+          "label": "Pricing",
+          "value": ""
+        },
+        {
+          "key": "contract",
+          "label": "Contract terms",
+          "value": ""
+        },
+        {
+          "key": "services",
+          "label": "Services",
+          "value": "Predictive maintenance, computer vision, digital twin, AI bots and assistants, advanced analytics and intelligent automation"
+        },
+        {
+          "key": "communication",
+          "label": "Communication",
+          "value": "Email, phone, LinkedIn and in-person meetings; in Catalan, Spanish and English"
+        },
+        {
+          "key": "clients",
+          "label": "Notable clients",
+          "value": ""
+        },
+        {
+          "key": "customers",
+          "label": "Customers served",
+          "value": ""
+        },
+        {
+          "key": "projects",
+          "label": "Projects delivered",
+          "value": ""
+        },
+        {
+          "key": "competitors",
+          "label": "Competitors",
+          "value": ""
+        },
+        {
+          "key": "social",
+          "label": "Social",
+          "value": "LinkedIn: neural-dynamics-ai",
+          "href": "https://www.linkedin.com/company/neural-dynamics-ai"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What is NDXai?",
+          "a": "NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vic (Barcelona, Spain). We design and deploy custom AI solutions for industrial companies and SMEs."
+        },
+        {
+          "q": "What kind of AI projects does NDXai do?",
+          "a": "Predictive maintenance, computer vision for quality control, digital twins, AI bots and assistants, advanced analytics and process automation. Every project is built around the client's own data and process."
+        },
+        {
+          "q": "Where is NDXai based and who does it work with?",
+          "a": "We are based in Vic, in the Osona region of Catalonia. We work with companies across Catalonia and the rest of Spain, and we can visit your plant in person."
+        },
+        {
+          "q": "Do I need a lot of data to start an AI project?",
+          "a": "Not necessarily. During the assessment we review what data you already have (historical records, sensors, ERP or spreadsheets) and, if it is not enough, we propose how to start collecting it."
+        },
+        {
+          "q": "How much does a project with NDXai cost?",
+          "a": "It depends on the scope and the data available. After the first conversation we prepare a proposal with scope, timeline and budget."
+        },
+        {
+          "q": "Which languages does NDXai work in?",
+          "a": "Catalan, Spanish and English. Meetings and project documentation can be in any of the three."
+        }
+      ]
+    }
+  },
   "contact.title": "Contact us",
   "contact.subtitle": "We're here to help you transform your business",
   "contact.phone": "Phone",

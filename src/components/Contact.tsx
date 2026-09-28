@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { MAPS_URL, ORG } from '@/lib/seo';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -8,29 +9,29 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'info@ndxai.eu',
-      link: 'mailto:info@ndxai.eu',
+      value: ORG.email,
+      link: `mailto:${ORG.email}`,
       description: t('contact.emailDesc'),
     },
     {
       icon: Phone,
       title: t('contact.phone'),
-      value: '+34 651590000',
-      link: 'tel:+34651590000',
+      value: ORG.phoneDisplay,
+      link: `tel:${ORG.phone}`,
       description: t('contact.phoneDesc'),
     },
     {
       icon: MapPin,
       title: t('contact.location'),
-      value: 'Vic, Barcelona',
-      link: 'https://maps.google.com/?q=Vic',
+      value: `${ORG.locality}, ${ORG.region}`,
+      link: MAPS_URL,
       description: t('contact.locationDesc'),
     },
     {
       icon: Linkedin,
       title: 'LinkedIn',
       value: '@neural-dynamics-ai',
-      link: 'https://www.linkedin.com/company/neural-dynamics-ai',
+      link: ORG.linkedin,
       description: t('contact.linkedinDesc'),
     },
   ];

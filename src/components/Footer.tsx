@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { NAV_ITEMS, onSectionLinkClick } from '@/lib/sections';
+import { LANGS, LANG_STORAGE_KEY, langPath } from '@/lib/seo';
 import logo from '@/assets/logo_white.svg';
 import logoDark from '@/assets/logo_blue.svg';
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const currentYear = new Date().getFullYear();
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useState<'light' | 'dark'>(prefersDark ? 'dark' : 'light');
@@ -29,13 +31,6 @@ const Footer = () => {
 
     return () => observer.disconnect();
   }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -74,21 +69,16 @@ const Footer = () => {
               {t('footer.quick')}
             </h3>
             <ul className="space-y-3">
-              {[
-                { label: t('nav.home'), section: 'home' },
-                { label: t('nav.services'), section: 'services' },
-                { label: t('nav.about'), section: 'about' },
-                { label: t('nav.contact'), section: 'contact' },
-                { label: t('nav.blog'), section: 'blog' },
-              ].map((item) => (
-                <li key={item.section}>
-                  <button
-                    onClick={() => scrollToSection(item.section)}
+              {NAV_ITEMS.map(({ key, id }) => (
+                <li key={key}>
+                  <a
+                    href={`#${id}`}
+                    onClick={onSectionLinkClick(id)}
                     className="text-muted-foreground hover:text-primary transition-all duration-200 text-sm group flex items-center"
                   >
                     <span className="w-0 h-px bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
-                    {item.label}
-                  </button>
+                    {t(`nav.${key}`)}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -127,6 +117,31 @@ const Footer = () => {
         {/* Copyright con gradiente */}
         <div className="pt-8 border-t border-border/50">
           <div className="text-center">
+            {/* Enllaços d'idioma visibles i rastrejables (el desplegable del menú no ho és) */}
+            <nav aria-label={t('seo.switchLabel')} className="mb-4">
+              <ul className="flex justify-center gap-4 text-sm">
+                {LANGS.map((lang) => (
+                  <li key={lang}>
+                    <a
+                      href={langPath(lang)}
+                      hrefLang={lang}
+                      lang={lang}
+                      aria-current={lang === i18n.language ? 'true' : undefined}
+                      onClick={() => {
+                        try {
+                          localStorage.setItem(LANG_STORAGE_KEY, lang);
+                        } catch {
+                          // localStorage no disponible
+                        }
+                      }}
+                      className={lang === i18n.language ? 'text-primary font-medium' : 'text-muted-foreground hover:text-primary transition-colors'}
+                    >
+                      {t('seo.languageName', { lng: lang })}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
             <p className="text-muted-foreground text-sm">
               © {currentYear} <span className="font-semibold bg-gradient-primary bg-clip-text text-transparent">NDXai</span>. {t('footer.rights')}.
             </p>

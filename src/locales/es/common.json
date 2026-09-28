@@ -1,7 +1,17 @@
 {
+  "seo": {
+    "title": "NDXai | Consultora de IA para la industria en Vic (Barcelona)",
+    "description": "Consultora de IA en Vic (Barcelona). Mantenimiento predictivo, visión artificial, gemelos digitales y automatización a medida para industria y pymes.",
+    "ogLocale": "es_ES",
+    "languageName": "Español",
+    "switchLabel": "Idioma"
+  },
   "nav.home": "Inicio",
   "nav.services": "Servicios",
-  "nav.about": "Nosotros",
+  "nav.team": "Equipo",
+  "nav.faq": "FAQ",
+  "nav.label": "Navegación principal",
+  "nav.about": "Quiénes somos",
   "nav.contact": "Contacto",
   "nav.blog": "Blog",
   "hero.title": "Transformamos la industria con",
@@ -9,47 +19,273 @@
   "hero.subtitle": "En Neural Dynamics AI desarrollamos soluciones de IA personalizadas que optimizan procesos industriales, aumentan la eficiencia y reducen los costes operativos.",
   "hero.cta": "Solicita una demo",
   "hero.ctaSecondary": "Ver servicios",
-  "services.title": "Nuestros servicios",
-  "services.subtitle": "Soluciones de IA diseñadas para la industria moderna",
-  "services.learnMore": "Más información",
-  "services.predictive.title": "Mantenimiento predictivo",
-  "services.predictive.desc": "Cada parada por avería es una pérdida irrecuperable de tiempo y recursos. Con sistemas basados en datos históricos y modelos de IA, anticipamos fallos antes de que ocurran, permitiendo planificar las intervenciones técnicas con antelación. Esto reduce los costes de mantenimiento y evita interrupciones inesperadas en la producción.\n Por ejemplo, en una planta industrial, el sistema puede detectar patrones anómalos en la vibración de un motor o en la temperatura de una bomba, avisando al equipo técnico antes de que se produzca una avería grave.",
-  "services.predictive.detail": "Cada parada por avería es una pérdida irrecuperable de tiempo y recursos. Con sistemas basados en datos históricos y modelos de IA, anticipamos fallos antes de que ocurran, permitiendo planificar las intervenciones técnicas con antelación. Esto reduce los costes de mantenimiento y evita interrupciones inesperadas en la producción.\n Por ejemplo, en una planta industrial, el sistema puede detectar patrones anómalos en la vibración de un motor o en la temperatura de una bomba, avisando al equipo técnico antes de que se produzca una avería grave.",
-  "services.vision.title": "Visión artificial",
-  "services.vision.desc": "Los modelos de visión por computador inspeccionan productos con una precisión superior a la humana. Mediante redes neuronales profundas, detectamos defectos microscópicos o irregularidades en líneas de producción, asegurando estándares de calidad consistentes y reduciendo el rechazo de productos.\n Esto es especialmente útil en sectores como el farmacéutico o el alimentario, donde la detección automática de defectos puede evitar lotes defectuosos y mejorar la trazabilidad de los productos.",
-  "services.vision.detail": "Los modelos de visión por computador inspeccionan productos con una precisión superior a la humana. Mediante redes neuronales profundas, detectamos defectos microscópicos o irregularidades en líneas de producción, asegurando estándares de calidad consistentes y reduciendo el rechazo de productos.\n Esto es especialmente útil en sectores como el farmacéutico o el alimentario, donde la detección automática de defectos puede evitar lotes defectuosos y mejorar la trazabilidad de los productos.",
-  "services.bots.title": "Bots y asistentes de IA",
-  "services.bots.desc": "Desarrollamos asistentes virtuales inteligentes adaptados a diferentes necesidades: integración en webs o apps, bots para consultar información interna o para ofrecer soporte a clientes.\n Estos sistemas automatizan tareas repetitivas, ofrecen respuestas inmediatas y mejoran la experiencia del usuario. Por ejemplo, un bot de atención al cliente puede resolver dudas frecuentes sobre pedidos o facturación, mientras que un asistente interno puede ayudar al equipo a encontrar documentos o datos de forma instantánea.",
-  "services.bots.detail": "Desarrollamos asistentes virtuales inteligentes adaptados a diferentes necesidades: integración en webs o apps, bots para consultar información interna o para ofrecer soporte a clientes.\n Estos sistemas automatizan tareas repetitivas, ofrecen respuestas inmediatas y mejoran la experiencia del usuario. Por ejemplo, un bot de atención al cliente puede resolver dudas frecuentes sobre pedidos o facturación, mientras que un asistente interno puede ayudar al equipo a encontrar documentos o datos de forma instantánea.",
-  "services.optimization.title": "Automatización inteligente",
-  "services.optimization.desc": "Implementamos sistemas de IA que automatizan procesos repetitivos y administrativos, reduciendo errores y liberando tiempo valioso para tu equipo.\n De esta manera, el personal puede centrarse en tareas de mayor valor estratégico, como la innovación o la relación con los clientes. Un ejemplo sería la automatización de la gestión de facturas o del procesamiento de pedidos, que puede reducir drásticamente los tiempos de respuesta y aumentar la productividad.",
-  "services.optimization.detail": "Implementamos sistemas de IA que automatizan procesos repetitivos y administrativos, reduciendo errores y liberando tiempo valioso para tu equipo.\n De esta manera, el personal puede centrarse en tareas de mayor valor estratégico, como la innovación o la relación con los clientes. Un ejemplo sería la automatización de la gestión de facturas o del procesamiento de pedidos, que puede reducir drásticamente los tiempos de respuesta y aumentar la productividad.",
-  "services.analytics.title": "Analítica avanzada",
-  "services.analytics.desc": "Convertimos los datos de tu empresa en una ventaja competitiva mediante técnicas de Inteligencia Artificial y Aprendizaje Automático. Creamos modelos que permiten prever ventas, optimizar la gestión de inventarios, segmentar clientes o definir precios dinámicos.\n Esto permite tomar decisiones más informadas y mejorar la eficiencia empresarial. Por ejemplo, un comercio puede ajustar sus promociones según la demanda prevista o una empresa logística puede optimizar las rutas de reparto.",
-  "services.analytics.detail": "Convertimos los datos de tu empresa en una ventaja competitiva mediante técnicas de Inteligencia Artificial y Aprendizaje Automático. Creamos modelos que permiten prever ventas, optimizar la gestión de inventarios, segmentar clientes o definir precios dinámicos.\n Esto permite tomar decisiones más informadas y mejorar la eficiencia empresarial. Por ejemplo, un comercio puede ajustar sus promociones según la demanda prevista o una empresa logística puede optimizar las rutas de reparto.",
-  "services.digital.title": "Gemelo digital",
-  "services.digital.desc": "Los gemelos digitales son réplicas virtuales exactas de tus operaciones físicas. Permiten simular cambios en procesos, probar mejoras o predecir resultados sin detener la producción.\n Esta tecnología ayuda a reducir riesgos y acelera la innovación: por ejemplo, una fábrica puede probar virtualmente una nueva configuración de máquinas o un cambio en el flujo de trabajo antes de implementarlo realmente, ahorrando tiempo y costes.",
-  "services.digital.detail": "Los gemelos digitales son réplicas virtuales exactas de tus operaciones físicas. Permiten simular cambios en procesos, probar mejoras o predecir resultados sin detener la producción.\n Esta tecnología ayuda a reducir riesgos y acelera la innovación: por ejemplo, una fábrica puede probar virtualmente una nueva configuración de máquinas o un cambio en el flujo de trabajo antes de implementarlo realmente, ahorrando tiempo y costes.",
-  "services.requestConsultation": "Solicita una consulta",
-  "about.title": "Nuestro equipo",
-  "about.subtitle": "Expertos en IA industrial y cofundadores",
-  "about.text": "Nuestro equipo cuenta con una amplia experiencia en Inteligencia Artificial, Big Data y tecnologías digitales. Combinamos conocimientos técnicos con visión de negocio para identificar oportunidades y generar valor real en las empresas.",
-  "about.cta": "Descubre más",
-  "about.member1.name": "Sergi Masó",
-  "about.member1.role": "Analista de datos",
-  "about.member1.desc": "Especialista en analizar los retos empresariales y traducirlos en soluciones prácticas. Aplica la IA para resolver problemas reales, combinando conocimiento técnico y visión global para conectar tecnología y negocio.",
-  "about.member2.name": "Iker Reina",
-  "about.member2.role": "Arquitecto de Ciberseguridad e Infraestructura Cloud",
-  "about.member2.desc": "Especialista en seguridad Cloud e IA con experiencia internacional, liderando implementaciones a gran escala en Europa y América. Experto en servicios de IA de AWS y soluciones de seguridad.",
-  "about.member3.name": "Gil Prat",
-  "about.member3.role": "Ingeniero Full Stack",
-  "about.member3.desc": "Especialista en el desarrollo de soluciones completas, combinando back-end, front-end y bases de datos, con experiencia en integración de tecnología IoT y liderazgo técnico.",
-  "about.member4.name": "Mariona Forcada",
-  "about.member4.role": "Ingeniera de Datos",
-  "about.member4.desc": "Experta en gestión y arquitectura de datos, especializada en la construcción de ETLs y optimización de bases de datos. Combina conocimientos avanzados en ingeniería de datos con la implementación de proyectos de IA.",
-  "about.member5.name": "Carlo Manzo",
-  "about.member5.role": "Científico de datos",
-  "about.member5.desc": "Especialista en la aplicación de la inteligencia artificial para extraer conocimientos significativos a partir de datos complejos. Apasionado por aprovechar la IA para acelerar el descubrimiento, ofrecer soluciones tecnológicas escalables y conectar la investigación científica con las aplicaciones del mundo real.",
+  "aboutPage": {
+    "eyebrow": "Sobre NDXai",
+    "title": "¿Qué es NDXai?",
+    "valueProp": "NDXai (Neural Dynamics AI) es una consultora de inteligencia artificial con sede en Vic (Barcelona) que diseña, desarrolla e implanta soluciones de IA a medida —mantenimiento predictivo, visión artificial, gemelos digitales, asistentes de IA, analítica avanzada y automatización— para empresas industriales y pymes que quieren reducir costes y ganar eficiencia.",
+    "ctaPrimary": "Habla con el equipo",
+    "ctaSecondary": "Ver datos clave",
+    "highlights": [
+      {
+        "value": "5",
+        "label": "especialistas en IA, datos y cloud"
+      },
+      {
+        "value": "6",
+        "label": "líneas de servicio de IA"
+      },
+      {
+        "value": "3",
+        "label": "idiomas: catalán, castellano e inglés"
+      }
+    ],
+    "what": {
+      "title": "Qué hace NDXai",
+      "items": [
+        {
+          "id": "predictive",
+          "title": "Mantenimiento predictivo",
+          "text": "Analizamos datos históricos y de sensores (vibración, temperatura, consumo) con modelos de IA para anticipar averías antes de que ocurran. El resultado son intervenciones planificadas, menos paradas imprevistas y menores costes de mantenimiento."
+        },
+        {
+          "id": "vision",
+          "title": "Visión artificial",
+          "text": "Entrenamos redes neuronales que inspeccionan el producto en la línea y detectan defectos o irregularidades que el ojo humano pasa por alto. Así se mantiene una calidad constante, se reduce el rechazo y se mejora la trazabilidad, especialmente en los sectores alimentario y farmacéutico."
+        },
+        {
+          "id": "digital",
+          "title": "Gemelo digital",
+          "text": "Construimos réplicas virtuales de procesos y plantas para simular cambios antes de aplicarlos. Permite probar una nueva configuración de máquinas o de flujo de trabajo sin detener la producción y con menos riesgo."
+        },
+        {
+          "id": "bots",
+          "title": "Bots y asistentes de IA",
+          "text": "Desarrollamos asistentes para webs, apps o uso interno que atienden a clientes o ayudan al equipo a encontrar documentos y datos. Automatizan las consultas repetitivas y dan respuestas inmediatas a cualquier hora."
+        },
+        {
+          "id": "analytics",
+          "title": "Analítica avanzada",
+          "text": "Creamos modelos de machine learning para prever ventas, optimizar inventarios, segmentar clientes o definir precios dinámicos. Convierten los datos de la empresa en decisiones mejor informadas."
+        },
+        {
+          "id": "optimization",
+          "title": "Automatización inteligente",
+          "text": "Automatizamos procesos repetitivos y administrativos, como la gestión de facturas o el procesamiento de pedidos. Se reducen errores y tiempos de respuesta, y el equipo gana tiempo para tareas de más valor."
+        }
+      ]
+    },
+    "different": {
+      "title": "Qué hace diferente a NDXai",
+      "items": [
+        {
+          "title": "Equipo local en Vic, con trato presencial",
+          "text": "Estamos en Vic (Osona) y podemos ir a la planta, hablar con los operarios y ver el proceso en persona. El cliente trata directamente con las personas que construyen la solución, sin intermediarios comerciales."
+        },
+        {
+          "title": "Cinco perfiles complementarios en un solo equipo",
+          "text": "Reunimos análisis de negocio, ciencia de datos, ingeniería de datos, desarrollo full stack con IoT y arquitectura cloud y ciberseguridad. Un mismo equipo cubre el proyecto de principio a fin, de los datos a la puesta en producción."
+        },
+        {
+          "title": "IA a medida, no productos cerrados",
+          "text": "Cada modelo se entrena con los datos y el proceso de cada cliente, en lugar de forzar el problema para que encaje en una herramienta genérica. La solución se adapta a la planta, no al revés."
+        },
+        {
+          "title": "Foco en la industria",
+          "text": "Trabajamos sobre problemas de planta: averías, calidad, procesos y datos de producción. Hablamos el idioma de mantenimiento, calidad y operaciones, no solo el de la tecnología."
+        },
+        {
+          "title": "Seguridad y cloud desde el diseño",
+          "text": "El equipo tiene experiencia en servicios de IA de AWS y en seguridad cloud en despliegues a gran escala en Europa y América. Los datos industriales se tratan con criterios de ciberseguridad desde el primer día."
+        }
+      ]
+    },
+    "who": {
+      "title": "Quién trabaja con NDXai",
+      "items": [
+        "Empresas industriales y plantas de producción de Osona y Cataluña con maquinaria crítica o líneas automatizadas.",
+        "Fabricantes de los sectores alimentario y farmacéutico que necesitan control de calidad y trazabilidad.",
+        "Responsables de mantenimiento, calidad y operaciones que quieren reducir paradas y rechazos.",
+        "Empresas logísticas y de distribución que quieren prever la demanda y optimizar rutas e inventario.",
+        "Pymes que quieren automatizar tareas administrativas o atender a sus clientes con asistentes de IA."
+      ]
+    },
+    "team": {
+      "title": "El equipo detrás de NDXai",
+      "story": "",
+      "composition": "NDXai la forman cinco cofundadores con perfiles complementarios en análisis de negocio, ciencia e ingeniería de datos, desarrollo de software e infraestructura cloud.",
+      "linkedinLabel": "LinkedIn de",
+      "members": [
+        {
+          "name": "Sergi Masó",
+          "role": "Analista de datos",
+          "bio": "Especialista en analizar los retos empresariales y traducirlos en soluciones prácticas. Aplica la IA a problemas reales, conectando tecnología y negocio.",
+          "linkedin": ""
+        },
+        {
+          "name": "Iker Reina",
+          "role": "Arquitecto de Ciberseguridad e Infraestructura Cloud",
+          "bio": "Especialista en seguridad cloud e IA con experiencia internacional, ha liderado implementaciones a gran escala en Europa y América. Experto en servicios de IA de AWS y soluciones de seguridad.",
+          "linkedin": ""
+        },
+        {
+          "name": "Gil Prat",
+          "role": "Ingeniero Full Stack",
+          "bio": "Desarrolla soluciones completas que combinan back-end, front-end y bases de datos. Tiene experiencia en integración de tecnología IoT y liderazgo técnico.",
+          "linkedin": ""
+        },
+        {
+          "name": "Mariona Forcada",
+          "role": "Ingeniera de Datos",
+          "bio": "Experta en gestión y arquitectura de datos, especializada en la construcción de ETL y la optimización de bases de datos. Combina ingeniería de datos avanzada con la implementación de proyectos de IA.",
+          "linkedin": ""
+        },
+        {
+          "name": "Carlo Manzo",
+          "role": "Científico de datos",
+          "bio": "Aplica la inteligencia artificial para extraer conocimiento de datos complejos. Le apasiona conectar la investigación científica con aplicaciones reales y escalables.",
+          "linkedin": ""
+        }
+      ]
+    },
+    "how": {
+      "title": "Cómo trabaja NDXai",
+      "steps": [
+        {
+          "title": "Primera conversación",
+          "text": "Nos cuentas el reto por email, teléfono o en persona en Vic. Entendemos el proceso, el objetivo y los datos disponibles."
+        },
+        {
+          "title": "Diagnóstico y propuesta",
+          "text": "Evaluamos la viabilidad y el impacto esperado y te proponemos alcance, plazos y presupuesto."
+        },
+        {
+          "title": "Desarrollo y prueba",
+          "text": "Construimos la solución con tus datos y la validamos con tu equipo antes de desplegarla."
+        },
+        {
+          "title": "Puesta en producción y soporte",
+          "text": "Integramos la solución en tus sistemas, formamos al equipo y hacemos seguimiento para mejorarla."
+        }
+      ],
+      "channels": "Trabajas directamente con el equipo técnico que desarrolla tu proyecto, en catalán, castellano o inglés."
+    },
+    "facts": {
+      "title": "Datos clave de NDXai",
+      "rows": [
+        {
+          "key": "name",
+          "label": "Nombre de la empresa",
+          "value": "NDXai (Neural Dynamics AI S.L.)"
+        },
+        {
+          "key": "type",
+          "label": "Tipo",
+          "value": "Consultora de inteligencia artificial para la industria"
+        },
+        {
+          "key": "founded",
+          "label": "Fundación",
+          "value": "2025"
+        },
+        {
+          "key": "founders",
+          "label": "Fundadores",
+          "value": "Sergi Masó, Iker Reina, Gil Prat, Mariona Forcada y Carlo Manzo"
+        },
+        {
+          "key": "hq",
+          "label": "Sede",
+          "value": "Carrer Assemblea de Catalunya 9, 08500 Vic (Barcelona), España"
+        },
+        {
+          "key": "website",
+          "label": "Web",
+          "value": "www.ndxai.eu",
+          "href": "https://www.ndxai.eu"
+        },
+        {
+          "key": "offering",
+          "label": "Oferta principal",
+          "value": "Soluciones de IA a medida para empresas industriales y pymes"
+        },
+        {
+          "key": "pricing",
+          "label": "Precios",
+          "value": ""
+        },
+        {
+          "key": "contract",
+          "label": "Condiciones de contrato",
+          "value": ""
+        },
+        {
+          "key": "services",
+          "label": "Servicios",
+          "value": "Mantenimiento predictivo, visión artificial, gemelo digital, bots y asistentes de IA, analítica avanzada y automatización inteligente"
+        },
+        {
+          "key": "communication",
+          "label": "Comunicación",
+          "value": "Email, teléfono, LinkedIn y reuniones presenciales; en catalán, castellano e inglés"
+        },
+        {
+          "key": "clients",
+          "label": "Clientes destacados",
+          "value": ""
+        },
+        {
+          "key": "customers",
+          "label": "Clientes atendidos",
+          "value": ""
+        },
+        {
+          "key": "projects",
+          "label": "Proyectos entregados",
+          "value": ""
+        },
+        {
+          "key": "competitors",
+          "label": "Competidores",
+          "value": ""
+        },
+        {
+          "key": "social",
+          "label": "Redes sociales",
+          "value": "LinkedIn: neural-dynamics-ai",
+          "href": "https://www.linkedin.com/company/neural-dynamics-ai"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Qué es NDXai?",
+          "a": "NDXai (Neural Dynamics AI) es una consultora de inteligencia artificial con sede en Vic (Barcelona). Diseñamos e implantamos soluciones de IA a medida para empresas industriales y pymes."
+        },
+        {
+          "q": "¿Qué tipo de proyectos de IA hace NDXai?",
+          "a": "Mantenimiento predictivo, visión artificial para control de calidad, gemelos digitales, bots y asistentes de IA, analítica avanzada y automatización de procesos. Cada proyecto se construye con los datos y el proceso del cliente."
+        },
+        {
+          "q": "¿Dónde está NDXai y con qué empresas trabaja?",
+          "a": "Tenemos la sede en Vic, en la comarca de Osona. Trabajamos con empresas de Cataluña y del resto de España, y podemos visitar la planta en persona."
+        },
+        {
+          "q": "¿Necesito tener muchos datos para empezar un proyecto de IA?",
+          "a": "No necesariamente. En el diagnóstico revisamos qué datos existen (históricos, sensores, ERP u hojas de cálculo) y, si no son suficientes, proponemos cómo empezar a recogerlos."
+        },
+        {
+          "q": "¿Cuánto cuesta un proyecto con NDXai?",
+          "a": "Depende del alcance y de los datos disponibles. Después de la primera conversación preparamos una propuesta con alcance, plazos y presupuesto."
+        },
+        {
+          "q": "¿En qué idiomas trabaja NDXai?",
+          "a": "En catalán, castellano e inglés. Tanto las reuniones como la documentación del proyecto pueden hacerse en cualquiera de los tres."
+        }
+      ]
+    }
+  },
   "contact.title": "Contáctanos",
   "contact.subtitle": "Estamos aquí para ayudarte a transformar tu empresa",
   "contact.phone": "Teléfono",
