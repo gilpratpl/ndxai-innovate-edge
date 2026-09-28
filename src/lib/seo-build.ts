@@ -65,7 +65,12 @@ export function buildJsonLd(lang: Lang, loc: Locale) {
           name: c.what.title,
           itemListElement: c.what.items.map((s) => ({
             '@type': 'Offer',
-            itemOffered: { '@type': 'Service', name: s.title, description: s.text, provider: { '@id': orgId } },
+            itemOffered: {
+              '@type': 'Service',
+              name: s.title,
+              description: s.text.replace(/\n/g, ' '),
+              provider: { '@id': orgId },
+            },
           })),
         },
         founder: c.team.members.map((m) => ({
@@ -235,7 +240,7 @@ export function renderLlmsTxt(locales: Locales): string {
     '',
     `## ${c.what.title}`,
     '',
-    ...c.what.items.map((s) => `- **${s.title}**: ${s.text}`),
+    ...c.what.items.map((s) => `- **${s.title}**: ${s.text.replace(/\n/g, ' ')}`),
     '',
     `## ${c.different.title}`,
     '',

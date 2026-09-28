@@ -41,36 +41,38 @@
     ],
     "what": {
       "title": "Què fa NDXai",
+      "showMore": "Veure més",
+      "showLess": "Veure menys",
       "items": [
         {
           "id": "predictive",
           "title": "Manteniment predictiu",
-          "text": "Analitzem dades històriques i de sensors (vibració, temperatura, consum) amb models d'IA per anticipar avaries abans que passin. El resultat són intervencions planificades, menys aturades imprevistes i menys costos de manteniment."
+          "text": "Cada parada per avaria és una pèrdua irrecuperable de temps i recursos. Amb sistemes basats en dades històriques i models d'IA, anticipem fallades abans que passin, permetent planificar les intervencions tècniques amb antelació. Això redueix costos de manteniment i evita interrupcions inesperades en la producció.\nPer exemple, en una planta industrial, el sistema pot detectar patrons anòmals en la vibració d'un motor o en la temperatura d'una bomba, avisant l'equip tècnic abans que es produeixi una avaria greu."
         },
         {
           "id": "vision",
           "title": "Visió artificial",
-          "text": "Entrenem xarxes neuronals que inspeccionen el producte a la línia i detecten defectes o irregularitats que l'ull humà no veu. Així es manté una qualitat constant, es redueix el rebuig i es millora la traçabilitat, sobretot en els sectors alimentari i farmacèutic."
+          "text": "Els models de visió per computador inspeccionen productes amb una precisió superior a la humana. Mitjançant xarxes neuronals profundes, detectem defectes microscòpics o irregularitats en línies de producció, assegurant estàndards de qualitat consistents i reduint el rebuig de productes.\nAixò és especialment útil en sectors com el farmacèutic o l'alimentari, on la detecció automàtica de defectes pot evitar lots defectuosos i millorar la traçabilitat dels productes."
         },
         {
           "id": "digital",
           "title": "Bessó digital",
-          "text": "Construïm rèpliques virtuals de processos i plantes per simular canvis abans d'aplicar-los. Permet provar una nova configuració de màquines o de flux de treball sense aturar la producció i amb menys risc."
+          "text": "Els bessons digitals són rèpliques virtuals exactes de les teves operacions físiques. Permeten simular canvis en processos, provar millores o predir resultats sense aturar la producció.\nAquesta tecnologia ajuda a reduir riscos i accelera la innovació: per exemple, una fàbrica pot provar virtualment una nova configuració de màquines o un canvi en el flux de treball abans d'implementar-lo realment, estalviant temps i costos."
         },
         {
           "id": "bots",
           "title": "Bots i assistents d'IA",
-          "text": "Desenvolupem assistents per a webs, apps o ús intern que atenen clients o ajuden l'equip a trobar documents i dades. Automatitzen les consultes repetitives i donen respostes immediates a qualsevol hora."
+          "text": "Desenvolupem assistents virtuals intel·ligents adaptats a diferents necessitats: integració en webs o apps, bots per consultar informació interna o per donar suport a clients.\nAquests sistemes automatitzen tasques repetitives, ofereixen respostes immediates i milloren l'experiència d'usuari. Per exemple, un bot d'atenció al client pot resoldre dubtes freqüents sobre comandes o facturació, mentre un assistent intern pot ajudar l'equip a trobar documents o dades de forma instantània."
         },
         {
           "id": "analytics",
           "title": "Analítica avançada",
-          "text": "Creem models de machine learning per preveure vendes, optimitzar estocs, segmentar clients o definir preus dinàmics. Converteixen les dades de l'empresa en decisions més ben informades."
+          "text": "Convertim les dades de la teva empresa en un avantatge competitiu mitjançant tècniques d'Intel·ligència Artificial i Aprenentatge Automàtic. Creem models que permeten preveure vendes, optimitzar la gestió d'estocs, segmentar clients o definir preus dinàmics.\nAixò permet prendre decisions més informades i millorar l'eficiència empresarial. Per exemple, un comerç pot ajustar les seves promocions segons la demanda prevista o una empresa logística pot optimitzar les rutes de repartiment."
         },
         {
           "id": "optimization",
           "title": "Automatització intel·ligent",
-          "text": "Automatitzem processos repetitius i administratius, com la gestió de factures o el processament de comandes. Es redueixen errors i temps de resposta, i l'equip guanya temps per a tasques de més valor."
+          "text": "Implementem sistemes d'IA que automatitzen processos repetitius i administratius, reduint errors i alliberant temps valuós per al teu equip.\nD'aquesta manera, el personal pot centrar-se en tasques de més valor estratègic, com la innovació o la relació amb clients. Un exemple seria l'automatització de la gestió de factures o del processament de comandes, que pot reduir dràsticament els temps de resposta i augmentar la productivitat."
         }
       ]
     },

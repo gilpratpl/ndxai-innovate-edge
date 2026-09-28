@@ -17,7 +17,7 @@ export interface AboutContent {
   ctaPrimary: string;
   ctaSecondary: string;
   highlights: { value: string; label: string }[];
-  what: { title: string; items: AboutServiceItem[] };
+  what: { title: string; showMore: string; showLess: string; items: AboutServiceItem[] };
   different: { title: string; items: AboutItem[] };
   who: { title: string; items: string[] };
   team: { title: string; story: string; composition: string; linkedinLabel: string; members: AboutMember[] };
@@ -53,7 +53,10 @@ export function renderAboutStaticHtml(c: AboutContent): string {
   parts.push(`<h2>${esc(c.title)}</h2><p>${esc(c.valueProp)}</p>`);
 
   parts.push(`<h2 id="${id.what}">${esc(c.what.title)}</h2>`);
-  for (const s of c.what.items) parts.push(`<h3>${esc(s.title)}</h3><p>${esc(s.text)}</p>`);
+  for (const s of c.what.items) {
+    parts.push(`<h3>${esc(s.title)}</h3>`);
+    for (const para of s.text.split('\n')) parts.push(`<p>${esc(para)}</p>`);
+  }
 
   parts.push(`<h2 id="${id.different}">${esc(c.different.title)}</h2>`);
   for (const d of c.different.items) parts.push(`<h3>${esc(d.title)}</h3><p>${esc(d.text)}</p>`);

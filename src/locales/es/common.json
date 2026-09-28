@@ -41,36 +41,38 @@
     ],
     "what": {
       "title": "Qué hace NDXai",
+      "showMore": "Ver más",
+      "showLess": "Ver menos",
       "items": [
         {
           "id": "predictive",
           "title": "Mantenimiento predictivo",
-          "text": "Analizamos datos históricos y de sensores (vibración, temperatura, consumo) con modelos de IA para anticipar averías antes de que ocurran. El resultado son intervenciones planificadas, menos paradas imprevistas y menores costes de mantenimiento."
+          "text": "Cada parada por avería es una pérdida irrecuperable de tiempo y recursos. Con sistemas basados en datos históricos y modelos de IA, anticipamos fallos antes de que ocurran, permitiendo planificar las intervenciones técnicas con antelación. Esto reduce los costes de mantenimiento y evita interrupciones inesperadas en la producción.\nPor ejemplo, en una planta industrial, el sistema puede detectar patrones anómalos en la vibración de un motor o en la temperatura de una bomba, avisando al equipo técnico antes de que se produzca una avería grave."
         },
         {
           "id": "vision",
           "title": "Visión artificial",
-          "text": "Entrenamos redes neuronales que inspeccionan el producto en la línea y detectan defectos o irregularidades que el ojo humano pasa por alto. Así se mantiene una calidad constante, se reduce el rechazo y se mejora la trazabilidad, especialmente en los sectores alimentario y farmacéutico."
+          "text": "Los modelos de visión por computador inspeccionan productos con una precisión superior a la humana. Mediante redes neuronales profundas, detectamos defectos microscópicos o irregularidades en líneas de producción, asegurando estándares de calidad consistentes y reduciendo el rechazo de productos.\nEsto es especialmente útil en sectores como el farmacéutico o el alimentario, donde la detección automática de defectos puede evitar lotes defectuosos y mejorar la trazabilidad de los productos."
         },
         {
           "id": "digital",
           "title": "Gemelo digital",
-          "text": "Construimos réplicas virtuales de procesos y plantas para simular cambios antes de aplicarlos. Permite probar una nueva configuración de máquinas o de flujo de trabajo sin detener la producción y con menos riesgo."
+          "text": "Los gemelos digitales son réplicas virtuales exactas de tus operaciones físicas. Permiten simular cambios en procesos, probar mejoras o predecir resultados sin detener la producción.\nEsta tecnología ayuda a reducir riesgos y acelera la innovación: por ejemplo, una fábrica puede probar virtualmente una nueva configuración de máquinas o un cambio en el flujo de trabajo antes de implementarlo realmente, ahorrando tiempo y costes."
         },
         {
           "id": "bots",
           "title": "Bots y asistentes de IA",
-          "text": "Desarrollamos asistentes para webs, apps o uso interno que atienden a clientes o ayudan al equipo a encontrar documentos y datos. Automatizan las consultas repetitivas y dan respuestas inmediatas a cualquier hora."
+          "text": "Desarrollamos asistentes virtuales inteligentes adaptados a diferentes necesidades: integración en webs o apps, bots para consultar información interna o para ofrecer soporte a clientes.\nEstos sistemas automatizan tareas repetitivas, ofrecen respuestas inmediatas y mejoran la experiencia del usuario. Por ejemplo, un bot de atención al cliente puede resolver dudas frecuentes sobre pedidos o facturación, mientras que un asistente interno puede ayudar al equipo a encontrar documentos o datos de forma instantánea."
         },
         {
           "id": "analytics",
           "title": "Analítica avanzada",
-          "text": "Creamos modelos de machine learning para prever ventas, optimizar inventarios, segmentar clientes o definir precios dinámicos. Convierten los datos de la empresa en decisiones mejor informadas."
+          "text": "Convertimos los datos de tu empresa en una ventaja competitiva mediante técnicas de Inteligencia Artificial y Aprendizaje Automático. Creamos modelos que permiten prever ventas, optimizar la gestión de inventarios, segmentar clientes o definir precios dinámicos.\nEsto permite tomar decisiones más informadas y mejorar la eficiencia empresarial. Por ejemplo, un comercio puede ajustar sus promociones según la demanda prevista o una empresa logística puede optimizar las rutas de reparto."
         },
         {
           "id": "optimization",
           "title": "Automatización inteligente",
-          "text": "Automatizamos procesos repetitivos y administrativos, como la gestión de facturas o el procesamiento de pedidos. Se reducen errores y tiempos de respuesta, y el equipo gana tiempo para tareas de más valor."
+          "text": "Implementamos sistemas de IA que automatizan procesos repetitivos y administrativos, reduciendo errores y liberando tiempo valioso para tu equipo.\nDe esta manera, el personal puede centrarse en tareas de mayor valor estratégico, como la innovación o la relación con los clientes. Un ejemplo sería la automatización de la gestión de facturas o del procesamiento de pedidos, que puede reducir drásticamente los tiempos de respuesta y aumentar la productividad."
         }
       ]
     },

@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import {
@@ -15,7 +15,7 @@ import {
   TrendingUp,
   type LucideIcon,
 } from 'lucide-react';
-import { ABOUT_SECTION_IDS as IDS, visibleFacts, type AboutContent } from '@/lib/about';
+import { ABOUT_SECTION_IDS as IDS, visibleFacts, type AboutContent, type AboutServiceItem } from '@/lib/about';
 import member1 from '@/assets/team/member-1.webp';
 import member2 from '@/assets/team/member-2.webp';
 import member3 from '@/assets/team/member-3.webp';
@@ -43,6 +43,53 @@ const SubHeading = ({ id, children }: { id: string; children: ReactNode }) => (
     {children}
   </h2>
 );
+
+// Targeta de servei: mostra el principi del text amb "…" i "Veure més" l'amplia.
+// El text sencer és sempre al DOM (només s'amaga visualment), així Google i les IA el llegeixen.
+const ServiceCard = ({
+  item,
+  showMore,
+  showLess,
+}: {
+  item: AboutServiceItem;
+  showMore: string;
+  showLess: string;
+}) => {
+  const [expanded, setExpanded] = useState(false);
+  const Icon = serviceIcons[item.id] ?? Cog;
+  const [first, ...rest] = item.text.split('\n');
+  const textId = `service-${item.id}-text`;
+
+  return (
+    <article className="group flex flex-col rounded-2xl border border-border/60 bg-card/60 p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-xl">
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-primary shadow-lg shadow-primary/25">
+        <Icon className="h-6 w-6 text-primary-foreground" aria-hidden="true" />
+      </div>
+      <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
+      <div id={textId} className="space-y-3 text-sm text-muted-foreground leading-relaxed">
+        <p className={expanded ? undefined : 'line-clamp-3'}>
+          {first}
+          {/* Si el primer paràgraf ja hi cap sencer, el "…" indica que n'hi ha més */}
+          {!expanded && rest.length > 0 && <span aria-hidden="true"> …</span>}
+        </p>
+        {rest.map((para) => (
+          <p key={para} className={expanded ? undefined : 'hidden'}>
+            {para}
+          </p>
+        ))}
+      </div>
+      <button
+        type="button"
+        onClick={() => setExpanded((v) => !v)}
+        aria-expanded={expanded}
+        aria-controls={textId}
+        className="mt-4 self-start text-sm font-medium text-primary hover:underline"
+      >
+        {expanded ? showLess : `${showMore} →`}
+      </button>
+    </article>
+  );
+};
 
 const About = () => {
   const { t } = useTranslation();
@@ -83,22 +130,10 @@ const About = () => {
         {/* 2. Què fa NDXai */}
         <div>
           <SubHeading id={IDS.what}>{c.what.title}</SubHeading>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {c.what.items.map((s) => {
-              const Icon = serviceIcons[s.id] ?? Cog;
-              return (
-                <article
-                  key={s.id}
-                  className="group rounded-2xl border border-border/60 bg-card/60 p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:-translate-y-1"
-                >
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-primary shadow-lg shadow-primary/25">
-                    <Icon className="h-6 w-6 text-primary-foreground" aria-hidden="true" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.text}</p>
-                </article>
-              );
-            })}
+          <div className="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {c.what.items.map((s) => (
+              <ServiceCard key={s.id} item={s} showMore={c.what.showMore} showLess={c.what.showLess} />
+            ))}
           </div>
         </div>
 

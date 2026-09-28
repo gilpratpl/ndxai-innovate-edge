@@ -41,36 +41,38 @@
     ],
     "what": {
       "title": "What NDXai does",
+      "showMore": "Read more",
+      "showLess": "Read less",
       "items": [
         {
           "id": "predictive",
           "title": "Predictive maintenance",
-          "text": "We analyse historical and sensor data (vibration, temperature, power draw) with AI models to anticipate breakdowns before they happen. The result is planned interventions, fewer unplanned stoppages and lower maintenance costs."
+          "text": "Every breakdown stop is an irrecoverable loss of time and resources. Using systems based on historical data and AI models, we anticipate failures before they occur, allowing technical interventions to be planned in advance. This reduces maintenance costs and prevents unexpected production interruptions.\nFor example, in an industrial plant, the system can detect abnormal patterns in a motor's vibration or a pump's temperature, alerting the technical team before a serious failure happens."
         },
         {
           "id": "vision",
           "title": "Computer vision",
-          "text": "We train neural networks that inspect products on the line and detect defects or irregularities the human eye misses. Quality stays consistent, rejects go down and traceability improves, especially in the food and pharmaceutical sectors."
+          "text": "Computer vision models inspect products with precision beyond human capability. Through deep neural networks, we detect microscopic defects or irregularities in production lines, ensuring consistent quality standards and reducing product rejection.\nThis is especially useful in sectors such as pharmaceuticals or food processing, where automatic defect detection can prevent defective batches and improve product traceability."
         },
         {
           "id": "digital",
           "title": "Digital twin",
-          "text": "We build virtual replicas of processes and plants to simulate changes before applying them. You can test a new machine layout or workflow without stopping production and with less risk."
+          "text": "Digital twins are exact virtual replicas of your physical operations. They allow you to simulate process changes, test improvements, or predict outcomes without halting production.\nThis technology helps reduce risks and accelerates innovation: for example, a factory can virtually test a new machine configuration or workflow change before implementing it in real life, saving time and costs."
         },
         {
           "id": "bots",
           "title": "AI bots and assistants",
-          "text": "We develop assistants for websites, apps or internal use that serve customers or help your team find documents and data. They automate repetitive questions and give instant answers at any time of day."
+          "text": "We develop intelligent virtual assistants tailored to different needs: website or app integration, bots for internal information queries, or customer support.\nThese systems automate repetitive tasks, provide instant responses, and enhance user experience. For example, a customer service bot can resolve common inquiries about orders or billing, while an internal assistant can help teams find documents or data instantly."
         },
         {
           "id": "analytics",
           "title": "Advanced analytics",
-          "text": "We build machine learning models to forecast sales, optimise inventory, segment customers or set dynamic prices. They turn company data into better-informed decisions."
+          "text": "We turn your company's data into a competitive advantage through Artificial Intelligence and Machine Learning techniques. We create models that forecast sales, optimize inventory management, segment customers, or define dynamic pricing.\nThis enables better-informed decision-making and improves business efficiency. For example, a retailer can adjust promotions based on predicted demand, or a logistics company can optimize delivery routes."
         },
         {
           "id": "optimization",
           "title": "Intelligent automation",
-          "text": "We automate repetitive and administrative processes such as invoice handling or order processing. Errors and response times go down, and your team gains time for higher-value work."
+          "text": "We implement AI systems that automate repetitive and administrative processes, reducing errors and freeing up valuable time for your team.\nThis allows staff to focus on higher-value strategic tasks such as innovation or customer relations. For instance, automating invoice management or order processing can drastically reduce response times and increase productivity."
         }
       ]
     },
