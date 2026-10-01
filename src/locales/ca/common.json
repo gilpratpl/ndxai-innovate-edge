@@ -22,7 +22,7 @@
   "aboutPage": {
     "eyebrow": "Sobre NDXai",
     "title": "Què és NDXai?",
-    "valueProp": "NDXai (Neural Dynamics AI) és una consultora d'intel·ligència artificial amb seu a Vic (Barcelona) que dissenya, desenvolupa i implanta solucions d'IA a mida —manteniment predictiu, visió artificial, bessons digitals, assistents d'IA, analítica avançada i automatització— per a empreses industrials i pimes que volen reduir costos i guanyar eficiència.",
+    "valueProp": "NDXai (Neural Dynamics AI) és una consultora d'intel·ligència artificial amb seu a Vic (Barcelona) que dissenya, desenvolupa i implanta solucions d'IA a mida —manteniment predictiu, visió artificial, bessons digitals, agents d'IA, analítica avançada i automatització— per a empreses industrials i pimes que volen reduir costos i guanyar eficiència.",
     "ctaPrimary": "Parla amb l'equip",
     "ctaSecondary": "Veure dades clau",
     "highlights": [
@@ -43,6 +43,7 @@
       "title": "Què fa NDXai",
       "showMore": "Veure més",
       "showLess": "Veure menys",
+      "pageLink": "Pàgina del servei",
       "items": [
         {
           "id": "predictive",
@@ -61,8 +62,8 @@
         },
         {
           "id": "bots",
-          "title": "Bots i assistents d'IA",
-          "text": "Desenvolupem assistents virtuals intel·ligents adaptats a diferents necessitats: integració en webs o apps, bots per consultar informació interna o per donar suport a clients.\nAquests sistemes automatitzen tasques repetitives, ofereixen respostes immediates i milloren l'experiència d'usuari. Per exemple, un bot d'atenció al client pot resoldre dubtes freqüents sobre comandes o facturació, mentre un assistent intern pot ajudar l'equip a trobar documents o dades de forma instantània."
+          "title": "Bots i agents d'IA",
+          "text": "Desenvolupem bots i agents d'IA adaptats a diferents necessitats: integració en webs o apps, agents per consultar informació interna o per donar suport a clients.\nAquests sistemes automatitzen tasques repetitives, ofereixen respostes immediates i milloren l'experiència d'usuari. Per exemple, un bot d'atenció al client pot resoldre dubtes freqüents sobre comandes o facturació, mentre un agent intern pot ajudar l'equip a trobar documents o dades de forma instantània."
         },
         {
           "id": "analytics",
@@ -108,7 +109,7 @@
         "Fabricants dels sectors alimentari i farmacèutic que necessiten control de qualitat i traçabilitat.",
         "Responsables de manteniment, qualitat i operacions que volen reduir aturades i rebuigs.",
         "Empreses logístiques i de distribució que volen preveure la demanda i optimitzar rutes i estocs.",
-        "Pimes que volen automatitzar tasques administratives o atendre els seus clients amb assistents d'IA."
+        "Pimes que volen automatitzar tasques administratives o atendre els seus clients amb agents d'IA."
       ]
     },
     "team": {
@@ -223,7 +224,7 @@
         {
           "key": "services",
           "label": "Serveis",
-          "value": "Manteniment predictiu, visió artificial, bessó digital, bots i assistents d'IA, analítica avançada i automatització intel·ligent"
+          "value": "Manteniment predictiu, visió artificial, bessó digital, bots i agents d'IA, analítica avançada i automatització intel·ligent"
         },
         {
           "key": "communication",
@@ -267,7 +268,7 @@
         },
         {
           "q": "Quin tipus de projectes d'IA fa NDXai?",
-          "a": "Manteniment predictiu, visió artificial per al control de qualitat, bessons digitals, bots i assistents d'IA, analítica avançada i automatització de processos. Cada projecte es construeix amb les dades i el procés del client."
+          "a": "Manteniment predictiu, visió artificial per al control de qualitat, bessons digitals, bots i agents d'IA, analítica avançada i automatització de processos. Cada projecte es construeix amb les dades i el procés del client."
         },
         {
           "q": "On és NDXai i amb quines empreses treballa?",
@@ -305,7 +306,8 @@
   "footer.quick": "Enllaços ràpids",
   "footer.legal": "Legal",
   "footer.privacy": "Privacitat",
-  "footer.terms": "Termes",
+  "footer.terms": "Avís legal",
+  "footer.services": "Serveis",
   "notFound.title": "404",
   "notFound.message": "Vaja! Pàgina no trobada",
   "notFound.backHome": "Torna a l'inici",

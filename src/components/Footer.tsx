@@ -1,12 +1,20 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { NAV_ITEMS, onSectionLinkClick } from '@/lib/sections';
-import { LANGS, LANG_STORAGE_KEY, langPath } from '@/lib/seo';
+import { NAV_ITEMS, onSectionLinkClick, sectionHref } from '@/lib/sections';
+import type { AboutServiceItem } from '@/lib/about';
+import { LEGAL_IDS, pagePath, type ServiceId } from '@/lib/pages';
+import { currentPagePath } from '@/lib/route';
+import { LANGS, LANG_STORAGE_KEY, type Lang } from '@/lib/seo';
 import logo from '@/assets/logo_white.svg';
 import logoDark from '@/assets/logo_blue.svg';
 
+const LEGAL_LABELS = { privacy: 'footer.privacy', notice: 'footer.terms' } as const;
+const linkClass = 'text-muted-foreground hover:text-primary transition-all duration-200 text-sm group flex items-center';
+
 const Footer = () => {
   const { t, i18n } = useTranslation();
+  const lang = i18n.language as Lang;
+  const services = t('aboutPage.what.items', { returnObjects: true }) as AboutServiceItem[];
   const currentYear = new Date().getFullYear();
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useState<'light' | 'dark'>(prefersDark ? 'dark' : 'light');
@@ -43,7 +51,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8 relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
           {/* Logo y tagline */}
-          <div className="col-span-1 md:col-span-9">
+          <div className="col-span-1 md:col-span-5">
             <div className="mb-6">
               <button
                 type="button"
@@ -72,9 +80,9 @@ const Footer = () => {
               {NAV_ITEMS.map(({ key, id }) => (
                 <li key={key}>
                   <a
-                    href={`#${id}`}
+                    href={sectionHref(id)}
                     onClick={onSectionLinkClick(id)}
-                    className="text-muted-foreground hover:text-primary transition-all duration-200 text-sm group flex items-center"
+                    className={linkClass}
                   >
                     <span className="w-0 h-px bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
                     {t(`nav.${key}`)}
@@ -84,34 +92,39 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Enlaces legales 
-          <div className="col-span-1 md:col-span-4">
+          {/* Una pàgina pròpia per servei */}
+          <div className="col-span-1 md:col-span-3">
+            <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">
+              {t('footer.services')}
+            </h3>
+            <ul className="space-y-3">
+              {services.map((s) => (
+                <li key={s.id}>
+                  <a href={pagePath(lang, { kind: 'service', id: s.id as ServiceId })} className={linkClass}>
+                    <span className="w-0 h-px bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
+                    {s.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Enlaces legales */}
+          <div className="col-span-1 md:col-span-2">
             <h3 className="font-semibold text-foreground mb-6 text-sm uppercase tracking-wider">
               {t('footer.legal')}
             </h3>
             <ul className="space-y-3">
-              <li>
-                <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-primary transition-all duration-200 text-sm group flex items-center"
-                >
-                  <span className="w-0 h-px bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
-                  {t('footer.privacy')}
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="#" 
-                  className="text-muted-foreground hover:text-primary transition-all duration-200 text-sm group flex items-center"
-                >
-                  <span className="w-0 h-px bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
-                  {t('footer.terms')}
-                </a>
-              </li>
+              {LEGAL_IDS.map((id) => (
+                <li key={id}>
+                  <a href={pagePath(lang, { kind: 'legal', id })} className={linkClass}>
+                    <span className="w-0 h-px bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
+                    {t(LEGAL_LABELS[id])}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
-
-          */}
         </div>
 
         {/* Copyright con gradiente */}
@@ -120,23 +133,23 @@ const Footer = () => {
             {/* Enllaços d'idioma visibles i rastrejables (el desplegable del menú no ho és) */}
             <nav aria-label={t('seo.switchLabel')} className="mb-4">
               <ul className="flex justify-center gap-4 text-sm">
-                {LANGS.map((lang) => (
-                  <li key={lang}>
+                {LANGS.map((l) => (
+                  <li key={l}>
                     <a
-                      href={langPath(lang)}
-                      hrefLang={lang}
-                      lang={lang}
-                      aria-current={lang === i18n.language ? 'true' : undefined}
+                      href={currentPagePath(l)}
+                      hrefLang={l}
+                      lang={l}
+                      aria-current={l === lang ? 'true' : undefined}
                       onClick={() => {
                         try {
-                          localStorage.setItem(LANG_STORAGE_KEY, lang);
+                          localStorage.setItem(LANG_STORAGE_KEY, l);
                         } catch {
                           // localStorage no disponible
                         }
                       }}
-                      className={lang === i18n.language ? 'text-primary font-medium' : 'text-muted-foreground hover:text-primary transition-colors'}
+                      className={l === lang ? 'text-primary font-medium' : 'text-muted-foreground hover:text-primary transition-colors'}
                     >
-                      {t('seo.languageName', { lng: lang })}
+                      {t('seo.languageName', { lng: l })}
                     </a>
                   </li>
                 ))}

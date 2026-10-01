@@ -1,6 +1,6 @@
 # NDXai (Neural Dynamics AI)
 
-> NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vic (Barcelona, Spain) that designs, builds and deploys custom AI solutions (predictive maintenance, computer vision, digital twins, AI assistants, advanced analytics and automation) for industrial companies and SMEs that want to cut costs and work more efficiently.
+> NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vic (Barcelona, Spain) that designs, builds and deploys custom AI solutions (predictive maintenance, computer vision, digital twins, AI agents, advanced analytics and automation) for industrial companies and SMEs that want to cut costs and work more efficiently.
 
 ## Website
 
@@ -10,12 +10,12 @@
 
 ## What NDXai does
 
-- **Predictive maintenance**: Every breakdown stop is an irrecoverable loss of time and resources. Using systems based on historical data and AI models, we anticipate failures before they occur, allowing technical interventions to be planned in advance. This reduces maintenance costs and prevents unexpected production interruptions. For example, in an industrial plant, the system can detect abnormal patterns in a motor's vibration or a pump's temperature, alerting the technical team before a serious failure happens.
-- **Computer vision**: Computer vision models inspect products with precision beyond human capability. Through deep neural networks, we detect microscopic defects or irregularities in production lines, ensuring consistent quality standards and reducing product rejection. This is especially useful in sectors such as pharmaceuticals or food processing, where automatic defect detection can prevent defective batches and improve product traceability.
-- **Digital twin**: Digital twins are exact virtual replicas of your physical operations. They allow you to simulate process changes, test improvements, or predict outcomes without halting production. This technology helps reduce risks and accelerates innovation: for example, a factory can virtually test a new machine configuration or workflow change before implementing it in real life, saving time and costs.
-- **AI bots and assistants**: We develop intelligent virtual assistants tailored to different needs: website or app integration, bots for internal information queries, or customer support. These systems automate repetitive tasks, provide instant responses, and enhance user experience. For example, a customer service bot can resolve common inquiries about orders or billing, while an internal assistant can help teams find documents or data instantly.
-- **Advanced analytics**: We turn your company's data into a competitive advantage through Artificial Intelligence and Machine Learning techniques. We create models that forecast sales, optimize inventory management, segment customers, or define dynamic pricing. This enables better-informed decision-making and improves business efficiency. For example, a retailer can adjust promotions based on predicted demand, or a logistics company can optimize delivery routes.
-- **Intelligent automation**: We implement AI systems that automate repetitive and administrative processes, reducing errors and freeing up valuable time for your team. This allows staff to focus on higher-value strategic tasks such as innovation or customer relations. For instance, automating invoice management or order processing can drastically reduce response times and increase productivity.
+- [Predictive maintenance](https://www.ndxai.eu/en/predictive-maintenance/): Every breakdown stop is an irrecoverable loss of time and resources. Using systems based on historical data and AI models, we anticipate failures before they occur, allowing technical interventions to be planned in advance. This reduces maintenance costs and prevents unexpected production interruptions. For example, in an industrial plant, the system can detect abnormal patterns in a motor's vibration or a pump's temperature, alerting the technical team before a serious failure happens.
+- [Computer vision](https://www.ndxai.eu/en/computer-vision/): Computer vision models inspect products with precision beyond human capability. Through deep neural networks, we detect microscopic defects or irregularities in production lines, ensuring consistent quality standards and reducing product rejection. This is especially useful in sectors such as pharmaceuticals or food processing, where automatic defect detection can prevent defective batches and improve product traceability.
+- [Digital twin](https://www.ndxai.eu/en/digital-twin/): Digital twins are exact virtual replicas of your physical operations. They allow you to simulate process changes, test improvements, or predict outcomes without halting production. This technology helps reduce risks and accelerates innovation: for example, a factory can virtually test a new machine configuration or workflow change before implementing it in real life, saving time and costs.
+- [AI bots and agents](https://www.ndxai.eu/en/ai-agents/): We develop AI bots and agents tailored to different needs: website or app integration, agents for internal information queries, or customer support. These systems automate repetitive tasks, provide instant responses, and enhance user experience. For example, a customer service bot can resolve common inquiries about orders or billing, while an internal agent can help teams find documents or data instantly.
+- [Advanced analytics](https://www.ndxai.eu/en/advanced-analytics/): We turn your company's data into a competitive advantage through Artificial Intelligence and Machine Learning techniques. We create models that forecast sales, optimize inventory management, segment customers, or define dynamic pricing. This enables better-informed decision-making and improves business efficiency. For example, a retailer can adjust promotions based on predicted demand, or a logistics company can optimize delivery routes.
+- [Intelligent automation](https://www.ndxai.eu/en/intelligent-automation/): We implement AI systems that automate repetitive and administrative processes, reducing errors and freeing up valuable time for your team. This allows staff to focus on higher-value strategic tasks such as innovation or customer relations. For instance, automating invoice management or order processing can drastically reduce response times and increase productivity.
 
 ## What makes NDXai different
 
@@ -42,7 +42,7 @@
 - Headquarters: Carrer Assemblea de Catalunya 9, 08500 Vic (Barcelona), Spain
 - Website: www.ndxai.eu
 - Core offering: Custom AI solutions for industrial companies and SMEs
-- Services: Predictive maintenance, computer vision, digital twin, AI bots and assistants, advanced analytics and intelligent automation
+- Services: Predictive maintenance, computer vision, digital twin, AI bots and agents, advanced analytics and intelligent automation
 - Communication: Email, phone, LinkedIn and in-person meetings; in Catalan, Spanish and English
 - Social: LinkedIn: neural-dynamics-ai
 
@@ -54,7 +54,7 @@ NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vi
 
 ### What kind of AI projects does NDXai do?
 
-Predictive maintenance, computer vision for quality control, digital twins, AI bots and assistants, advanced analytics and process automation. Every project is built around the client's own data and process.
+Predictive maintenance, computer vision for quality control, digital twins, AI bots and agents, advanced analytics and process automation. Every project is built around the client's own data and process.
 
 ### Where is NDXai based and who does it work with?
 

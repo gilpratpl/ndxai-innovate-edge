@@ -1,21 +1,11 @@
 import { useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
-import {
-  ArrowRight,
-  BarChart,
-  Bot,
-  Box,
-  CheckCircle2,
-  ChevronDown,
-  Cog,
-  Eye,
-  Linkedin,
-  Mail,
-  TrendingUp,
-  type LucideIcon,
-} from 'lucide-react';
+import { ArrowRight, CheckCircle2, ChevronDown, Cog, Linkedin, Mail } from 'lucide-react';
 import { ABOUT_SECTION_IDS as IDS, visibleFacts, type AboutContent, type AboutServiceItem } from '@/lib/about';
+import { pagePath, type ServiceId } from '@/lib/pages';
+import { currentLang } from '@/lib/route';
+import { serviceIcons } from '@/components/serviceIcons';
 import member1 from '@/assets/team/member-1.webp';
 import member2 from '@/assets/team/member-2.webp';
 import member3 from '@/assets/team/member-3.webp';
@@ -24,15 +14,6 @@ import member5 from '@/assets/team/member-5.webp';
 
 // Les fotos van per ordre, igual que aboutPage.team.members als JSON d'idiomes
 const memberImages = [member1, member2, member3, member4, member5];
-
-const serviceIcons: Record<string, LucideIcon> = {
-  predictive: Cog,
-  vision: Eye,
-  digital: Box,
-  bots: Bot,
-  analytics: BarChart,
-  optimization: TrendingUp,
-};
 
 const scrollToSection = (id: string) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -46,26 +27,32 @@ const SubHeading = ({ id, children }: { id: string; children: ReactNode }) => (
 
 // Targeta de servei: mostra el principi del text amb "…" i "Veure més" l'amplia.
 // El text sencer és sempre al DOM (només s'amaga visualment), així Google i les IA el llegeixen.
+// El títol i "Pàgina del servei" enllacen a la pàgina pròpia del servei.
 const ServiceCard = ({
   item,
   showMore,
   showLess,
+  pageLink,
 }: {
   item: AboutServiceItem;
   showMore: string;
   showLess: string;
+  pageLink: string;
 }) => {
   const [expanded, setExpanded] = useState(false);
   const Icon = serviceIcons[item.id] ?? Cog;
   const [first, ...rest] = item.text.split('\n');
   const textId = `service-${item.id}-text`;
+  const href = pagePath(currentLang, { kind: 'service', id: item.id as ServiceId });
 
   return (
     <article className="group flex flex-col rounded-2xl border border-border/60 bg-card/60 p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-xl">
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-primary shadow-lg shadow-primary/25">
         <Icon className="h-6 w-6 text-primary-foreground" aria-hidden="true" />
       </div>
-      <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
+      <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+        <a href={href}>{item.title}</a>
+      </h3>
       <div id={textId} className="space-y-3 text-sm text-muted-foreground leading-relaxed">
         <p className={expanded ? undefined : 'line-clamp-3'}>
           {first}
@@ -78,15 +65,21 @@ const ServiceCard = ({
           </p>
         ))}
       </div>
-      <button
-        type="button"
-        onClick={() => setExpanded((v) => !v)}
-        aria-expanded={expanded}
-        aria-controls={textId}
-        className="mt-4 self-start text-sm font-medium text-primary hover:underline"
-      >
-        {expanded ? showLess : `${showMore} →`}
-      </button>
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 text-sm font-medium">
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          aria-expanded={expanded}
+          aria-controls={textId}
+          className="text-muted-foreground hover:text-primary hover:underline"
+        >
+          {expanded ? showLess : showMore}
+        </button>
+        <a href={href} className="text-primary hover:underline">
+          {pageLink}
+          <span className="sr-only">: {item.title}</span> →
+        </a>
+      </div>
     </article>
   );
 };
@@ -132,7 +125,13 @@ const About = () => {
           <SubHeading id={IDS.what}>{c.what.title}</SubHeading>
           <div className="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-3">
             {c.what.items.map((s) => (
-              <ServiceCard key={s.id} item={s} showMore={c.what.showMore} showLess={c.what.showLess} />
+              <ServiceCard
+                key={s.id}
+                item={s}
+                showMore={c.what.showMore}
+                showLess={c.what.showLess}
+                pageLink={c.what.pageLink}
+              />
             ))}
           </div>
         </div>

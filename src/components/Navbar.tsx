@@ -8,7 +8,8 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { useTranslation } from 'react-i18next';
-import { NAV_ITEMS, onSectionLinkClick } from '@/lib/sections';
+import { NAV_ITEMS, onSectionLinkClick, sectionHref } from '@/lib/sections';
+import { currentPagePath } from '@/lib/route';
 import { LANGS, LANG_STORAGE_KEY, langPath, type Lang } from '@/lib/seo';
 
 import logo from '@/assets/logo_white.svg';
@@ -60,7 +61,7 @@ const Navbar = () => {
             {NAV_ITEMS.map(({ key, id }) => (
               <li key={key}>
                 <a
-                  href={`#${id}`}
+                  href={sectionHref(id)}
                   onClick={handleNavClick(id)}
                   className="relative text-foreground hover:text-primary transition-colors duration-300 group"
                 >
@@ -89,7 +90,7 @@ const Navbar = () => {
               {LANGS.map((lang) => (
                 <DropdownMenuItem key={lang} asChild>
                   <a
-                    href={langPath(lang) + window.location.hash}
+                    href={currentPagePath(lang) + window.location.hash}
                     hrefLang={lang}
                     lang={lang}
                     onClick={() => rememberLanguage(lang)}
@@ -129,7 +130,7 @@ const Navbar = () => {
           <ul className="flex flex-col items-center space-y-2">
             {NAV_ITEMS.map(({ key, id }) => (
               <li key={key}>
-                <a href={`#${id}`} onClick={handleNavClick(id)} className="text-foreground hover:text-primary transition-colors">
+                <a href={sectionHref(id)} onClick={handleNavClick(id)} className="text-foreground hover:text-primary transition-colors">
                   {t(`nav.${key}`)}
                 </a>
               </li>

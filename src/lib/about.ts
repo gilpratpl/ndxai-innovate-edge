@@ -17,7 +17,7 @@ export interface AboutContent {
   ctaPrimary: string;
   ctaSecondary: string;
   highlights: { value: string; label: string }[];
-  what: { title: string; showMore: string; showLess: string; items: AboutServiceItem[] };
+  what: { title: string; showMore: string; showLess: string; pageLink: string; items: AboutServiceItem[] };
   different: { title: string; items: AboutItem[] };
   who: { title: string; items: string[] };
   team: { title: string; story: string; composition: string; linkedinLabel: string; members: AboutMember[] };
@@ -46,7 +46,7 @@ const esc = (s: string) =>
  * Es posa dins de <div id="root"> perquè els crawlers que no executen JavaScript
  * (GPTBot, ClaudeBot, PerplexityBot...) el puguin llegir. React el substitueix en muntar-se.
  */
-export function renderAboutStaticHtml(c: AboutContent): string {
+export function renderAboutStaticHtml(c: AboutContent, serviceHref?: (id: string) => string): string {
   const id = ABOUT_SECTION_IDS;
   const parts: string[] = [];
   parts.push(`<section id="about-static" aria-label="${esc(c.eyebrow)}">`);
@@ -54,7 +54,8 @@ export function renderAboutStaticHtml(c: AboutContent): string {
 
   parts.push(`<h2 id="${id.what}">${esc(c.what.title)}</h2>`);
   for (const s of c.what.items) {
-    parts.push(`<h3>${esc(s.title)}</h3>`);
+    // Cada servei enllaça a la seva pàgina pròpia
+    parts.push(serviceHref ? `<h3><a href="${esc(serviceHref(s.id))}">${esc(s.title)}</a></h3>` : `<h3>${esc(s.title)}</h3>`);
     for (const para of s.text.split('\n')) parts.push(`<p>${esc(para)}</p>`);
   }
 

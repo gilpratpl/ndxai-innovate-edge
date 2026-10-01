@@ -22,7 +22,7 @@
   "aboutPage": {
     "eyebrow": "About NDXai",
     "title": "What is NDXai?",
-    "valueProp": "NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vic (Barcelona, Spain) that designs, builds and deploys custom AI solutions (predictive maintenance, computer vision, digital twins, AI assistants, advanced analytics and automation) for industrial companies and SMEs that want to cut costs and work more efficiently.",
+    "valueProp": "NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vic (Barcelona, Spain) that designs, builds and deploys custom AI solutions (predictive maintenance, computer vision, digital twins, AI agents, advanced analytics and automation) for industrial companies and SMEs that want to cut costs and work more efficiently.",
     "ctaPrimary": "Talk to the team",
     "ctaSecondary": "See key facts",
     "highlights": [
@@ -43,6 +43,7 @@
       "title": "What NDXai does",
       "showMore": "Read more",
       "showLess": "Read less",
+      "pageLink": "Service page",
       "items": [
         {
           "id": "predictive",
@@ -61,8 +62,8 @@
         },
         {
           "id": "bots",
-          "title": "AI bots and assistants",
-          "text": "We develop intelligent virtual assistants tailored to different needs: website or app integration, bots for internal information queries, or customer support.\nThese systems automate repetitive tasks, provide instant responses, and enhance user experience. For example, a customer service bot can resolve common inquiries about orders or billing, while an internal assistant can help teams find documents or data instantly."
+          "title": "AI bots and agents",
+          "text": "We develop AI bots and agents tailored to different needs: website or app integration, agents for internal information queries, or customer support.\nThese systems automate repetitive tasks, provide instant responses, and enhance user experience. For example, a customer service bot can resolve common inquiries about orders or billing, while an internal agent can help teams find documents or data instantly."
         },
         {
           "id": "analytics",
@@ -108,7 +109,7 @@
         "Food and pharmaceutical manufacturers that need quality control and traceability.",
         "Maintenance, quality and operations managers who want fewer stoppages and rejects.",
         "Logistics and distribution companies that want to forecast demand and optimise routes and inventory.",
-        "SMEs that want to automate admin tasks or serve their customers with AI assistants."
+        "SMEs that want to automate admin tasks or serve their customers with AI agents."
       ]
     },
     "team": {
@@ -223,7 +224,7 @@
         {
           "key": "services",
           "label": "Services",
-          "value": "Predictive maintenance, computer vision, digital twin, AI bots and assistants, advanced analytics and intelligent automation"
+          "value": "Predictive maintenance, computer vision, digital twin, AI bots and agents, advanced analytics and intelligent automation"
         },
         {
           "key": "communication",
@@ -267,7 +268,7 @@
         },
         {
           "q": "What kind of AI projects does NDXai do?",
-          "a": "Predictive maintenance, computer vision for quality control, digital twins, AI bots and assistants, advanced analytics and process automation. Every project is built around the client's own data and process."
+          "a": "Predictive maintenance, computer vision for quality control, digital twins, AI bots and agents, advanced analytics and process automation. Every project is built around the client's own data and process."
         },
         {
           "q": "Where is NDXai based and who does it work with?",
@@ -305,7 +306,8 @@
   "footer.quick": "Quick links",
   "footer.legal": "Legal",
   "footer.privacy": "Privacy",
-  "footer.terms": "Terms",
+  "footer.terms": "Legal notice",
+  "footer.services": "Services",
   "notFound.title": "404",
   "notFound.message": "Oops! Page not found",
   "notFound.backHome": "Return to Home",

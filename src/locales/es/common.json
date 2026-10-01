@@ -22,7 +22,7 @@
   "aboutPage": {
     "eyebrow": "Sobre NDXai",
     "title": "¿Qué es NDXai?",
-    "valueProp": "NDXai (Neural Dynamics AI) es una consultora de inteligencia artificial con sede en Vic (Barcelona) que diseña, desarrolla e implanta soluciones de IA a medida —mantenimiento predictivo, visión artificial, gemelos digitales, asistentes de IA, analítica avanzada y automatización— para empresas industriales y pymes que quieren reducir costes y ganar eficiencia.",
+    "valueProp": "NDXai (Neural Dynamics AI) es una consultora de inteligencia artificial con sede en Vic (Barcelona) que diseña, desarrolla e implanta soluciones de IA a medida —mantenimiento predictivo, visión artificial, gemelos digitales, agentes de IA, analítica avanzada y automatización— para empresas industriales y pymes que quieren reducir costes y ganar eficiencia.",
     "ctaPrimary": "Habla con el equipo",
     "ctaSecondary": "Ver datos clave",
     "highlights": [
@@ -43,6 +43,7 @@
       "title": "Qué hace NDXai",
       "showMore": "Ver más",
       "showLess": "Ver menos",
+      "pageLink": "Página del servicio",
       "items": [
         {
           "id": "predictive",
@@ -61,8 +62,8 @@
         },
         {
           "id": "bots",
-          "title": "Bots y asistentes de IA",
-          "text": "Desarrollamos asistentes virtuales inteligentes adaptados a diferentes necesidades: integración en webs o apps, bots para consultar información interna o para ofrecer soporte a clientes.\nEstos sistemas automatizan tareas repetitivas, ofrecen respuestas inmediatas y mejoran la experiencia del usuario. Por ejemplo, un bot de atención al cliente puede resolver dudas frecuentes sobre pedidos o facturación, mientras que un asistente interno puede ayudar al equipo a encontrar documentos o datos de forma instantánea."
+          "title": "Bots y agentes de IA",
+          "text": "Desarrollamos bots y agentes de IA adaptados a diferentes necesidades: integración en webs o apps, agentes para consultar información interna o para ofrecer soporte a clientes.\nEstos sistemas automatizan tareas repetitivas, ofrecen respuestas inmediatas y mejoran la experiencia del usuario. Por ejemplo, un bot de atención al cliente puede resolver dudas frecuentes sobre pedidos o facturación, mientras que un agente interno puede ayudar al equipo a encontrar documentos o datos de forma instantánea."
         },
         {
           "id": "analytics",
@@ -108,7 +109,7 @@
         "Fabricantes de los sectores alimentario y farmacéutico que necesitan control de calidad y trazabilidad.",
         "Responsables de mantenimiento, calidad y operaciones que quieren reducir paradas y rechazos.",
         "Empresas logísticas y de distribución que quieren prever la demanda y optimizar rutas e inventario.",
-        "Pymes que quieren automatizar tareas administrativas o atender a sus clientes con asistentes de IA."
+        "Pymes que quieren automatizar tareas administrativas o atender a sus clientes con agentes de IA."
       ]
     },
     "team": {
@@ -223,7 +224,7 @@
         {
           "key": "services",
           "label": "Servicios",
-          "value": "Mantenimiento predictivo, visión artificial, gemelo digital, bots y asistentes de IA, analítica avanzada y automatización inteligente"
+          "value": "Mantenimiento predictivo, visión artificial, gemelo digital, bots y agentes de IA, analítica avanzada y automatización inteligente"
         },
         {
           "key": "communication",
@@ -267,7 +268,7 @@
         },
         {
           "q": "¿Qué tipo de proyectos de IA hace NDXai?",
-          "a": "Mantenimiento predictivo, visión artificial para control de calidad, gemelos digitales, bots y asistentes de IA, analítica avanzada y automatización de procesos. Cada proyecto se construye con los datos y el proceso del cliente."
+          "a": "Mantenimiento predictivo, visión artificial para control de calidad, gemelos digitales, bots y agentes de IA, analítica avanzada y automatización de procesos. Cada proyecto se construye con los datos y el proceso del cliente."
         },
         {
           "q": "¿Dónde está NDXai y con qué empresas trabaja?",
@@ -305,7 +306,8 @@
   "footer.quick": "Enlaces rápidos",
   "footer.legal": "Legal",
   "footer.privacy": "Privacidad",
-  "footer.terms": "Términos",
+  "footer.terms": "Aviso legal",
+  "footer.services": "Servicios",
   "notFound.title": "404",
   "notFound.message": "¡Vaya! Página no encontrada",
   "notFound.backHome": "Volver al inicio",

@@ -4,17 +4,19 @@ import path from "path";
 import viteImagemin from "unplugin-imagemin/vite";
 import fs from "fs";
 import { localizeHtml, renderLlmsTxt, renderSitemap, type Locales } from "./src/lib/seo-build";
-import { LANGS, langFromPath, langPath } from "./src/lib/seo";
+import { LANGS } from "./src/lib/seo";
+import { ALL_PAGES, pageFromPath, pagePath } from "./src/lib/pages";
 
+const readLocale = (lang: string, file: string) =>
+  JSON.parse(fs.readFileSync(path.resolve(__dirname, `src/locales/${lang}/${file}.json`), "utf8"));
+
+// common.json (portada i textos generals) + pages.json (subpàgines) sota la clau "pages"
 const loadLocales = (): Locales =>
   Object.fromEntries(
-    LANGS.map((l) => [
-      l,
-      JSON.parse(fs.readFileSync(path.resolve(__dirname, `src/locales/${l}/common.json`), "utf8")),
-    ]),
+    LANGS.map((l) => [l, { ...readLocale(l, "common"), pages: readLocale(l, "pages") }]),
   ) as Locales;
 
-// SEO multiidioma: una URL per idioma (/, /ca/, /en/), cadascuna amb el seu <head>
+// SEO multiidioma: una URL per idioma i pàgina (/, /ca/, /en/, /ca/manteniment-predictiu/...), cadascuna amb el seu <head>
 // (títol, descripció, canonical, hreflang, Open Graph, JSON-LD) i el contingut en HTML
 // estàtic dins de #root per als crawlers que no executen JS. També genera sitemap.xml i llms.txt.
 const seoPlugin = (): Plugin => {
@@ -27,8 +29,10 @@ const seoPlugin = (): Plugin => {
       isBuild = config.command === "build";
     },
     transformIndexHtml(html, ctx) {
-      // En build es deixa la plantilla intacta; closeBundle en fa una còpia per idioma
-      return isBuild ? html : localizeHtml(html, langFromPath(ctx.originalUrl ?? "/"), loadLocales());
+      // En build es deixa la plantilla intacta; closeBundle en fa una còpia per idioma i pàgina
+      if (isBuild) return html;
+      const { lang, page } = pageFromPath((ctx.originalUrl ?? "/").split(/[?#]/)[0]);
+      return localizeHtml(html, lang, page, loadLocales());
     },
     closeBundle() {
       if (!isBuild) return;
@@ -36,9 +40,11 @@ const seoPlugin = (): Plugin => {
       const templatePath = path.join(outDir, "index.html");
       const template = fs.readFileSync(templatePath, "utf8");
       for (const lang of LANGS) {
-        const file = path.join(outDir, langPath(lang), "index.html");
-        fs.mkdirSync(path.dirname(file), { recursive: true });
-        fs.writeFileSync(file, localizeHtml(template, lang, locales));
+        for (const page of ALL_PAGES) {
+          const file = path.join(outDir, pagePath(lang, page), "index.html");
+          fs.mkdirSync(path.dirname(file), { recursive: true });
+          fs.writeFileSync(file, localizeHtml(template, lang, page, locales));
+        }
       }
       fs.writeFileSync(path.join(outDir, "sitemap.xml"), renderSitemap(new Date().toISOString().slice(0, 10)));
       fs.writeFileSync(path.join(outDir, "llms.txt"), renderLlmsTxt(locales));

@@ -23,6 +23,9 @@ export const LANG_STORAGE_KEY = 'ndxai.lang';
 export const ORG = {
   name: 'NDXai',
   legalName: 'Neural Dynamics AI S.L.',
+  // Dades de l'avís legal (LSSI art. 10). Mentre siguin buides no es mostren.
+  taxId: '', // NIF
+  registry: '', // dades d'inscripció al Registre Mercantil
   email: 'info@ndxai.eu',
   phone: '+34651590000',
   phoneDisplay: '+34 651 590 000',
