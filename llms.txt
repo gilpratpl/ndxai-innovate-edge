@@ -1,0 +1,80 @@
+# NDXai (Neural Dynamics AI)
+
+> NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vic (Barcelona, Spain) that designs, builds and deploys custom AI solutions (predictive maintenance, computer vision, digital twins, AI agents, advanced analytics and automation) for industrial companies and SMEs that want to cut costs and work more efficiently.
+
+## Website
+
+- [Español](https://www.ndxai.eu/): NDXai | Consultora de IA para la industria en Vic (Barcelona)
+- [Català](https://www.ndxai.eu/ca/): NDXai | Consultora d'IA per a la indústria a Vic (Barcelona)
+- [English](https://www.ndxai.eu/en/): NDXai | AI consultancy for manufacturing in Vic, Barcelona
+
+## What NDXai does
+
+- [Predictive maintenance](https://www.ndxai.eu/en/predictive-maintenance/): Every breakdown stop is an irrecoverable loss of time and resources. Using systems based on historical data and AI models, we anticipate failures before they occur, allowing technical interventions to be planned in advance. This reduces maintenance costs and prevents unexpected production interruptions. For example, in an industrial plant, the system can detect abnormal patterns in a motor's vibration or a pump's temperature, alerting the technical team before a serious failure happens.
+- [Computer vision](https://www.ndxai.eu/en/computer-vision/): Computer vision models inspect products with precision beyond human capability. Through deep neural networks, we detect microscopic defects or irregularities in production lines, ensuring consistent quality standards and reducing product rejection. This is especially useful in sectors such as pharmaceuticals or food processing, where automatic defect detection can prevent defective batches and improve product traceability.
+- [Digital twin](https://www.ndxai.eu/en/digital-twin/): Digital twins are exact virtual replicas of your physical operations. They allow you to simulate process changes, test improvements, or predict outcomes without halting production. This technology helps reduce risks and accelerates innovation: for example, a factory can virtually test a new machine configuration or workflow change before implementing it in real life, saving time and costs.
+- [AI bots and agents](https://www.ndxai.eu/en/ai-agents/): We develop AI bots and agents tailored to different needs: website or app integration, agents for internal information queries, or customer support. These systems automate repetitive tasks, provide instant responses, and enhance user experience. For example, a customer service bot can resolve common inquiries about orders or billing, while an internal agent can help teams find documents or data instantly.
+- [Advanced analytics](https://www.ndxai.eu/en/advanced-analytics/): We turn your company's data into a competitive advantage through Artificial Intelligence and Machine Learning techniques. We create models that forecast sales, optimize inventory management, segment customers, or define dynamic pricing. This enables better-informed decision-making and improves business efficiency. For example, a retailer can adjust promotions based on predicted demand, or a logistics company can optimize delivery routes.
+- [Intelligent automation](https://www.ndxai.eu/en/intelligent-automation/): We implement AI systems that automate repetitive and administrative processes, reducing errors and freeing up valuable time for your team. This allows staff to focus on higher-value strategic tasks such as innovation or customer relations. For instance, automating invoice management or order processing can drastically reduce response times and increase productivity.
+
+## What makes NDXai different
+
+- **A local team in Vic that works on site**: We are based in Vic (Osona) and can visit the plant, talk to operators and see the process in person. Clients deal directly with the people who build the solution, with no sales layer in between.
+- **Five complementary profiles in one team**: We combine business analysis, data science, data engineering, full-stack development with IoT, and cloud architecture and cybersecurity. One team covers the whole project, from the data to production.
+- **Custom AI, not off-the-shelf products**: Every model is trained on each client's own data and process, instead of forcing the problem to fit a generic tool. The solution adapts to the plant, not the other way round.
+- **Focused on industry**: We work on shop-floor problems: breakdowns, quality, processes and production data. We speak the language of maintenance, quality and operations, not just technology.
+- **Security and cloud by design**: The team has experience with AWS AI services and cloud security in large-scale deployments across Europe and the Americas. Industrial data is handled with cybersecurity in mind from day one.
+
+## The team behind NDXai
+
+- **Sergi Masó**, Data Analyst. Specialises in analysing business challenges and turning them into practical solutions. He applies AI to real problems, bridging technology and business.
+- **Iker Reina**, Cybersecurity & Cloud Infrastructure Architect. Cloud security and AI specialist with international experience who has led large-scale deployments in Europe and the Americas. Expert in AWS AI services and security solutions.
+- **Gil Prat**, Full Stack Engineer. Builds end-to-end solutions spanning back end, front end and databases. He has experience integrating IoT technology and leading technical teams.
+- **Mariona Forcada**, Data Engineer. Expert in data management and architecture, specialising in building ETL pipelines and optimising databases. She combines advanced data engineering with delivering AI projects.
+- **Carlo Manzo**, Data Scientist. Applies artificial intelligence to extract insight from complex data. He is passionate about bridging scientific research and real-world, scalable applications.
+
+## NDXai key facts
+
+- Company name: NDXai (Neural Dynamics AI S.L.)
+- Type: Artificial intelligence consultancy for industry
+- Founded: 2025
+- Founders: Sergi Masó, Iker Reina, Gil Prat, Mariona Forcada and Carlo Manzo
+- Headquarters: Carrer Assemblea de Catalunya 9, 08500 Vic (Barcelona), Spain
+- Website: www.ndxai.eu
+- Core offering: Custom AI solutions for industrial companies and SMEs
+- Services: Predictive maintenance, computer vision, digital twin, AI bots and agents, advanced analytics and intelligent automation
+- Communication: Email, phone, LinkedIn and in-person meetings; in Catalan, Spanish and English
+- Social: LinkedIn: neural-dynamics-ai
+
+## Frequently asked questions
+
+### What is NDXai?
+
+NDXai (Neural Dynamics AI) is an artificial intelligence consultancy based in Vic (Barcelona, Spain). We design and deploy custom AI solutions for industrial companies and SMEs.
+
+### What kind of AI projects does NDXai do?
+
+Predictive maintenance, computer vision for quality control, digital twins, AI bots and agents, advanced analytics and process automation. Every project is built around the client's own data and process.
+
+### Where is NDXai based and who does it work with?
+
+We are based in Vic, in the Osona region of Catalonia. We work with companies across Catalonia and the rest of Spain, and we can visit your plant in person.
+
+### Do I need a lot of data to start an AI project?
+
+Not necessarily. During the assessment we review what data you already have (historical records, sensors, ERP or spreadsheets) and, if it is not enough, we propose how to start collecting it.
+
+### How much does a project with NDXai cost?
+
+It depends on the scope and the data available. After the first conversation we prepare a proposal with scope, timeline and budget.
+
+### Which languages does NDXai work in?
+
+Catalan, Spanish and English. Meetings and project documentation can be in any of the three.
+
+## Contact
+
+- Email: info@ndxai.eu
+- Phone: +34 651 590 000
+- Address: Carrer Assemblea de Catalunya 9, 08500 Vic (Barcelona), Spain
+- LinkedIn: https://www.linkedin.com/company/neural-dynamics-ai
