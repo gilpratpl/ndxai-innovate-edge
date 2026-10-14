@@ -251,7 +251,7 @@
     "privacy": {
       "title": "Política de privacidad",
       "seoDescription": "Cómo trata NDXai (Neural Dynamics AI S.L.) los datos personales de quien visita la web: contacto, chat, analítica, cookies y derechos.",
-      "updated": "2026-10-01",
+      "updated": "2026-10-14",
       "intro": "Esta política explica qué datos personales trata Neural Dynamics AI S.L. (NDXai) cuando visitas www.ndxai.eu o te pones en contacto con nosotros, con qué finalidad y qué derechos tienes. El responsable del tratamiento es el titular de la web.",
       "sections": [
         {
@@ -259,21 +259,23 @@
           "body": [
             "Contacto. Si nos escribes por correo, nos llamas o nos contactas por LinkedIn, tratamos los datos que nos facilitas (nombre, empresa, correo, teléfono y el contenido del mensaje) para responderte y, en su caso, preparar una propuesta.",
             "Chat de la web. Los mensajes que escribes al asistente de la web se envían a nuestro servidor y a un proveedor de modelos de lenguaje para generar la respuesta. No escribas en él datos personales ni información confidencial.",
-            "Analítica. Usamos Google Analytics para saber, de forma agregada, cómo se utiliza la web (páginas visitadas, tipo de dispositivo, ubicación aproximada). Este servicio utiliza cookies.",
-            "Preferencia de idioma. Si cambias de idioma, guardamos la elección en tu navegador (almacenamiento local) para recordarla. Este dato no sale de tu dispositivo."
+            "Analítica. Si lo aceptas en el aviso de cookies, usamos Google Analytics para saber, de forma agregada, cómo se utiliza la web (páginas visitadas, tipo de dispositivo, ubicación aproximada). Si no lo aceptas, Google Analytics no se carga.",
+            "Preferencia de idioma. Si cambias de idioma, guardamos la elección en tu navegador (almacenamiento local) para recordarla. Este dato no sale de tu dispositivo.",
+            "Preferencia de cookies. Guardamos en tu navegador (almacenamiento local) si has aceptado o rechazado las cookies de analítica, para no volver a preguntártelo durante 12 meses. Este dato no sale de tu dispositivo."
           ]
         },
         {
           "title": "Base jurídica",
           "body": [
-            "Tratamos los datos de contacto y del chat para atender tu consulta: aplicación de medidas precontractuales a petición tuya (art. 6.1.b del RGPD) e interés legítimo en responder consultas profesionales (art. 6.1.f del RGPD)."
+            "Tratamos los datos de contacto y del chat para atender tu consulta: aplicación de medidas precontractuales a petición tuya (art. 6.1.b del RGPD) e interés legítimo en responder consultas profesionales (art. 6.1.f del RGPD).",
+            "La analítica se basa en tu consentimiento (art. 6.1.a del RGPD y art. 22.2 de la LSSI), que puedes retirar en cualquier momento desde «Configuración de cookies», en el pie de página."
           ]
         },
         {
           "title": "Cookies",
           "body": [
-            "Las únicas cookies de la web son las de Google Analytics (_ga y _ga_<identificador>), que sirven para distinguir visitantes y sesiones y caducan a los dos años como máximo.",
-            "Puedes bloquearlas o borrarlas desde la configuración del navegador, o instalar el complemento de inhabilitación de Google Analytics."
+            "Las únicas cookies de la web son las de Google Analytics (_ga y _ga_<identificador>), que sirven para distinguir visitantes y sesiones y caducan a los dos años como máximo. Solo se instalan si las aceptas en el aviso de cookies.",
+            "Puedes cambiar tu elección cuando quieras desde «Configuración de cookies», en el pie de página. Si las rechazas después de haberlas aceptado, las borramos. También puedes bloquearlas o borrarlas desde la configuración del navegador."
           ]
         },
         {

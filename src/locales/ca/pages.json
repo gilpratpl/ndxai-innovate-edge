@@ -251,7 +251,7 @@
     "privacy": {
       "title": "Política de privacitat",
       "seoDescription": "Com tracta NDXai (Neural Dynamics AI S.L.) les dades personals de qui visita el web: contacte, xat, analítica, galetes i drets.",
-      "updated": "2026-10-01",
+      "updated": "2026-10-14",
       "intro": "Aquesta política explica quines dades personals tracta Neural Dynamics AI S.L. (NDXai) quan visites www.ndxai.eu o et poses en contacte amb nosaltres, amb quina finalitat i quins drets tens. El responsable del tractament és el titular del web.",
       "sections": [
         {
@@ -259,21 +259,23 @@
           "body": [
             "Contacte. Si ens escrius per correu, ens truques o ens contactes per LinkedIn, tractem les dades que ens facilites (nom, empresa, correu, telèfon i el contingut del missatge) per respondre't i, si escau, preparar una proposta.",
             "Xat del web. Els missatges que escrius a l'assistent del web s'envien al nostre servidor i a un proveïdor de models de llenguatge per generar la resposta. No hi escriguis dades personals ni informació confidencial.",
-            "Analítica. Fem servir Google Analytics per saber, de manera agregada, com es fa servir el web (pàgines visitades, tipus de dispositiu, ubicació aproximada). Aquest servei utilitza galetes.",
-            "Preferència d'idioma. Si canvies d'idioma, desem la tria al teu navegador (emmagatzematge local) per recordar-la. Aquesta dada no surt del teu dispositiu."
+            "Analítica. Si ho acceptes a l'avís de galetes, fem servir Google Analytics per saber, de manera agregada, com es fa servir el web (pàgines visitades, tipus de dispositiu, ubicació aproximada). Si no ho acceptes, Google Analytics no es carrega.",
+            "Preferència d'idioma. Si canvies d'idioma, desem la tria al teu navegador (emmagatzematge local) per recordar-la. Aquesta dada no surt del teu dispositiu.",
+            "Preferència de galetes. Desem al teu navegador (emmagatzematge local) si has acceptat o rebutjat les galetes d'analítica, per no tornar-t'ho a preguntar durant 12 mesos. Aquesta dada no surt del teu dispositiu."
           ]
         },
         {
           "title": "Base jurídica",
           "body": [
-            "Tractem les dades de contacte i del xat per atendre la teva consulta: aplicació de mesures precontractuals a petició teva (art. 6.1.b del RGPD) i interès legítim a respondre consultes professionals (art. 6.1.f del RGPD)."
+            "Tractem les dades de contacte i del xat per atendre la teva consulta: aplicació de mesures precontractuals a petició teva (art. 6.1.b del RGPD) i interès legítim a respondre consultes professionals (art. 6.1.f del RGPD).",
+            "L'analítica es basa en el teu consentiment (art. 6.1.a del RGPD i art. 22.2 de la LSSI), que pots retirar en qualsevol moment des de «Configuració de galetes», al peu de pàgina."
           ]
         },
         {
           "title": "Galetes",
           "body": [
-            "Les úniques galetes del web són les de Google Analytics (_ga i _ga_<identificador>), que serveixen per distingir visitants i sessions i caduquen al cap de dos anys com a màxim.",
-            "Pots bloquejar-les o esborrar-les des de la configuració del navegador, o instal·lar el complement de desactivació de Google Analytics."
+            "Les úniques galetes del web són les de Google Analytics (_ga i _ga_<identificador>), que serveixen per distingir visitants i sessions i caduquen al cap de dos anys com a màxim. Només s'instal·len si les acceptes a l'avís de galetes.",
+            "Pots canviar l'elecció quan vulguis des de «Configuració de galetes», al peu de pàgina. Si les rebutges després d'haver-les acceptat, les esborrem. També pots bloquejar-les o esborrar-les des de la configuració del navegador."
           ]
         },
         {

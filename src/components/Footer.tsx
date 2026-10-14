@@ -4,6 +4,7 @@ import { NAV_ITEMS, onSectionLinkClick, sectionHref } from '@/lib/sections';
 import type { AboutServiceItem } from '@/lib/about';
 import { LEGAL_IDS, pagePath, type ServiceId } from '@/lib/pages';
 import { currentPagePath } from '@/lib/route';
+import { OPEN_CONSENT_EVENT } from '@/lib/consent';
 import { LANGS, LANG_STORAGE_KEY, type Lang } from '@/lib/seo';
 import logo from '@/assets/logo_white.svg';
 import logoDark from '@/assets/logo_blue.svg';
@@ -123,6 +124,12 @@ const Footer = () => {
                   </a>
                 </li>
               ))}
+              <li>
+                <button type="button" onClick={() => window.dispatchEvent(new Event(OPEN_CONSENT_EVENT))} className={linkClass}>
+                  <span className="w-0 h-px bg-primary transition-all duration-300 group-hover:w-4 mr-0 group-hover:mr-2" />
+                  {t('footer.cookies')}
+                </button>
+              </li>
             </ul>
           </div>
         </div>
